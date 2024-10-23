@@ -37,7 +37,6 @@ public class PlayerAimWeapon : MonoBehaviour
             transform.localScale = new Vector3(1, 1, 1);
             aimTransform.localScale = new Vector3(-1, -1, 1);
         }
-        Debug.Log(angle);
 
     }
 
