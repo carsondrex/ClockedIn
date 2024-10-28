@@ -25,9 +25,17 @@ public class PlayerMovement : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, verticalInput * speed);
 
         anim.SetBool("run", horizontalInput != 0);
-        if (anim.GetBool("down") == true)
+        if (anim.GetBool("down"))
         {
             anim.SetBool("downrun", verticalInput < -0.01f);
+        }
+        if (anim.GetBool("up"))
+        {
+            anim.SetBool("uprun", verticalInput > 0.01f);
+        }
+        if (!anim.GetBool("down") && !anim.GetBool("up") && verticalInput != 0f)
+        {
+            anim.SetBool("run", true);
         }
     }
 }

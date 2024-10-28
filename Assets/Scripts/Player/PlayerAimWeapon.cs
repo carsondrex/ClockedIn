@@ -21,23 +21,57 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
-        if (angle > -60f && angle < 90f)
+        //gun angle modifications
+        //gun is on right of player
+        if (angle < 90f && angle > -90f)
         {
-            anim.SetBool("down", false);
-            transform.localScale = new Vector3(-1, 1, 1);
-            aimTransform.localScale = new Vector3(1, 1, 1);
+            aimTransform.localScale = new Vector3(transform.localScale.x * -1f, 1, 1);
+            //look right
+            if (angle < 60f && angle > -60f)
+            {
+                transform.localScale = new Vector3(-1, 1, 1);
+                anim.SetBool("down", false);
+                anim.SetBool("up", false);
+            }
+            //look up
+            else if (angle > 60f)
+            {
+                anim.SetBool("down", false);
+                anim.SetBool("up", true);
+            }
+            //look down
+            else if (angle < -60f)
+            {
+                anim.SetBool("up", false);
+                anim.SetBool("down", true);
+            }
         }
-        else if (angle < -60f && angle > -150f)
-        {
-            anim.SetBool("down", true);
-        }
+        //gun is on left of player
+        //angle > 90f && angle < -90f
         else
         {
-            anim.SetBool("down", false);
-            transform.localScale = new Vector3(1, 1, 1);
-            aimTransform.localScale = new Vector3(-1, -1, 1);
+            aimTransform.localScale = new Vector3(transform.localScale.x * -1f, -1, 1);
+            //look left
+            if ((angle > 150f && angle < 180f) || (angle > -180f && angle < -150f))
+            {
+                transform.localScale = new Vector3(1, 1, 1);
+                anim.SetBool("down", false);
+                anim.SetBool("up", false);
+            }
+            //look up
+            else if (angle < 150f && angle > 90f)
+            {
+                anim.SetBool("down", false);
+                anim.SetBool("up", true);
+            }
+            //look down
+            else if (angle > -150f && angle < -90f)
+            {
+                anim.SetBool("up", false);
+                anim.SetBool("down", true);
+            }
         }
-
+        Debug.Log(angle);
     }
 
     public static Vector3 GetMouseWorldPosition()

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 592fc2a60649485499dfee960956e3de
+guid: 1eac535a283fe9f4d99f4ca2bd667196
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,91 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_0
+      name: clockedInPlayerUpwardsRun_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 165
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50818e1dd787e944da4d6cbcd0fc6f57
+      internalID: -1818371552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clockedInPlayerUpwardsRun_1
+      rect:
+        serializedVersion: 2
+        x: 60
+        y: 165
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43621c9b2515c084a893d2d59876efb9
+      internalID: 892655853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clockedInPlayerUpwardsRun_2
+      rect:
+        serializedVersion: 2
+        x: 120
+        y: 165
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fab5118b2f277d242aa7352d1275974a
+      internalID: -287369774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clockedInPlayerUpwardsRun_3
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 165
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aaa9e6031943a1499be01ce8d908261
+      internalID: -227212831
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clockedInPlayerUpwardsRun_4
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 7cafd9465fb6e6d4e95304f8a39640e3
-      internalID: 2064405330
+      spriteID: 27d652bc036658e4abf6bbf3e4d01775
+      internalID: -699892698
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_1
+      name: clockedInPlayerUpwardsRun_5
       rect:
         serializedVersion: 2
         x: 60
@@ -132,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0c4c3f4bebd15174f8aa4d83c62a6794
-      internalID: -233071559
+      spriteID: 29d47cd340b34b649a5044f8c52dd428
+      internalID: 105998063
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_2
+      name: clockedInPlayerUpwardsRun_6
       rect:
         serializedVersion: 2
         x: 120
@@ -153,20 +237,41 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b02facd6dbb21df43973c1e44b832fba
-      internalID: 1755970801
+      spriteID: 5cb775a65367a1148bed4c054e68d58e
+      internalID: 1406006792
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_3
+      name: clockedInPlayerUpwardsRun_7
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 110
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe970bb6b9f3a6d43837db399dd265ee
+      internalID: -1089700922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clockedInPlayerUpwardsRun_8
       rect:
         serializedVersion: 2
         x: 0
         y: 55
-        width: 45
-        height: 32
+        width: 60
+        height: 55
       alignment: 0
       pivot: {x: 0.5, y: 0.5}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -174,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 400c84cb65ee8284ea18b507f00efe3b
-      internalID: -2031556533
+      spriteID: c6d71be838f63294db802994a51e1bf3
+      internalID: 1840761900
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_4
+      name: clockedInPlayerUpwardsRun_9
       rect:
         serializedVersion: 2
         x: 60
@@ -195,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b7fbbb3797e9d9f4683bcd4b56e9ff01
-      internalID: -852136563
+      spriteID: 1a4a56bfc387f5b4fb70d55453964f6b
+      internalID: 1903549647
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_5
+      name: clockedInPlayerUpwardsRun_10
       rect:
         serializedVersion: 2
         x: 120
@@ -216,29 +321,50 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ab497f5f61155984aaab7903d013bb73
-      internalID: 1217713579
+      spriteID: 0304b9508c1e9cf47bbd875140b61df7
+      internalID: -988432729
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: clockedInPlayerHorVertRun_6
+      name: clockedInPlayerUpwardsRun_11
+      rect:
+        serializedVersion: 2
+        x: 180
+        y: 55
+        width: 60
+        height: 55
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0850c61f867dea8448a22e17064f0644
+      internalID: 436820668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: clockedInPlayerUpwardsRun_12
       rect:
         serializedVersion: 2
         x: 0
         y: 0
         width: 60
         height: 55
-      alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      alignment: 9
+      pivot: {x: 0.5787789, y: 0.26366335}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 3d3b8de47c32f3c448471f7e05072109
-      internalID: 1371049076
+      spriteID: cffd22deed6cc3d44bd2f1961509e663
+      internalID: -618583913
       vertices: []
       indices: 
       edges: []
@@ -254,13 +380,19 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      clockedInPlayerHorVertRun_0: 2064405330
-      clockedInPlayerHorVertRun_1: -233071559
-      clockedInPlayerHorVertRun_2: 1755970801
-      clockedInPlayerHorVertRun_3: -2031556533
-      clockedInPlayerHorVertRun_4: -852136563
-      clockedInPlayerHorVertRun_5: 1217713579
-      clockedInPlayerHorVertRun_6: 1371049076
+      clockedInPlayerUpwardsRun_0: -1818371552
+      clockedInPlayerUpwardsRun_1: 892655853
+      clockedInPlayerUpwardsRun_10: -988432729
+      clockedInPlayerUpwardsRun_11: 436820668
+      clockedInPlayerUpwardsRun_12: -618583913
+      clockedInPlayerUpwardsRun_2: -287369774
+      clockedInPlayerUpwardsRun_3: -227212831
+      clockedInPlayerUpwardsRun_4: -699892698
+      clockedInPlayerUpwardsRun_5: 105998063
+      clockedInPlayerUpwardsRun_6: 1406006792
+      clockedInPlayerUpwardsRun_7: -1089700922
+      clockedInPlayerUpwardsRun_8: 1840761900
+      clockedInPlayerUpwardsRun_9: 1903549647
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
