@@ -7,11 +7,13 @@ public class PlayerAimWeapon : MonoBehaviour
 {
     private Transform aimTransform;
     private Animator anim;
+    private SpriteRenderer weaponSprite;
     // Start is called before the first frame update
     void Awake()
     {
         aimTransform = transform.Find("Aim");
         anim = GetComponent<Animator>();
+        weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
     }
 
     // Update is called once per frame
@@ -27,33 +29,36 @@ public class PlayerAimWeapon : MonoBehaviour
         {
             aimTransform.localScale = new Vector3(transform.localScale.x * -1f, 1, 1);
             //look right
-            if (angle < 60f && angle > -60f)
+            if (angle < 45f && angle > -60f)
             {
                 transform.localScale = new Vector3(-1, 1, 1);
+                weaponSprite.sortingOrder = 3;
                 anim.SetBool("down", false);
                 anim.SetBool("up", false);
             }
             //look up
-            else if (angle > 60f)
+            else if (angle > 45f)
             {
                 anim.SetBool("down", false);
                 anim.SetBool("up", true);
+                weaponSprite.sortingOrder = 1;
             }
             //look down
             else if (angle < -60f)
             {
+                weaponSprite.sortingOrder = 3;
                 anim.SetBool("up", false);
                 anim.SetBool("down", true);
             }
         }
         //gun is on left of player
-        //angle > 90f && angle < -90f
         else
         {
             aimTransform.localScale = new Vector3(transform.localScale.x * -1f, -1, 1);
             //look left
             if ((angle > 150f && angle < 180f) || (angle > -180f && angle < -150f))
             {
+                weaponSprite.sortingOrder = 3;
                 transform.localScale = new Vector3(1, 1, 1);
                 anim.SetBool("down", false);
                 anim.SetBool("up", false);
@@ -63,15 +68,16 @@ public class PlayerAimWeapon : MonoBehaviour
             {
                 anim.SetBool("down", false);
                 anim.SetBool("up", true);
+                weaponSprite.sortingOrder = 1;
             }
             //look down
             else if (angle > -150f && angle < -90f)
             {
+                weaponSprite.sortingOrder = 3;
                 anim.SetBool("up", false);
                 anim.SetBool("down", true);
             }
         }
-        Debug.Log(angle);
     }
 
     public static Vector3 GetMouseWorldPosition()

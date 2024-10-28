@@ -27,11 +27,11 @@ public class PlayerMovement : MonoBehaviour
         anim.SetBool("run", horizontalInput != 0);
         if (anim.GetBool("down"))
         {
-            anim.SetBool("downrun", verticalInput < -0.01f);
+            anim.SetBool("downrun", verticalInput != 0f || horizontalInput != 0f);
         }
         if (anim.GetBool("up"))
         {
-            anim.SetBool("uprun", verticalInput > 0.01f);
+            anim.SetBool("uprun", verticalInput != 0f || horizontalInput != 0f);
         }
         if (!anim.GetBool("down") && !anim.GetBool("up") && verticalInput != 0f)
         {
