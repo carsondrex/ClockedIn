@@ -8,12 +8,18 @@ public class PlayerAimWeapon : MonoBehaviour
     private Transform aimTransform;
     private Animator anim;
     private SpriteRenderer weaponSprite;
+    public Animator weaponAnim;
+    public ParticleSystem gunFlash;
+    private bool canShoot;
+    public PlayerBullet bullet;
     // Start is called before the first frame update
     void Awake()
     {
         aimTransform = transform.Find("Aim");
         anim = GetComponent<Animator>();
         weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
+        weaponAnim = aimTransform.Find("Weapon").GetComponent<Animator>();
+        canShoot = true;
     }
 
     // Update is called once per frame
@@ -23,6 +29,12 @@ public class PlayerAimWeapon : MonoBehaviour
         Vector3 aimDirection = (mousePosition - transform.position).normalized;
         float angle = Mathf.Atan2(aimDirection.y, aimDirection.x) * Mathf.Rad2Deg;
         aimTransform.eulerAngles = new Vector3(0, 0, angle);
+        HandleAiming(angle);
+        HandleShooting(aimDirection);
+    }
+
+    private void HandleAiming(float angle)
+    {
         //gun angle modifications
         //gun is on right of player
         if (angle < 90f && angle > -90f)
@@ -78,6 +90,32 @@ public class PlayerAimWeapon : MonoBehaviour
                 anim.SetBool("down", true);
             }
         }
+    }
+
+    private void HandleShooting(Vector3 aimDirection)
+    {
+        if (Input.GetMouseButton(0))
+        {
+            if (canShoot)
+            {
+                StartCoroutine(Shoot(aimDirection));
+            }
+            weaponAnim.SetBool("Shoot", true);
+        }
+        else
+        {
+            weaponAnim.SetBool("Shoot", false);
+        }
+    }
+
+    protected IEnumerator Shoot(Vector3 shootDirection)
+    {
+        PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
+        newBullet.setTarget("Enemy", shootDirection, 10);
+        gunFlash.Play();
+        canShoot = false;
+        yield return new WaitForSeconds(0.4f);
+        canShoot = true;
     }
 
     public static Vector3 GetMouseWorldPosition()
