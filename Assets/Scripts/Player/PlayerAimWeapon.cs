@@ -11,7 +11,8 @@ public class PlayerAimWeapon : MonoBehaviour
     public Animator weaponAnim;
     public ParticleSystem gunFlash;
     private bool canShoot;
-    public PlayerBullet bullet;
+    private PlayerBullet bullet;
+    private GunManager gm;
     // Start is called before the first frame update
     void Awake()
     {
@@ -19,6 +20,7 @@ public class PlayerAimWeapon : MonoBehaviour
         anim = GetComponent<Animator>();
         weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
         weaponAnim = aimTransform.Find("Weapon").GetComponent<Animator>();
+        gm = transform.GetComponent<GunManager>();
         canShoot = true;
     }
 
@@ -110,8 +112,25 @@ public class PlayerAimWeapon : MonoBehaviour
 
     protected IEnumerator Shoot(Vector3 shootDirection)
     {
+        //bullet type decider depending on active gun
+        if (gm.weaponIndex == 0) //Assault rifle
+            bullet = gm.bullets[0];//undecided
+        else if (gm.weaponIndex == 1) //flamer
+            bullet = gm.bullets[1];//have to add flame bullet
+        else if (gm.weaponIndex == 2) //Gun 4
+            bullet = gm.bullets[5]; //waveform
+        else if (gm.weaponIndex == 3) //Gun 5
+            bullet = gm.bullets[2];//undecided
+        else if (gm.weaponIndex == 4) //L-Coil
+            bullet = gm.bullets[4];//spark
+        else if (gm.weaponIndex == 5) //L-Coil
+            bullet = gm.bullets[3];//spark
+        else
+            Debug.Log("Unrecognized gun");
+
+        CinemachineShake.Instance.ShakeCamera(3f, .3f);
         PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
-        newBullet.setTarget("Enemy", shootDirection, 10);
+        newBullet.setTarget("Enemy", shootDirection, 12);
         gunFlash.Play();
         canShoot = false;
         yield return new WaitForSeconds(0.4f);

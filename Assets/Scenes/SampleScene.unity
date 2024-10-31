@@ -5046,6 +5046,8 @@ GameObject:
   m_Component:
   - component: {fileID: 374060240}
   - component: {fileID: 374060239}
+  - component: {fileID: 374060242}
+  - component: {fileID: 374060241}
   m_Layer: 0
   m_Name: Virtual Camera
   m_TagString: Untagged
@@ -5108,6 +5110,71 @@ Transform:
   - {fileID: 573343497}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &374060241
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374060238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 97d72f15a1482224889c70754cd99c08, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+--- !u!114 &374060242
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 374060238}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 180ecf9b41d478f468eb3e9083753217, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_ImpulseDefinition:
+    m_ImpulseChannel: 1
+    m_ImpulseShape: 2
+    m_CustomImpulseShape:
+      serializedVersion: 2
+      m_Curve: []
+      m_PreInfinity: 2
+      m_PostInfinity: 2
+      m_RotationOrder: 4
+    m_ImpulseDuration: 0.2
+    m_ImpulseType: 0
+    m_DissipationRate: 0.25
+    m_RawSignal: {fileID: 0}
+    m_AmplitudeGain: 1
+    m_FrequencyGain: 1
+    m_RepeatMode: 0
+    m_Randomize: 1
+    m_TimeEnvelope:
+      m_AttackShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_DecayShape:
+        serializedVersion: 2
+        m_Curve: []
+        m_PreInfinity: 2
+        m_PostInfinity: 2
+        m_RotationOrder: 4
+      m_AttackTime: 0
+      m_SustainTime: 0.2
+      m_DecayTime: 0.7
+      m_ScaleWithImpact: 1
+      m_HoldForever: 0
+    m_ImpactRadius: 100
+    m_DirectionMode: 0
+    m_DissipationMode: 2
+    m_DissipationDistance: 100
+    m_PropagationSpeed: 343
+  m_DefaultVelocity: {x: 0, y: -1, z: 0}
 --- !u!1 &519420028
 GameObject:
   m_ObjectHideFlags: 0
@@ -5247,6 +5314,7 @@ GameObject:
   - component: {fileID: 573343500}
   - component: {fileID: 573343499}
   - component: {fileID: 573343498}
+  - component: {fileID: 573343501}
   m_Layer: 0
   m_Name: cm
   m_TagString: Untagged
@@ -5330,6 +5398,23 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: ac0b09e7857660247b1477e93731de29, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+--- !u!114 &573343501
+MonoBehaviour:
+  m_ObjectHideFlags: 3
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 573343496}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 68bb026fafb42b14791938953eaace77, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  m_NoiseProfile: {fileID: 11400000, guid: 69ce8388f6785dd4c8c39915efece2f4, type: 2}
+  m_PivotOffset: {x: 0, y: 0, z: 0}
+  m_AmplitudeGain: 1
+  m_FrequencyGain: 1
+  mNoiseOffsets: {x: 0, y: 0, z: 0}
 --- !u!1 &867145052
 GameObject:
   m_ObjectHideFlags: 0
@@ -5473,9 +5558,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f0421351427755a4eb978386e87f9232, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  weaponAnim: {fileID: 0}
+  weaponAnim: {fileID: 9068581129586244721}
   gunFlash: {fileID: 67419400}
-  bullet: {fileID: 2802236280353600321, guid: aaf9107bdabaf4e46a9d3bc58cdcfc83, type: 3}
 --- !u!95 &867145058
 Animator:
   serializedVersion: 5
@@ -5511,19 +5595,18 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   weapons:
   - {fileID: 21300000, guid: 32e9fbfc81aa77148bbc0b1912ebca42, type: 3}
-  - {fileID: 21300000, guid: 3edb92cc3954a99419af3a29ea5be154, type: 3}
-  - {fileID: 21300000, guid: b6937431685212240b26365daa4378a8, type: 3}
   - {fileID: 21300000, guid: 4cee7eed984a5e8449b3033fff32fd96, type: 3}
   - {fileID: 21300000, guid: 6a2a99eccce04944983fcd8933f3ffd6, type: 3}
   - {fileID: 21300000, guid: 915b0810065484d428fe3d4cb77cec8d, type: 3}
-  - {fileID: 21300000, guid: 9059f8fa94b8e1c4faf5ad06ff43d9de, type: 3}
-  - {fileID: 21300000, guid: 2b037dc9fb071c24f8494741753941b1, type: 3}
   - {fileID: 21300000, guid: 0019ffca82463b94ea7616c27834bfa8, type: 3}
-  - {fileID: 21300000, guid: 4c4f56ba647627c4390e737698ac8ca1, type: 3}
-  - {fileID: 21300000, guid: 36a332029df23cc4cb662c0771cc55b9, type: 3}
-  - {fileID: 21300000, guid: 5523ead99a913f44fae4af67ef228cd4, type: 3}
-  - {fileID: 21300000, guid: 353337a867d69144a9edf83554844926, type: 3}
   - {fileID: 21300000, guid: bbd37da818e57a64481ea724717cebd2, type: 3}
+  bullets:
+  - {fileID: 7861126017504167079, guid: 91602cc50cca12642aad5c1182f5dafb, type: 3}
+  - {fileID: 7041068566601444439, guid: 9391f308c4f716b4badb3ed8279cce3e, type: 3}
+  - {fileID: 2527067041135069845, guid: 42ff1b637dc9e234abee7aba935db216, type: 3}
+  - {fileID: 6024465929490267355, guid: 754c336fe52314c47b0d5bd25e0b5aee, type: 3}
+  - {fileID: 6425388657181418978, guid: 3cad605f6f4da36439bf151a3b31308f, type: 3}
+  - {fileID: 2802236280353600321, guid: aaf9107bdabaf4e46a9d3bc58cdcfc83, type: 3}
   weaponIndex: 0
 --- !u!1 &1191705941
 GameObject:
