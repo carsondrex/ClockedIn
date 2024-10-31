@@ -38,10 +38,10 @@ public class PlayerBullet : MonoBehaviour
         }
         if (target == "Enemy" && other.tag == "Enemy")
         {
-            /*EnemyShip enemyShip = other.GetComponent<EnemyShip>();
-            if (enemyShip.health <= 0)
+            /*Enemy enemy = other.GetComponent<Enemy>();
+            if (enemy.health <= 0)
             {
-                GameManager.enemiesKilled++;
+                
             }*/
         }
     }

@@ -14,6 +14,7 @@ public class CinemachineShake : MonoBehaviour
     {
         Instance = this;
         vc = GetComponent<CinemachineVirtualCamera>();
+        shakeTimer = 0f;
     }
 
     public void ShakeCamera(float intensity, float time)
