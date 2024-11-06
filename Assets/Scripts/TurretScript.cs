@@ -17,7 +17,6 @@ public class TurretScript : MonoBehaviour
     {
         canShoot = false;
         yield return new WaitForSeconds(2);
-        Debug.Log("Triggering Shoot");
         anim.SetTrigger("Shoot");
         yield return new WaitForSeconds(.1f);
         TurretBulletScript newBullet = Instantiate(bullet, transform.position-(new Vector3(0, .75f, 0)), new Quaternion(0, 0, 0, 0));
@@ -30,7 +29,6 @@ public class TurretScript : MonoBehaviour
     {
         if (canShoot)
         {
-            Debug.Log("Calling Shoot");
             StartCoroutine(Shoot());
         }
     }

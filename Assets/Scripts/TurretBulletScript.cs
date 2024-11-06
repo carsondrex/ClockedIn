@@ -8,6 +8,7 @@ public class TurretBulletScript : MonoBehaviour
     public float turnSpeed;
     public float lifeTime;
     private GameObject target;
+    private PlayerMovement playerHealth;
     private Vector2 directionToPlayer;
     private float angleToPlayer;
     private Animator anim;
@@ -19,6 +20,7 @@ public class TurretBulletScript : MonoBehaviour
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         target = GameObject.Find("Player");
+        playerHealth = target.GetComponent<PlayerMovement>();
         StartCoroutine(Timer());
     }
 
@@ -55,7 +57,6 @@ public class TurretBulletScript : MonoBehaviour
 
             if (rb != null)
             {
-                Debug.Log("PUSH");
                 var dir = (rb.transform.position - transform.position);
                 float explosionForce = power / dir.magnitude;
                 if (explosionForce > 0) 
@@ -76,6 +77,7 @@ public class TurretBulletScript : MonoBehaviour
         if(other.tag == "Player")
         {
             StartCoroutine(Explode());
+            playerHealth.TakeDamage(20);
         }
     }
     
