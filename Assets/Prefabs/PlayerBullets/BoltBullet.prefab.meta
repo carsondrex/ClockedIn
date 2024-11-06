@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD:Assets/Prefabs/PlayerBullets/BoltBullet.prefab.meta
 guid: 91602cc50cca12642aad5c1182f5dafb
+=======
+guid: 70a93a73cbed9c64a8de53d981aac794
+>>>>>>> EnemiesBranch:Assets/Prefabs/TurretBot.prefab.meta
 PrefabImporter:
   externalObjects: {}
   userData: 
