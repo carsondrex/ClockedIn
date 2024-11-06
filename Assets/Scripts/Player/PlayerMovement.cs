@@ -31,6 +31,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
         rb.velocity = new Vector2(rb.velocity.x, verticalInput * speed);
 
+        //TODO: change horizontal/verticalInput params to fit the new add force way of movement
         anim.SetBool("run", horizontalInput != 0);
         if (anim.GetBool("down"))
         {
@@ -50,8 +51,8 @@ public class PlayerMovement : MonoBehaviour,IDamagable
 
     public void TakeDamage(int damage)
     {
-        CinemachineShake.Instance.ShakeCamera(4.5f, .5f);
-        health -= damage;
+        CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
+        health -= damage / 2; //divide by 2 since we have two colliders on player
         float targetFillAmount = health / 100;
         healthBar.DOValue(targetFillAmount, fillSpeed);
         if (health <= 0)

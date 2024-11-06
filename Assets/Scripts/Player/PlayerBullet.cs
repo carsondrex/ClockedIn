@@ -43,6 +43,7 @@ public class PlayerBullet : MonoBehaviour
             {
                 
             }*/
+            Destroy(this.gameObject);
         }
     }
 }
