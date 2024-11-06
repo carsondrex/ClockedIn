@@ -19,15 +19,7 @@ MonoBehaviour:
     width: 1536
     height: 772.8
   m_ShowMode: 4
-<<<<<<< HEAD
-  m_Title: Project
-=======
-<<<<<<< HEAD
-  m_Title: Project
-=======
-  m_Title: Console
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  m_Title: Game
   m_RootView: {fileID: 2}
   m_MinSize: {x: 875, y: 300}
   m_MaxSize: {x: 10000, y: 10000}
@@ -127,15 +119,7 @@ MonoBehaviour:
   m_MinSize: {x: 300, y: 100}
   m_MaxSize: {x: 24288, y: 16192}
   vertical: 0
-<<<<<<< HEAD
-  controlID: 2094
-=======
-<<<<<<< HEAD
-  controlID: 2094
-=======
-  controlID: 61001
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  controlID: 20478
   draggingID: 0
 --- !u!114 &6
 MonoBehaviour:
@@ -161,15 +145,7 @@ MonoBehaviour:
   m_MinSize: {x: 200, y: 100}
   m_MaxSize: {x: 16192, y: 16192}
   vertical: 1
-<<<<<<< HEAD
-  controlID: 1985
-=======
-<<<<<<< HEAD
-  controlID: 1985
-=======
-  controlID: 60912
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  controlID: 20426
   draggingID: 0
 --- !u!114 &7
 MonoBehaviour:
@@ -190,27 +166,12 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
     width: 1167.2
-    height: 392.8
+    height: 310.4
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 1986
-<<<<<<< HEAD
-=======
-=======
-    width: 958.6667
-    height: 273.33334
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 60913
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  controlID: 20379
   draggingID: 0
 --- !u!114 &8
 MonoBehaviour:
@@ -229,23 +190,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
     width: 965.6
-    height: 392.8
+    height: 310.4
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-<<<<<<< HEAD
-=======
-=======
-    width: 791.3333
-    height: 273.33334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
   m_ActualView: {fileID: 15}
   m_Panes:
   - {fileID: 15}
@@ -269,25 +217,11 @@ MonoBehaviour:
     serializedVersion: 2
     x: 965.6
     y: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
     width: 201.59998
-    height: 392.8
+    height: 310.4
   m_MinSize: {x: 202, y: 221}
   m_MaxSize: {x: 4002, y: 4021}
   m_ActualView: {fileID: 17}
-<<<<<<< HEAD
-=======
-=======
-    width: 167.33337
-    height: 273.33334
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
-  m_ActualView: {fileID: 18}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
   m_Panes:
   - {fileID: 17}
   m_Selected: 0
@@ -310,29 +244,13 @@ MonoBehaviour:
   m_Position:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    y: 392.8
+    y: 310.4
     width: 1167.2
-    height: 330
+    height: 412.4
   m_MinSize: {x: 200, y: 50}
   m_MaxSize: {x: 16192, y: 8096}
   vertical: 0
-  controlID: 2042
-<<<<<<< HEAD
-=======
-=======
-    y: 273.33334
-    width: 958.6667
-    height: 306.00003
-  m_MinSize: {x: 200, y: 50}
-  m_MaxSize: {x: 16192, y: 8096}
-  vertical: 0
-  controlID: 60965
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  controlID: 20427
   draggingID: 0
 --- !u!114 &11
 MonoBehaviour:
@@ -351,23 +269,10 @@ MonoBehaviour:
     serializedVersion: 2
     x: 0
     y: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    width: 584.8
-    height: 330
+    width: 529.6
+    height: 412.4
   m_MinSize: {x: 201, y: 221}
   m_MaxSize: {x: 4001, y: 4021}
-<<<<<<< HEAD
-=======
-=======
-    width: 327.33334
-    height: 306.00003
-  m_MinSize: {x: 200, y: 200}
-  m_MaxSize: {x: 4000, y: 4000}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
   m_ActualView: {fileID: 14}
   m_Panes:
   - {fileID: 14}
@@ -383,59 +288,25 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 12006, guid: 0000000000000000e000000000000000, type: 0}
-<<<<<<< HEAD
   m_Name: ProjectBrowser
-=======
-<<<<<<< HEAD
-  m_Name: ProjectBrowser
-=======
-  m_Name: ConsoleWindow
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
   m_EditorClassIdentifier: 
   m_Children: []
   m_Position:
     serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    x: 584.8
+    x: 529.6
     y: 0
-    width: 582.39996
-    height: 330
+    width: 637.6
+    height: 412.4
   m_MinSize: {x: 232, y: 271}
   m_MaxSize: {x: 10002, y: 10021}
   m_ActualView: {fileID: 18}
-<<<<<<< HEAD
-=======
-=======
-    x: 327.33334
-    y: 0
-    width: 631.3334
-    height: 306.00003
-  m_MinSize: {x: 102, y: 121}
-  m_MaxSize: {x: 4002, y: 4021}
-  m_ActualView: {fileID: 20}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
   m_Panes:
   - {fileID: 18}
   - {fileID: 19}
   - {fileID: 20}
   - {fileID: 21}
-<<<<<<< HEAD
   m_Selected: 0
-  m_LastSelected: 3
-=======
-<<<<<<< HEAD
-  m_Selected: 0
-  m_LastSelected: 3
-=======
-  m_Selected: 1
-  m_LastSelected: 0
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  m_LastSelected: 1
 --- !u!114 &13
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -484,21 +355,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
-    y: 466.4
-    width: 583.8
-    height: 309
-=======
-<<<<<<< HEAD
-    y: 466.4
-    width: 583.8
-    height: 309
-=======
-    y: 346
-    width: 326.33334
-    height: 285.00003
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    y: 384
+    width: 528.6
+    height: 391.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -515,15 +374,7 @@ MonoBehaviour:
   m_ShowGizmos: 0
   m_TargetDisplay: 0
   m_ClearColor: {r: 0, g: 0, b: 0, a: 0}
-<<<<<<< HEAD
-  m_TargetSize: {x: 512, y: 288}
-=======
-<<<<<<< HEAD
-  m_TargetSize: {x: 512, y: 288}
-=======
-  m_TargetSize: {x: 326.33334, y: 184}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  m_TargetSize: {x: 528.6, y: 297}
   m_TextureFilterMode: 0
   m_TextureHideFlags: 61
   m_RenderIMGUI: 1
@@ -538,30 +389,17 @@ MonoBehaviour:
     m_VRangeLocked: 0
     hZoomLockedByDefault: 0
     vZoomLockedByDefault: 0
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    m_HBaseRangeMin: -204.8
-    m_HBaseRangeMax: 204.8
-    m_VBaseRangeMin: -115.200005
-    m_VBaseRangeMax: 115.200005
-<<<<<<< HEAD
-=======
-=======
-    m_HBaseRangeMin: -108.77779
-    m_HBaseRangeMax: 108.77779
-    m_VBaseRangeMin: -61.333336
-    m_VBaseRangeMax: 61.333336
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    m_HBaseRangeMin: -211.43999
+    m_HBaseRangeMax: 211.43999
+    m_VBaseRangeMin: -118.8
+    m_VBaseRangeMax: 118.8
     m_HAllowExceedBaseRangeMin: 1
     m_HAllowExceedBaseRangeMax: 1
     m_VAllowExceedBaseRangeMin: 1
     m_VAllowExceedBaseRangeMax: 1
     m_ScaleWithWindow: 0
     m_HSlider: 0
-    m_VSlider: 1
+    m_VSlider: 0
     m_IgnoreScrollWheelUntilClicked: 0
     m_EnableMouseInput: 1
     m_EnableSliderZoomHorizontal: 0
@@ -572,52 +410,23 @@ MonoBehaviour:
       serializedVersion: 2
       x: 0
       y: 21
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-      width: 583.8
-      height: 288
-    m_Scale: {x: 1.3264143, y: 1.3264143}
-    m_Translation: {x: 291.9, y: 144.00006}
-<<<<<<< HEAD
-=======
-=======
-      width: 326.33334
-      height: 264.00003
-    m_Scale: {x: 1.5, y: 1.5}
-    m_Translation: {x: 163.16669, y: 132.00002}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+      width: 528.6
+      height: 370.4
+    m_Scale: {x: 1.25, y: 1.25}
+    m_Translation: {x: 264.3, y: 185.20001}
     m_MarginLeft: 0
     m_MarginRight: 0
     m_MarginTop: 0
     m_MarginBottom: 0
     m_LastShownAreaInsideMargins:
       serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-      x: -220.06697
-      y: -108.56341
-      width: 440.13394
-      height: 217.12672
+      x: -211.43999
+      y: -148.16
+      width: 422.87997
+      height: 296.32
     m_MinimalGUI: 1
   m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 729.75, y: 386.25}
-<<<<<<< HEAD
-=======
-=======
-      x: -108.777794
-      y: -88.00001
-      width: 217.55556
-      height: 176.00002
-    m_MinimalGUI: 1
-  m_defaultScale: 1
-  m_LastWindowPixelSize: {x: 489.5, y: 427.50006}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  m_LastWindowPixelSize: {x: 660.75, y: 489.25}
   m_ClearInEditMode: 1
   m_NoCameraWarning: 1
   m_LowResolutionForAspectRatios: 01000000000000000000
@@ -644,21 +453,9 @@ MonoBehaviour:
   m_Pos:
     serializedVersion: 2
     x: 0
-<<<<<<< HEAD
     y: 73.6
     width: 964.6
-    height: 371.8
-=======
-<<<<<<< HEAD
-    y: 73.6
-    width: 964.6
-    height: 371.8
-=======
-    y: 72.66667
-    width: 790.3333
-    height: 252.33334
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    height: 289.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1082,21 +879,9 @@ MonoBehaviour:
   m_PlayAudio: 0
   m_AudioPlay: 0
   m_Position:
-<<<<<<< HEAD
-    m_Target: {x: 0.384, y: -0.37600005, z: 0}
+    m_Target: {x: -5.2073784, y: -0.11267058, z: 0.054122116}
     speed: 2
-    m_Value: {x: 0.384, y: -0.37600005, z: 0}
-=======
-<<<<<<< HEAD
-    m_Target: {x: 0.384, y: -0.37600005, z: 0}
-    speed: 2
-    m_Value: {x: 0.384, y: -0.37600005, z: 0}
-=======
-    m_Target: {x: -5.093756, y: -0.8336524, z: 0.073904924}
-    speed: 2
-    m_Value: {x: -5.093756, y: -0.8336524, z: 0.073904924}
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    m_Value: {x: -5.2073784, y: -0.11267058, z: 0.054122116}
   m_RenderMode: 0
   m_CameraMode:
     drawMode: 0
@@ -1146,21 +931,9 @@ MonoBehaviour:
     speed: 2
     m_Value: {x: 0, y: 0, z: 0, w: 1}
   m_Size:
-<<<<<<< HEAD
-    m_Target: 0.71414286
+    m_Target: 4.5878024
     speed: 2
-    m_Value: 0.71414286
-=======
-<<<<<<< HEAD
-    m_Target: 0.71414286
-    speed: 2
-    m_Value: 0.71414286
-=======
-    m_Target: 2.609502
-    speed: 2
-    m_Value: 2.609502
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    m_Value: 4.5878024
   m_Ortho:
     m_Target: 1
     speed: 2
@@ -1239,23 +1012,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
     x: 965.60004
     y: 73.6
     width: 199.59998
-    height: 371.8
-<<<<<<< HEAD
-=======
-=======
-    x: 791.3334
-    y: 72.66667
-    width: 165.33337
-    height: 252.33334
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    height: 289.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1269,21 +1029,9 @@ MonoBehaviour:
   m_SceneHierarchy:
     m_TreeViewState:
       scrollPos: {x: 0, y: 0}
-<<<<<<< HEAD
-      m_SelectedIDs: 64670000
+      m_SelectedIDs: f4680000
       m_LastClickedID: 0
-      m_ExpandedIDs: fefaffffc0660000d8660000e6660000f0660000
-=======
-<<<<<<< HEAD
-      m_SelectedIDs: 64670000
-      m_LastClickedID: 0
-      m_ExpandedIDs: fefaffffc0660000d8660000e6660000f0660000
-=======
-      m_SelectedIDs: 0eb4feff
-      m_LastClickedID: 0
-      m_ExpandedIDs: 8c98fcff86b3feffeeb4fefffeb70000
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+      m_ExpandedIDs: a414ffffea14ffff7efaffff
       m_RenameOverlay:
         m_UserAcceptedRename: 0
         m_Name: 
@@ -1327,23 +1075,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    x: 584.8
-    y: 466.4
-    width: 580.39996
-    height: 309
-<<<<<<< HEAD
-=======
-=======
-    x: 327.33334
-    y: 346
-    width: 629.3334
-    height: 285.00003
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    x: 529.60004
+    y: 384
+    width: 635.6
+    height: 391.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1365,15 +1100,7 @@ MonoBehaviour:
     m_SkipHidden: 0
     m_SearchArea: 1
     m_Folders:
-<<<<<<< HEAD
-    - Assets/Prefabs/PlayerBullets
-=======
-<<<<<<< HEAD
-    - Assets/Prefabs/PlayerBullets
-=======
-    - Assets/Scripts
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    - Assets/Scenes
     m_Globs: []
     m_OriginalText: 
     m_ImportLogFlags: 0
@@ -1381,35 +1108,16 @@ MonoBehaviour:
   m_ViewMode: 1
   m_StartGridSize: 67
   m_LastFolders:
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-  - Assets/Prefabs/PlayerBullets
+  - Assets/Scenes
   m_LastFoldersGridSize: 67
   m_LastProjectPath: C:\Users\thund\Documents\GitHub\Clocked-In
   m_LockTracker:
     m_IsLocked: 0
   m_FolderTreeState:
-    scrollPos: {x: 0, y: 3}
-    m_SelectedIDs: 4a690000
-    m_LastClickedID: 26954
-    m_ExpandedIDs: 00000000aa680000ac680000ae680000b0680000b2680000ba680000e2680000
-<<<<<<< HEAD
-=======
-=======
-  - Assets/Scripts
-  m_LastFoldersGridSize: 53
-  m_LastProjectPath: C:\Users\aiden\Documents\GitHub\Clocked-In
-  m_LockTracker:
-    m_IsLocked: 0
-  m_FolderTreeState:
-    scrollPos: {x: 0, y: 44.999146}
-    m_SelectedIDs: 94060000
-    m_LastClickedID: 1684
-    m_ExpandedIDs: 0000000004060000d00600005cb8000000ca9a3bffffff7f
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    scrollPos: {x: 0, y: 80.600006}
+    m_SelectedIDs: ea680000
+    m_LastClickedID: 26858
+    m_ExpandedIDs: 0000000070270000b4680000b6680000b8680000ba680000bc680000be680000c0680000da680000ee680000da700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1437,15 +1145,7 @@ MonoBehaviour:
     scrollPos: {x: 0, y: 0}
     m_SelectedIDs: 
     m_LastClickedID: 0
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000aa680000ac680000ae680000b0680000b2680000ba680000e2680000
-=======
-<<<<<<< HEAD
-    m_ExpandedIDs: 00000000aa680000ac680000ae680000b0680000b2680000ba680000e2680000
-=======
-    m_ExpandedIDs: 0000000004060000d00600005cb8000000ca9a3bffffff7f
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    m_ExpandedIDs: 0000000070270000b4680000b6680000b8680000ba680000bc680000be680000c0680000da680000ee680000da700000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
       m_Name: 
@@ -1472,7 +1172,7 @@ MonoBehaviour:
   m_ListAreaState:
     m_SelectedInstanceIDs: 
     m_LastClickedInstanceID: 0
-    m_HadKeyboardFocusLastEvent: 1
+    m_HadKeyboardFocusLastEvent: 0
     m_ExpandedInstanceIDs: c62300009c6100005494000000000000f8670000666a00009463000010630000
     m_RenameOverlay:
       m_UserAcceptedRename: 0
@@ -1521,23 +1221,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    x: 572
-    y: 476.80002
-    width: 593.19995
-    height: 298.59998
-<<<<<<< HEAD
-=======
-=======
-    x: 327.33334
-    y: 346
-    width: 629.3334
-    height: 285.00003
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    x: 529.60004
+    y: 384
+    width: 635.6
+    height: 391.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1548,10 +1235,6 @@ MonoBehaviour:
     m_LastAppliedPresetName: Default
     m_SaveData: []
     m_OverlaysVisible: 1
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
 --- !u!114 &20
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1572,10 +1255,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-    x: 572
-    y: 476.80002
-    width: 593.19995
-    height: 298.59998
+    x: 529.60004
+    y: 384
+    width: 635.6
+    height: 391.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1594,6 +1277,9 @@ MonoBehaviour:
     - {fileID: 3509798131187155888, guid: 4e396206683b3403e989bbcc368d1a99, type: 2}
     - {fileID: 1396857685119038436, guid: de204a1321c2740f385902f5de7d6b89, type: 2}
     - {fileID: 4470182168797857811, guid: a767d342f70a54806ade1a7245b9aa18, type: 2}
+    - {fileID: -6145165697197915218, guid: a613ed873c337ac4e89063a6e5315801, type: 2}
+    - {fileID: -6247180189583933685, guid: 079dadfcd0e3c8c4c8aa4fc7134da1cf, type: 2}
+    - {fileID: -440562723244256162, guid: 2216a07adddae4cf792492157b6ffa0e, type: 2}
     m_ValueSerializationHelper:
     - e00: 0.5060602
       e01: 0
@@ -1691,10 +1377,58 @@ MonoBehaviour:
       e31: 0
       e32: 0
       e33: 1
+    - e00: 0.46949723
+      e01: 0
+      e02: 0
+      e03: 85.30493
+      e10: 0
+      e11: 0.46949723
+      e12: 0
+      e13: 61.53825
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
+    - e00: 1
+      e01: 0
+      e02: 0
+      e03: 0
+      e10: 0
+      e11: 1
+      e12: 0
+      e13: 0
+      e20: 0
+      e21: 0
+      e22: 1
+      e23: 0
+      e30: 0
+      e31: 0
+      e32: 0
+      e33: 1
   m_PreviewAnimator: {fileID: 0}
-  m_AnimatorController: {fileID: 9100000, guid: 4e396206683b3403e989bbcc368d1a99, type: 2}
+  m_AnimatorController: {fileID: 9100000, guid: 042d5c5e5f0910440ad5d94053c0e864, type: 2}
   m_BreadCrumbs:
-  - m_Target: {fileID: 3509798131187155888, guid: 4e396206683b3403e989bbcc368d1a99, type: 2}
+  - m_Target: {fileID: -5945772574241556472, guid: 042d5c5e5f0910440ad5d94053c0e864, type: 2}
     m_ScrollPosition: {x: 0, y: 0}
   stateMachineGraph: {fileID: 0}
   stateMachineGraphGUI: {fileID: 0}
@@ -1707,11 +1441,6 @@ MonoBehaviour:
   m_CurrentEditor: 1
   m_LayerEditor:
     m_SelectedLayerIndex: 0
-<<<<<<< HEAD
-=======
-=======
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
 --- !u!114 &21
 MonoBehaviour:
   m_ObjectHideFlags: 52
@@ -1732,23 +1461,10 @@ MonoBehaviour:
     m_Tooltip: 
   m_Pos:
     serializedVersion: 2
-<<<<<<< HEAD
-=======
-<<<<<<< HEAD
->>>>>>> carsonPlayerWeaponsInitial
-    x: 572
-    y: 476.80002
-    width: 593.19995
-    height: 298.59998
-<<<<<<< HEAD
-=======
-=======
-    x: 330
+    x: 529.60004
     y: 384
-    width: 629.3334
-    height: 285.00003
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+    width: 635.6
+    height: 391.4
   m_SerializedDataModeController:
     m_DataMode: 0
     m_PreferredDataMode: 0
@@ -1761,15 +1477,7 @@ MonoBehaviour:
     m_OverlaysVisible: 1
   m_LockTracker:
     m_IsLocked: 0
-<<<<<<< HEAD
-  m_LastSelectedObjectID: 26332
-=======
-<<<<<<< HEAD
-  m_LastSelectedObjectID: 26332
-=======
-  m_LastSelectedObjectID: -223092
->>>>>>> EnemiesBranch
->>>>>>> carsonPlayerWeaponsInitial
+  m_LastSelectedObjectID: 26288
 --- !u!114 &22
 MonoBehaviour:
   m_ObjectHideFlags: 52

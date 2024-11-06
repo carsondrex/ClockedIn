@@ -55,18 +55,18 @@ public class TurretBulletScript : MonoBehaviour
         {
             Rigidbody2D rb = hit.GetComponent<Rigidbody2D>();
 
-            if (rb != null)
+            if (rb != null && rb.gameObject.tag == "Player")
             {
                 var dir = (rb.transform.position - transform.position);
                 float explosionForce = power / dir.magnitude;
-                if (explosionForce > 0) 
+                if (explosionForce > 0)
                 {
                     float wearoff = 1 - (dir.magnitude / radius);
                     dir.Normalize();
-                    RigidBody2DExtension.AddExplosionForce(rb, explosionForce*100, explosionPos, radius);
+                    RigidBody2DExtension.AddExplosionForce(rb, explosionForce * 100, explosionPos, radius);
                 }
             }
-                
+
         }
         yield return new WaitForSeconds(.5f);
         Destroy(this.gameObject);

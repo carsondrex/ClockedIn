@@ -329,7 +329,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1beba7979f9d6642b5fdeb58e254827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 0.7
+  speed: 8
   health: 100
 --- !u!114 &72552862
 MonoBehaviour:
@@ -406,10 +406,10 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 200
-  m_LinearDrag: 8
+  m_LinearDrag: 16
   m_AngularDrag: 0
   m_GravityScale: 0
-  m_Material: {fileID: 6200000, guid: e7945f430a4fdd14b90d0ec0bd20f1a5, type: 2}
+  m_Material: {fileID: 0}
   m_IncludeLayers:
     serializedVersion: 2
     m_Bits: 0
@@ -542,7 +542,7 @@ CapsuleCollider2D:
   m_Offset: {x: 0.057198435, y: -0.042119265}
   m_Size: {x: 0.5581061, y: 1.234647}
   m_Direction: 0
---- !u!1001 &135013838
+--- !u!1001 &399810159
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
@@ -590,6 +590,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 2881413157704034456, guid: 70a93a73cbed9c64a8de53d981aac794, type: 3}
+      propertyPath: m_SortingOrder
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 7555190707636603200, guid: 70a93a73cbed9c64a8de53d981aac794, type: 3}
+      propertyPath: bullet
+      value: 
+      objectReference: {fileID: -3874578454887396243, guid: ba49256d8d28b90449e2c8031946b026, type: 3}
     - target: {fileID: 7704761638413363383, guid: 70a93a73cbed9c64a8de53d981aac794, type: 3}
       propertyPath: m_Name
       value: TurretBot
@@ -6295,4 +6303,4 @@ SceneRoots:
   - {fileID: 72552860}
   - {fileID: 1511857116}
   - {fileID: 816624262}
-  - {fileID: 135013838}
+  - {fileID: 399810159}

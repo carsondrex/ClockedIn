@@ -16,7 +16,7 @@ GameObject:
   - component: {fileID: 2144532878685079419}
   m_Layer: 0
   m_Name: BoltBullet
-  m_TagString: Untagged
+  m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0

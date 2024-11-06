@@ -48,7 +48,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 128
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -111,8 +111,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b934bbeebcf1e584989c895a5ce26d8b
-      internalID: 2075272940
+      spriteID: 3bfba246cf368454ebad522e8b353f68
+      internalID: 2940965
       vertices: []
       indices: 
       edges: []
@@ -132,8 +132,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 4218b9a6378c0c741a2f4933c7f76523
-      internalID: 1932392686
+      spriteID: 8610d08d441fd574eab07b4d3842f35c
+      internalID: 1458456329
       vertices: []
       indices: 
       edges: []
@@ -153,8 +153,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: b8db0543550f43b4c9f1ef71d26ec72f
-      internalID: 1616159515
+      spriteID: c9b96c03b4fbb7b44b722995a65ab3dc
+      internalID: -784289303
       vertices: []
       indices: 
       edges: []
@@ -174,8 +174,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 475ed418071e75c42b1a051388e5bcf1
-      internalID: -60997578
+      spriteID: 6dcc09a52bb796a4bae20370466194f6
+      internalID: -2075676657
       vertices: []
       indices: 
       edges: []
@@ -191,10 +191,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      TurretBot - WhiteHit_0: 2075272940
-      TurretBot - WhiteHit_1: 1932392686
-      TurretBot - WhiteHit_2: 1616159515
-      TurretBot - WhiteHit_3: -60997578
+      TurretBot - WhiteHit_0: 2940965
+      TurretBot - WhiteHit_1: 1458456329
+      TurretBot - WhiteHit_2: -784289303
+      TurretBot - WhiteHit_3: -2075676657
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
