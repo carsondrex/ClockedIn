@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe4f46dd370794f48bdc4b38b4aefa20
+guid: ac5a67f6f4ab2334d974855e59be9325
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BallBot - death_0
+      name: TurretBot - Death_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f11f4fe86b873d45a30ce61b70fc539
-      internalID: -451959265
+      spriteID: 435e4ae38d1a68a469d4f4bacb124a0e
+      internalID: 1456827054
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_1
+      name: TurretBot - Death_1
       rect:
         serializedVersion: 2
         x: 128
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0195b92bb55f24142b81faa6187822b5
-      internalID: -2054472168
+      spriteID: 1e7c706992e7339499ec61e454b34556
+      internalID: -1519177652
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_2
+      name: TurretBot - Death_2
       rect:
         serializedVersion: 2
         x: 256
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18c272bb559c64242ade8d690e3da162
-      internalID: -1884426766
+      spriteID: 74249071f1d5ac449a3818b6a10ab1f2
+      internalID: 670881635
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_3
+      name: TurretBot - Death_3
       rect:
         serializedVersion: 2
         x: 384
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aa11abfa573ad498e104c61289dd2a
-      internalID: 1350540379
+      spriteID: e0019fc20feb76247b3640b126a62515
+      internalID: 1125468679
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_4
+      name: TurretBot - Death_4
       rect:
         serializedVersion: 2
         x: 512
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54da9ddb5dc41714d92dc41fc560932c
-      internalID: 2091782745
+      spriteID: 1816d3840a7b95944ba12ba3fe3b3c20
+      internalID: 254650294
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_5
+      name: TurretBot - Death_5
       rect:
         serializedVersion: 2
         x: 640
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e55bbf64991794181c92b2300d60e1
-      internalID: -993050256
+      spriteID: 83d3af32e7e63824491d03502bc503a8
+      internalID: -1413805568
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_6
+      name: TurretBot - Death_6
       rect:
         serializedVersion: 2
         x: 768
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac6e5a0bfb11a184a891d0359fe546c7
-      internalID: 1434125518
+      spriteID: 6438841335a169949a950070db024a27
+      internalID: -1664834963
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_7
+      name: TurretBot - Death_7
       rect:
         serializedVersion: 2
         x: 896
@@ -258,14 +258,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139f0f42c46d5534797d0b0fabf833c0
-      internalID: -1409099176
+      spriteID: f018a2e240080cc488f3ca0bbdbe437f
+      internalID: -2137925844
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_8
+      name: TurretBot - Death_8
       rect:
         serializedVersion: 2
         x: 1024
@@ -279,14 +279,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 8cb4bcfe865fa0b4eafa1b6252b372fb
-      internalID: 1653786163
+      spriteID: 784db6b986f1a0d4f8e5aef7e2b3c32e
+      internalID: -1306126954
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_9
+      name: TurretBot - Death_9
       rect:
         serializedVersion: 2
         x: 1152
@@ -300,14 +300,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: f5fad2b815f031a4ba98be05295d11dc
-      internalID: 2038262511
+      spriteID: 8287f26d302f2cd47a32ad874227504e
+      internalID: -369499988
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_10
+      name: TurretBot - Death_10
       rect:
         serializedVersion: 2
         x: 1280
@@ -321,14 +321,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1090e14c4f4b14b4a96cc994247bde7d
-      internalID: -769839119
+      spriteID: a7f96537819b1524fac93fe5646437b3
+      internalID: -1512760593
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_11
+      name: TurretBot - Death_11
       rect:
         serializedVersion: 2
         x: 1408
@@ -342,14 +342,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 589be40f16c0a1b4a8995a4c01194a04
-      internalID: -849736910
+      spriteID: e854e974fa502c14d8a422724b4056b4
+      internalID: -27157092
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_12
+      name: TurretBot - Death_12
       rect:
         serializedVersion: 2
         x: 1536
@@ -363,8 +363,29 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 51562e5c4b29fbe4d9cbc7aa7273d878
-      internalID: -532589077
+      spriteID: 2590891f86be776468b525cb10081feb
+      internalID: -69726419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TurretBot - Death_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 0
+        width: 128
+        height: 128
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6caede87c060a154595e6d5e66b0a566
+      internalID: -1353745499
       vertices: []
       indices: 
       edges: []
@@ -380,19 +401,20 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BallBot - death_0: -451959265
-      BallBot - death_1: -2054472168
-      BallBot - death_10: -769839119
-      BallBot - death_11: -849736910
-      BallBot - death_12: -532589077
-      BallBot - death_2: -1884426766
-      BallBot - death_3: 1350540379
-      BallBot - death_4: 2091782745
-      BallBot - death_5: -993050256
-      BallBot - death_6: 1434125518
-      BallBot - death_7: -1409099176
-      BallBot - death_8: 1653786163
-      BallBot - death_9: 2038262511
+      TurretBot - Death_0: 1456827054
+      TurretBot - Death_1: -1519177652
+      TurretBot - Death_10: -1512760593
+      TurretBot - Death_11: -27157092
+      TurretBot - Death_12: -69726419
+      TurretBot - Death_13: -1353745499
+      TurretBot - Death_2: 670881635
+      TurretBot - Death_3: 1125468679
+      TurretBot - Death_4: 254650294
+      TurretBot - Death_5: -1413805568
+      TurretBot - Death_6: -1664834963
+      TurretBot - Death_7: -2137925844
+      TurretBot - Death_8: -1306126954
+      TurretBot - Death_9: -369499988
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: fe4f46dd370794f48bdc4b38b4aefa20
+guid: 42c2cac61b8a1d74f8017ae41cb70963
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -97,7 +97,7 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: BallBot - death_0
+      name: BallBot - moving_0
       rect:
         serializedVersion: 2
         x: 0
@@ -111,14 +111,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 1f11f4fe86b873d45a30ce61b70fc539
-      internalID: -451959265
+      spriteID: c7e9ea4950c87db4ba23b294192cb041
+      internalID: -1955774313
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_1
+      name: BallBot - moving_1
       rect:
         serializedVersion: 2
         x: 128
@@ -132,14 +132,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 0195b92bb55f24142b81faa6187822b5
-      internalID: -2054472168
+      spriteID: 92bd5730b911dd1448467daa32d77229
+      internalID: -117775191
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_2
+      name: BallBot - moving_2
       rect:
         serializedVersion: 2
         x: 256
@@ -153,14 +153,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 18c272bb559c64242ade8d690e3da162
-      internalID: -1884426766
+      spriteID: 0f7e8d47d9f5b2e489108babd85a02d7
+      internalID: -345212784
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_3
+      name: BallBot - moving_3
       rect:
         serializedVersion: 2
         x: 384
@@ -174,14 +174,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 85aa11abfa573ad498e104c61289dd2a
-      internalID: 1350540379
+      spriteID: 6138a662abc69054eaadc0e7117f0c44
+      internalID: 254358435
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_4
+      name: BallBot - moving_4
       rect:
         serializedVersion: 2
         x: 512
@@ -195,14 +195,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 54da9ddb5dc41714d92dc41fc560932c
-      internalID: 2091782745
+      spriteID: bb40b533527532f46828495f64a0107f
+      internalID: 1359999426
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_5
+      name: BallBot - moving_5
       rect:
         serializedVersion: 2
         x: 640
@@ -216,14 +216,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 07e55bbf64991794181c92b2300d60e1
-      internalID: -993050256
+      spriteID: cf8183ed84fe9324f8a7fb86f79bfb7a
+      internalID: -550212864
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_6
+      name: BallBot - moving_6
       rect:
         serializedVersion: 2
         x: 768
@@ -237,14 +237,14 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ac6e5a0bfb11a184a891d0359fe546c7
-      internalID: 1434125518
+      spriteID: f007465665fccb44a8675238cce63d3a
+      internalID: 513368339
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: BallBot - death_7
+      name: BallBot - moving_7
       rect:
         serializedVersion: 2
         x: 896
@@ -258,113 +258,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 139f0f42c46d5534797d0b0fabf833c0
-      internalID: -1409099176
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BallBot - death_8
-      rect:
-        serializedVersion: 2
-        x: 1024
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 8cb4bcfe865fa0b4eafa1b6252b372fb
-      internalID: 1653786163
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BallBot - death_9
-      rect:
-        serializedVersion: 2
-        x: 1152
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: f5fad2b815f031a4ba98be05295d11dc
-      internalID: 2038262511
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BallBot - death_10
-      rect:
-        serializedVersion: 2
-        x: 1280
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1090e14c4f4b14b4a96cc994247bde7d
-      internalID: -769839119
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BallBot - death_11
-      rect:
-        serializedVersion: 2
-        x: 1408
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 589be40f16c0a1b4a8995a4c01194a04
-      internalID: -849736910
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: BallBot - death_12
-      rect:
-        serializedVersion: 2
-        x: 1536
-        y: 0
-        width: 128
-        height: 128
-      alignment: 0
-      pivot: {x: 0, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 51562e5c4b29fbe4d9cbc7aa7273d878
-      internalID: -532589077
+      spriteID: 678699b9b46e50446911f611e5dc116a
+      internalID: 1303299109
       vertices: []
       indices: 
       edges: []
@@ -380,19 +275,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      BallBot - death_0: -451959265
-      BallBot - death_1: -2054472168
-      BallBot - death_10: -769839119
-      BallBot - death_11: -849736910
-      BallBot - death_12: -532589077
-      BallBot - death_2: -1884426766
-      BallBot - death_3: 1350540379
-      BallBot - death_4: 2091782745
-      BallBot - death_5: -993050256
-      BallBot - death_6: 1434125518
-      BallBot - death_7: -1409099176
-      BallBot - death_8: 1653786163
-      BallBot - death_9: 2038262511
+      BallBot - moving_0: -1955774313
+      BallBot - moving_1: -117775191
+      BallBot - moving_2: -345212784
+      BallBot - moving_3: 254358435
+      BallBot - moving_4: 1359999426
+      BallBot - moving_5: -550212864
+      BallBot - moving_6: 513368339
+      BallBot - moving_7: 1303299109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
