@@ -130,7 +130,7 @@ public class PlayerAimWeapon : MonoBehaviour
 
         CinemachineShake.Instance.ShakeCamera(4f, .3f); //could potentially change these values depending on the bullet or even make bosses shake the screen
         PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
-        newBullet.setTarget("Enemy", shootDirection, 12);
+        newBullet.setTarget("Enemy", shootDirection, 18);
         gunFlash.Play();
         canShoot = false;
         yield return new WaitForSeconds(0.4f);
