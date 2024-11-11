@@ -128,7 +128,7 @@ public class PlayerAimWeapon : MonoBehaviour
         else
             Debug.Log("Unrecognized gun");
 
-        CinemachineShake.Instance.ShakeCamera(3f, .3f); //could potentially change these values depending on the bullet or even make bosses shake the screen
+        CinemachineShake.Instance.ShakeCamera(4f, .3f); //could potentially change these values depending on the bullet or even make bosses shake the screen
         PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
         newBullet.setTarget("Enemy", shootDirection, 12);
         gunFlash.Play();

@@ -8,8 +8,11 @@ public class PlayerBullet : MonoBehaviour
     private string target;
     protected Rigidbody2D rb;
     protected float speed;
+    public GameObject impact;
+    private SpriteRenderer bulletSprite;
     void Start()
     {
+        bulletSprite = GetComponent<SpriteRenderer>();
     }
     public void setTarget(string name, Vector3 dir, float force)
     {
@@ -31,18 +34,19 @@ public class PlayerBullet : MonoBehaviour
 
     void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.tag == target)
-        {
-            //other.GetComponent<Ship>().takeDamage();
-            Destroy(this.gameObject);
-        }
         if (target == "Enemy" && other.tag == "Enemy")
         {
-            /*Enemy enemy = other.GetComponent<Enemy>();
-            if (enemy.health <= 0)
-            {
-                
-            }*/
+            bulletSprite.enabled = false;
+            Vector2 collisionPoint = other.ClosestPoint(transform.position);
+            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
         }
+    }
+
+    IEnumerator SelfDestruct(GameObject thisBullet, GameObject thisImpact)
+    {
+        yield return new WaitForSeconds(0.4f);
+        Destroy(thisImpact);
+        Destroy(this.gameObject);
     }
 }
