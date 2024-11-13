@@ -10,9 +10,13 @@ public class PlayerBullet : MonoBehaviour
     protected float speed;
     public GameObject impact;
     private SpriteRenderer bulletSprite;
+    private GunManager gunManager;
+    private int damage;
     void Start()
     {
         bulletSprite = GetComponent<SpriteRenderer>();
+        gunManager = GameObject.Find("Player").GetComponent<GunManager>();
+        damage = gunManager.getDamage();
     }
     public void setTarget(string name, Vector3 dir, float force)
     {
@@ -40,6 +44,7 @@ public class PlayerBullet : MonoBehaviour
             Vector2 collisionPoint = other.ClosestPoint(transform.position);
             GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
             StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
+            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
         }
     }
 

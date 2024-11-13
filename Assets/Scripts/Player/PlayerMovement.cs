@@ -11,6 +11,8 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     private Animator anim;
     public float health = 100f;
     //health bar
+    private Vector2 directionToPlayer;
+    private float angleToPlayer;
     private Slider healthBar;
     private float fillSpeed = 0.3f;
 
@@ -28,8 +30,8 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        rb.velocity = new Vector2(horizontalInput * speed, rb.velocity.y);
-        rb.velocity = new Vector2(rb.velocity.x, verticalInput * speed);
+        rb.AddForce(new Vector2(horizontalInput * speed, rb.velocity.y));
+        rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed));
 
         anim.SetBool("run", horizontalInput != 0);
         if (anim.GetBool("down"))

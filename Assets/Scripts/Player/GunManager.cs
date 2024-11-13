@@ -7,6 +7,8 @@ public class GunManager : MonoBehaviour
     private Transform aimTransform;
     private SpriteRenderer weaponSprite;
     public Sprite[] weapons;
+    public int[] damages;
+    public int damage;
     public PlayerBullet[] bullets; //roundabout way to add the bullets to the static bullets[]
     public int weaponIndex;
     void Awake()
@@ -45,6 +47,10 @@ public class GunManager : MonoBehaviour
             weaponIndex = 5;
         }
         weaponSprite.sprite = weapons[weaponIndex];
+        damage = damages[weaponIndex];
+    }
 
+    public int getDamage() {
+        return damage;
     }
 }

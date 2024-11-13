@@ -2,11 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class TurretScript : MonoBehaviour
+public class TurretScript : MonoBehaviour, IDamagable
 {
     public TurretBulletScript bullet;
     public Animator anim;
     private bool canShoot = true;
+    public int health;
     // Start is called before the first frame update
     void Start()
     {
@@ -33,5 +34,19 @@ public class TurretScript : MonoBehaviour
         }
     }
 
+    public void TakeDamage(int damage) {
+        health -= damage;
+        if (health <= 0) {
+            StartCoroutine(Die());
+        } else {
+            anim.SetTrigger("Hit");
+        }
+    }
+
+    public IEnumerator Die() {
+        anim.SetTrigger("Die");
+        yield return new WaitForSeconds(1.5f);
+        Destroy(this.gameObject);
+    }
     
 }
