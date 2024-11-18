@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
+using UnityEngine.SceneManagement;
 using DG.Tweening;
 
 public class PlayerMovement : MonoBehaviour,IDamagable
@@ -13,6 +14,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     //health bar
     private Slider healthBar;
     private float fillSpeed = 0.3f;
+    private LevelLoader ll;
 
     // Start is called before the first frame update
     void Start()
@@ -20,6 +22,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         rb = GetComponent<Rigidbody2D>();
         anim = GetComponent<Animator>();
         healthBar = GameObject.Find("Health Bar").GetComponent<Slider>();
+        ll = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
     }
 
     // Update is called once per frame
@@ -28,8 +31,9 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        rb.AddForce(new Vector2(horizontalInput * speed, rb.velocity.y));
-        rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed));
+        //rb.AddForce(new Vector2(horizontalInput * speed, rb.velocity.y));
+        //rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed));
+        rb.AddForce(new Vector2(horizontalInput, verticalInput) * speed * Time.deltaTime);
 
         anim.SetBool("run", horizontalInput != 0);
         if (anim.GetBool("down"))
@@ -56,8 +60,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         healthBar.DOValue(targetFillAmount, fillSpeed);
         if (health <= 0)
         {
-            Cursor.lockState = CursorLockMode.None;
-            //Invoke("GameOver", 1f); //game over screen
+            ll.GameOver(); ; //game over screen, enter corresponding scene index here.
         }
     }
 }
