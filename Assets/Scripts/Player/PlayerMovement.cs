@@ -11,8 +11,6 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     private Animator anim;
     public float health = 100f;
     //health bar
-    private Vector2 directionToPlayer;
-    private float angleToPlayer;
     private Slider healthBar;
     private float fillSpeed = 0.3f;
 
