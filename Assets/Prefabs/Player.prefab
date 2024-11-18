@@ -106,7 +106,7 @@ Rigidbody2D:
   m_UseFullKinematicContacts: 0
   m_UseAutoMass: 0
   m_Mass: 200
-  m_LinearDrag: 16
+  m_LinearDrag: 8
   m_AngularDrag: 0
   m_GravityScale: 0
   m_Material: {fileID: 0}
@@ -153,7 +153,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f1beba7979f9d6642b5fdeb58e254827, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  speed: 8
+  speed: 4
   health: 100
 --- !u!114 &7043006750794079543
 MonoBehaviour:
@@ -188,6 +188,8 @@ MonoBehaviour:
   - {fileID: 21300000, guid: 915b0810065484d428fe3d4cb77cec8d, type: 3}
   - {fileID: 21300000, guid: 0019ffca82463b94ea7616c27834bfa8, type: 3}
   - {fileID: 21300000, guid: bbd37da818e57a64481ea724717cebd2, type: 3}
+  damages: 
+  damage: 0
   bullets:
   - {fileID: 7861126017504167079, guid: 91602cc50cca12642aad5c1182f5dafb, type: 3}
   - {fileID: 7041068566601444439, guid: 9391f308c4f716b4badb3ed8279cce3e, type: 3}

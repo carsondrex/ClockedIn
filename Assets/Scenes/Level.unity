@@ -180,11 +180,15 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5040639155242658367, guid: 756c5b6fb02af8241aac0b6c7d460eb7, type: 3}
       propertyPath: m_Mass
-      value: 1
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 5040639155242658367, guid: 756c5b6fb02af8241aac0b6c7d460eb7, type: 3}
+      propertyPath: m_LinearDrag
+      value: 8
       objectReference: {fileID: 0}
     - target: {fileID: 5458972745213954460, guid: 756c5b6fb02af8241aac0b6c7d460eb7, type: 3}
       propertyPath: speed
-      value: 4000
+      value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 5458972745213954460, guid: 756c5b6fb02af8241aac0b6c7d460eb7, type: 3}
       propertyPath: m_Enabled
