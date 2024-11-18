@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7752514116688738955}
   - component: {fileID: 7305880037343811145}
   - component: {fileID: 1163238290018686092}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: WaveformBullet 1
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}

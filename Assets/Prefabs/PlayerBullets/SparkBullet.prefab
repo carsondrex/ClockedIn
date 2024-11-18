@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 7755558460882489271}
   - component: {fileID: 8129114124094443784}
   - component: {fileID: 3495434982703852446}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: SparkBullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}

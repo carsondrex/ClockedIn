@@ -122,6 +122,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   bullet: {fileID: -3874578454887396243, guid: 61920c05f0960c148ad29dfd9ee3990a, type: 3}
   anim: {fileID: 2178334153967464983}
+  health: 30
 --- !u!60 &3065476319794973044
 PolygonCollider2D:
   m_ObjectHideFlags: 0
