@@ -9,6 +9,7 @@ public class TurretScript : MonoBehaviour, IDamagable
     private bool canShoot = true;
     public int health;
     private int isFlipped;
+    private WinCondition deathChecker;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,6 +18,7 @@ public class TurretScript : MonoBehaviour, IDamagable
         } else {
             isFlipped = 1;
         }
+        deathChecker = GameObject.Find("Main Camera").GetComponent<WinCondition>();
     }
 
     public IEnumerator Shoot()
@@ -51,6 +53,7 @@ public class TurretScript : MonoBehaviour, IDamagable
     public IEnumerator Die() {
         anim.SetTrigger("Die");
         yield return new WaitForSeconds(1.5f);
+        deathChecker.EnemyDied();
         Destroy(this.gameObject);
     }
     

@@ -23,6 +23,10 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(2)); //whatever the index is of the game over screen. will change.
     }
 
+    public void Win() {
+        StartCoroutine(LoadLevel(3));
+    }
+
     public IEnumerator LoadLevel(int levelIndex)
     {
         transition.SetTrigger("Start");

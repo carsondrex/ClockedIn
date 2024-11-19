@@ -15,10 +15,12 @@ public class BallScript : MonoBehaviour, IDamagable
     public int health;
     private bool dying = false;
     private NavMeshAgent agent;
+    private WinCondition deathChecker;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
+        deathChecker = GameObject.Find("Main Camera").GetComponent<WinCondition>();
         player = GameObject.Find("Player");
         playerHealth = player.GetComponent<PlayerMovement>();
         agent = GetComponent<NavMeshAgent>();
@@ -86,8 +88,10 @@ public class BallScript : MonoBehaviour, IDamagable
 
     public IEnumerator Die() {
         dying = true; 
+        agent.speed = 0;
         anim.SetTrigger("Die");
         yield return new WaitForSeconds(1.6f);
+        deathChecker.EnemyDied();
         Destroy(this.gameObject);
     }
 }
