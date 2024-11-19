@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.AI;
 
 public class BallScript : MonoBehaviour, IDamagable
 {
@@ -13,12 +14,14 @@ public class BallScript : MonoBehaviour, IDamagable
     private GameObject player;
     public int health;
     private bool dying = false;
+    private NavMeshAgent agent;
     // Start is called before the first frame update
     void Start()
     {
         anim = GetComponent<Animator>();
         player = GameObject.Find("Player");
         playerHealth = player.GetComponent<PlayerMovement>();
+        agent = GetComponent<NavMeshAgent>();
     }
 
     // Update is called once per frame
@@ -31,6 +34,11 @@ public class BallScript : MonoBehaviour, IDamagable
             transform.localScale = new Vector3(5, 5, 1);
         } else {
             transform.localScale = new Vector3(-5, 5, 1);
+        }
+        if (agent.velocity != new Vector3(0, 0, 0)) {
+            anim.SetBool("Moving", true);
+        } else {
+            anim.SetBool("Moving", false);
         }
 
     }
@@ -69,7 +77,7 @@ public class BallScript : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage) {
         health -= damage;
-        if (health <= 0) {
+        if (health <= 0 && dying == false) {
             StartCoroutine(Die());
         } else if (dying == false) {
             anim.SetTrigger("Hit");
