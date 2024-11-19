@@ -5,11 +5,12 @@ using UnityEngine.AI;
 
 public class Enemy : MonoBehaviour
 {
-    [SerializeField] Transform target;
+    private Rigidbody2D target;
     NavMeshAgent agent;
 
     void Start()
     {
+        target = GameObject.Find("Player").GetComponent<Rigidbody2D>();
         agent = GetComponent<NavMeshAgent>();
         agent.updateRotation = false;
         agent.updateUpAxis = false;
