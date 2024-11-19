@@ -13,8 +13,8 @@ TagManager:
   - 
   - Water
   - UI
-  - 
-  - 
+  - MeleeAttacks
+  - PlayerBullet
   - 
   - 
   - 
@@ -42,4 +42,25 @@ TagManager:
   m_SortingLayers:
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: Player
+    uniqueID: 3758905777
+    locked: 0
+  - name: 1Sunset
+    uniqueID: 320144233
+    locked: 0
+  - name: 2FarBuilding
+    uniqueID: 2813180155
+    locked: 0
+  - name: 3Bridge
+    uniqueID: 3257054075
+    locked: 0
+  - name: 4Blimp_2
+    uniqueID: 4019753243
+    locked: 0
+  - name: 5Blimp_1
+    uniqueID: 1666851777
+    locked: 0
+  - name: 6Building
+    uniqueID: 4006641263
     locked: 0

@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 530495421697641647}
   - component: {fileID: 5868076277970305106}
   - component: {fileID: 3276740347772880840}
-  m_Layer: 0
+  m_Layer: 7
   m_Name: CrossedBullet
   m_TagString: PlayerBullet
   m_Icon: {fileID: 0}
