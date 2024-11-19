@@ -8,10 +8,15 @@ public class TurretScript : MonoBehaviour, IDamagable
     public Animator anim;
     private bool canShoot = true;
     public int health;
+    private int isFlipped;
     // Start is called before the first frame update
     void Start()
     {
-        
+        if (transform.localScale.x > 0) {
+            isFlipped = 0;
+        } else {
+            isFlipped = 1;
+        }
     }
 
     public IEnumerator Shoot()
@@ -20,7 +25,7 @@ public class TurretScript : MonoBehaviour, IDamagable
         yield return new WaitForSeconds(2);
         anim.SetTrigger("Shoot");
         yield return new WaitForSeconds(.1f);
-        TurretBulletScript newBullet = Instantiate(bullet, transform.position-(new Vector3(0, .75f, 0)), new Quaternion(0, 0, 0, 0));
+        TurretBulletScript newBullet = Instantiate(bullet, transform.position-(new Vector3(0, .75f, 0)), Quaternion.Euler(new Vector3(0, 0, 180*isFlipped)));
         yield return new WaitForSeconds(2);
         canShoot = true;
     }

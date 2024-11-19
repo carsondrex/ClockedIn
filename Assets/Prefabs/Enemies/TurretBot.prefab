@@ -120,7 +120,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: de7b62eff847a6c46a2939ab411af407, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  bullet: {fileID: -3874578454887396243, guid: 61920c05f0960c148ad29dfd9ee3990a, type: 3}
+  bullet: {fileID: -3874578454887396243, guid: ba49256d8d28b90449e2c8031946b026, type: 3}
   anim: {fileID: 2178334153967464983}
   health: 30
 --- !u!60 &3065476319794973044
