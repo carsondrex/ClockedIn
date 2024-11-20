@@ -13,6 +13,7 @@ public class PlayerAimWeapon : MonoBehaviour
     private bool canShoot;
     private PlayerBullet bullet;
     private GunManager gm;
+    private SpriteRenderer playerSprite;
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,6 +22,7 @@ public class PlayerAimWeapon : MonoBehaviour
         weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
         weaponAnim = aimTransform.Find("Weapon").GetComponent<Animator>();
         gm = transform.GetComponent<GunManager>();
+        playerSprite = GetComponent<SpriteRenderer>();
         canShoot = true;
     }
 
@@ -41,11 +43,13 @@ public class PlayerAimWeapon : MonoBehaviour
         //gun is on right of player
         if (angle < 90f && angle > -90f)
         {
-            aimTransform.localScale = new Vector3(transform.localScale.x * -1f, 1, 1);
+            playerSprite.flipX = false;
+            weaponSprite.flipX = false;
+            weaponSprite.flipY = true;
             //look right
             if (angle < 45f && angle > -60f)
             {
-                transform.localScale = new Vector3(-1, 1, 1);
+                playerSprite.flipX = false;
                 weaponSprite.sortingOrder = 3;
                 anim.SetBool("down", false);
                 anim.SetBool("up", false);
@@ -68,12 +72,13 @@ public class PlayerAimWeapon : MonoBehaviour
         //gun is on left of player
         else
         {
-            aimTransform.localScale = new Vector3(transform.localScale.x * -1f, -1, 1);
+            playerSprite.flipX = true;
+            weaponSprite.flipX = false;
+            weaponSprite.flipY = false;
             //look left
             if ((angle > 150f && angle < 180f) || (angle > -180f && angle < -150f))
             {
                 weaponSprite.sortingOrder = 3;
-                transform.localScale = new Vector3(1, 1, 1);
                 anim.SetBool("down", false);
                 anim.SetBool("up", false);
             }
