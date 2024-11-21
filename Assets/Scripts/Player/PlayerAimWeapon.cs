@@ -1,7 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-//using CodeMonkey.Utils;
 
 public class PlayerAimWeapon : MonoBehaviour
 {
@@ -49,24 +48,27 @@ public class PlayerAimWeapon : MonoBehaviour
             //look right
             if (angle < 45f && angle > -60f)
             {
-                playerSprite.flipX = false;
                 weaponSprite.sortingOrder = 3;
+                anim.SetBool("leftRight", true);
                 anim.SetBool("down", false);
                 anim.SetBool("up", false);
+                playerSprite.flipX = false;
             }
             //look up
             else if (angle > 45f)
             {
-                anim.SetBool("down", false);
                 anim.SetBool("up", true);
+                anim.SetBool("leftRight", false);
+                //anim.SetBool("down", false);
                 weaponSprite.sortingOrder = 1;
             }
             //look down
             else if (angle < -60f)
             {
                 weaponSprite.sortingOrder = 3;
-                anim.SetBool("up", false);
                 anim.SetBool("down", true);
+                anim.SetBool("leftRight", false);
+                //anim.SetBool("up", false);
             }
         }
         //gun is on left of player
@@ -79,22 +81,25 @@ public class PlayerAimWeapon : MonoBehaviour
             if ((angle > 150f && angle < 180f) || (angle > -180f && angle < -150f))
             {
                 weaponSprite.sortingOrder = 3;
+                anim.SetBool("leftRight", true);
                 anim.SetBool("down", false);
                 anim.SetBool("up", false);
             }
             //look up
             else if (angle < 150f && angle > 90f)
             {
-                anim.SetBool("down", false);
                 anim.SetBool("up", true);
+                anim.SetBool("leftRight", false);
+                //anim.SetBool("down", false);
                 weaponSprite.sortingOrder = 1;
             }
             //look down
             else if (angle > -150f && angle < -90f)
             {
                 weaponSprite.sortingOrder = 3;
-                anim.SetBool("up", false);
                 anim.SetBool("down", true);
+                anim.SetBool("leftRight", false);
+                //anim.SetBool("up", false);
             }
         }
     }

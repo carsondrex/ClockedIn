@@ -16,8 +16,12 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     private LevelLoader ll;
     private bool canBlink = true;
     private Slider staminaBar;
-    private float stamFillTime = 0f;
+    private int maxStamina = 100;
+    private int currentStamina;
     public ParticleSystem blinkParticles;
+    private WaitForSeconds regenTick = new WaitForSeconds(0.03f);
+    private Coroutine regen;
+    public bool isInvincible;
     // Start is called before the first frame update
     void Start()
     {
@@ -26,6 +30,10 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         healthBar = GameObject.Find("Health Bar").GetComponent<Slider>();
         staminaBar = GameObject.Find("Stamina Bar").GetComponent<Slider>();
         ll = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+        isInvincible = false;
+        currentStamina = 100;
+        staminaBar.maxValue = maxStamina;
+        staminaBar.value = currentStamina;
     }
 
     // Update is called once per frame
@@ -39,34 +47,37 @@ public class PlayerMovement : MonoBehaviour,IDamagable
 
         if (canBlink)
         {
-            //problem: blink anim doesn't work when looking up or down because the up or down bools aren't being reset correctly
-            anim.SetBool("run", horizontalInput != 0);
             if (anim.GetBool("down"))
             {
-                anim.SetBool("uprun", false);
                 anim.SetBool("downrun", verticalInput != 0f || horizontalInput != 0f);
+                anim.SetBool("uprun", false);
+                anim.SetBool("run", false);
             }
             else if (anim.GetBool("up"))
             {
-                anim.SetBool("downrun", false);
                 anim.SetBool("uprun", verticalInput != 0f || horizontalInput != 0f);
+                anim.SetBool("downrun", false);
+                anim.SetBool("run", false);
             }
-            else if (!anim.GetBool("down") && !anim.GetBool("up") && verticalInput != 0f)
+            else if (anim.GetBool("leftRight"))
             {
-                anim.SetBool("run", true);
+                if (verticalInput != 0f || horizontalInput != 0f)
+                {
+                    anim.SetBool("run", verticalInput != 0f || horizontalInput != 0f);
+                    anim.SetBool("downrun", false);
+                    anim.SetBool("uprun", false);
+                }
+                else
+                {
+                    anim.SetBool("run", false);
+                }
             }
         }
 
-        if (Input.GetKeyDown(KeyCode.Space) && canBlink && staminaBar.value >= 0.4 && (horizontalInput != 0f || verticalInput != 0f))
+        if (Input.GetKeyDown(KeyCode.Space) && canBlink && currentStamina == 100 && (horizontalInput != 0f || verticalInput != 0f))
         {
             canBlink = false;
-            Blink(horizontalInput, verticalInput);
-        }
-
-        if (staminaBar.value < 1f && canBlink == true)
-        {
-            staminaBar.value = Mathf.Lerp(staminaBar.value, staminaBar.maxValue, stamFillTime);
-            stamFillTime += 0.0006f * Time.deltaTime;
+            StartCoroutine(Blink(horizontalInput, verticalInput));
         }
     }
 
@@ -82,16 +93,49 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         }
     }
 
-    private void Blink(float horizontalInput, float verticalInput)
+    private IEnumerator Blink(float horizontalInput, float verticalInput)
     {
-        anim.SetTrigger("blink");
+        anim.SetBool("blink", true);
         float rotationAngle = Mathf.Atan2(verticalInput, horizontalInput);
-        staminaBar.DOValue(staminaBar.value - 0.5f, 0.2f);
+        //manage stamina
+        currentStamina = 0;
+        staminaBar.DOValue(currentStamina, 0.2f);
+        if (regen != null)
+        {
+            StopCoroutine(regen);
+        }
+        regen = StartCoroutine(RegenStamina());
+
+        isInvincible = true;
         rb.AddForce(new Vector2(horizontalInput * 5000, rb.velocity.y), ForceMode2D.Impulse);
         rb.AddForce(new Vector2(rb.velocity.x, verticalInput * 5000), ForceMode2D.Impulse);
+
         blinkParticles.transform.rotation = Quaternion.Euler(0, 0, Mathf.Rad2Deg * rotationAngle);
         blinkParticles.Play();
+
+        yield return new WaitForSeconds(.1f);
+        anim.SetBool("blinkBack", true);
+        anim.SetBool("blink", false);
+        yield return new WaitForSeconds(.1f);
+        anim.SetBool("blinkBack", false);
+        isInvincible = false;
         canBlink = true;
-        anim.SetTrigger("blinkBack");
+    }
+
+    private IEnumerator RegenStamina()
+    {
+        yield return new WaitForSeconds(1);
+        while (currentStamina < maxStamina)
+        {
+            currentStamina += maxStamina / 100;
+            staminaBar.value = currentStamina;
+            yield return regenTick;
+        }
+        regen = null;
+    }
+
+    public bool getIsInvincible()
+    {
+        return isInvincible;
     }
 }
