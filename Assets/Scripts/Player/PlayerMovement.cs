@@ -31,8 +31,8 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
-        rb.AddForce(new Vector2(horizontalInput * speed, rb.velocity.y * Time.deltaTime), ForceMode2D.Force);
-        rb.AddForce(new Vector2(rb.velocity.x * Time.deltaTime, verticalInput * speed), ForceMode2D.Force);
+        rb.AddForce(new Vector2(horizontalInput * speed * Time.deltaTime * 1000, rb.velocity.y), ForceMode2D.Force);
+        rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed * Time.deltaTime * 1000), ForceMode2D.Force);
 
         anim.SetBool("run", horizontalInput != 0);
         if (anim.GetBool("down"))

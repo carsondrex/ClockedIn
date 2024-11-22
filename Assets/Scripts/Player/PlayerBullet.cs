@@ -43,14 +43,14 @@ public class PlayerBullet : MonoBehaviour
             bulletSprite.enabled = false;
             Vector2 collisionPoint = other.ClosestPoint(transform.position);
             GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
-            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
+            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
         }
     }
 
     IEnumerator SelfDestruct(GameObject thisBullet, GameObject thisImpact)
     {
-        yield return new WaitForSeconds(0.4f);
+        yield return new WaitForSeconds(0.1f);
         Destroy(thisImpact);
         Destroy(this.gameObject);
     }

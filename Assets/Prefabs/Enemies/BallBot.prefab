@@ -207,6 +207,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 6f2c4180234b232458fdf719c58e9a95, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  state: Idle
+  speed: 3
 --- !u!195 &7109655577556015186
 NavMeshAgent:
   m_ObjectHideFlags: 0

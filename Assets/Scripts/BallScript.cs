@@ -89,6 +89,7 @@ public class BallScript : MonoBehaviour, IDamagable
     public IEnumerator Die() {
         dying = true; 
         agent.speed = 0;
+        GetComponent<CircleCollider2D>().enabled = false;
         anim.SetTrigger("Die");
         yield return new WaitForSeconds(1.6f);
         deathChecker.EnemyDied();

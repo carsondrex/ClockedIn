@@ -10,6 +10,7 @@ public class TurretScript : MonoBehaviour, IDamagable
     public int health;
     private int isFlipped;
     private WinCondition deathChecker;
+    public string state = "Idle";
     // Start is called before the first frame update
     void Start()
     {
@@ -35,7 +36,7 @@ public class TurretScript : MonoBehaviour, IDamagable
     // Update is called once per frame
     void Update()
     {
-        if (canShoot)
+        if (canShoot && state != "Idle")
         {
             StartCoroutine(Shoot());
         }
