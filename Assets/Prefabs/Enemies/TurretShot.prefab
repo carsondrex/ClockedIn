@@ -196,5 +196,5 @@ MonoBehaviour:
   projSpeed: 3
   turnSpeed: 100
   lifeTime: 4
-  radius: 10
+  radius: 4
   power: 200
