@@ -42,16 +42,24 @@ public class PlayerBullet : MonoBehaviour
         {
             bulletSprite.enabled = false;
             Vector2 collisionPoint = other.ClosestPoint(transform.position);
-            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            GameObject thisImpact = null;
+            thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
             StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
+        }
+        else if (gameObject.name == "Flamer Particles")
+        {
+            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
         }
     }
 
     IEnumerator SelfDestruct(GameObject thisBullet, GameObject thisImpact)
     {
         yield return new WaitForSeconds(0.1f);
-        Destroy(thisImpact);
+        if (thisImpact)
+        {
+            Destroy(thisImpact);
+        }
         Destroy(this.gameObject);
     }
 }

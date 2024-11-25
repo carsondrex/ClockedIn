@@ -22,6 +22,9 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     private WaitForSeconds regenTick = new WaitForSeconds(0.03f);
     private Coroutine regen;
     public bool isInvincible;
+    private GunManager gm;
+    //card drops
+    public ParticleSystem dropPickUpParticles;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +33,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         healthBar = GameObject.Find("Health Bar").GetComponent<Slider>();
         staminaBar = GameObject.Find("Stamina Bar").GetComponent<Slider>();
         ll = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+        gm = GetComponent<GunManager>();
         isInvincible = false;
         currentStamina = 100;
         staminaBar.maxValue = maxStamina;
@@ -93,6 +97,17 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         }
     }
 
+    public void Heal(float healAmount)
+    {
+        float heal = health + healAmount;
+        if (heal > 100)
+        {
+            heal = 100;
+        }
+        float targetFillAmount = heal / 100;
+        healthBar.DOValue(targetFillAmount, fillSpeed);
+    }
+
     private IEnumerator Blink(float horizontalInput, float verticalInput)
     {
         anim.SetBool("blink", true);
@@ -137,5 +152,46 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     public bool getIsInvincible()
     {
         return isInvincible;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Drop")
+        {
+            ParticleSystem dropPickUp = Instantiate(dropPickUpParticles, collision.gameObject.transform.position, Quaternion.identity);
+            if (collision.gameObject.name == "HealthDrop")
+            {
+                Heal(collision.gameObject.GetComponent<HealthDrop>().healAmount);
+            }
+            else if (collision.gameObject.name == "FlamerDrop(Clone)")
+            {
+                gm.setGun(1);
+            }
+            else if (collision.gameObject.name == "TeslaCoilDrop(Clone)")
+            {
+                gm.setGun(2);
+            }
+            else if (collision.gameObject.name == "GattlingGunDrop(Clone)")
+            {
+                gm.setGun(3);
+            }
+            else if (collision.gameObject.name == "LCoilDrop(Clone)")
+            {
+                gm.setGun(4);
+            }
+            else if (collision.gameObject.name == "ShotgunDrop(Clone)")
+            {
+                gm.setGun(5);
+            }
+            
+            Destroy(collision.gameObject);
+            StartCoroutine(DestroyParticles(dropPickUp));
+        }
+    }
+
+    IEnumerator DestroyParticles(ParticleSystem dropPickUp)
+    {
+        yield return new WaitForSeconds(0.4f);
+        Destroy(dropPickUp.gameObject);
     }
 }

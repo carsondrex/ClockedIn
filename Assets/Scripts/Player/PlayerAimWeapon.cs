@@ -9,6 +9,7 @@ public class PlayerAimWeapon : MonoBehaviour
     private SpriteRenderer weaponSprite;
     public Animator weaponAnim;
     public ParticleSystem gunFlash;
+    public ParticleSystem flamerParticles;
     private bool canShoot;
     private PlayerBullet bullet;
     private GunManager gm;
@@ -22,6 +23,7 @@ public class PlayerAimWeapon : MonoBehaviour
         weaponAnim = aimTransform.Find("Weapon").GetComponent<Animator>();
         gm = transform.GetComponent<GunManager>();
         playerSprite = GetComponent<SpriteRenderer>();
+        flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
     }
 
@@ -59,7 +61,6 @@ public class PlayerAimWeapon : MonoBehaviour
             {
                 anim.SetBool("up", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("down", false);
                 weaponSprite.sortingOrder = 1;
             }
             //look down
@@ -68,7 +69,6 @@ public class PlayerAimWeapon : MonoBehaviour
                 weaponSprite.sortingOrder = 3;
                 anim.SetBool("down", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("up", false);
             }
         }
         //gun is on left of player
@@ -90,7 +90,6 @@ public class PlayerAimWeapon : MonoBehaviour
             {
                 anim.SetBool("up", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("down", false);
                 weaponSprite.sortingOrder = 1;
             }
             //look down
@@ -99,7 +98,6 @@ public class PlayerAimWeapon : MonoBehaviour
                 weaponSprite.sortingOrder = 3;
                 anim.SetBool("down", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("up", false);
             }
         }
     }
@@ -122,28 +120,39 @@ public class PlayerAimWeapon : MonoBehaviour
 
     protected IEnumerator Shoot(Vector3 shootDirection)
     {
+        int bulletIndex = 0;
         //bullet type decider depending on active gun
         if (gm.weaponIndex == 0) //Assault rifle
-            bullet = gm.bullets[0];//undecided
-        else if (gm.weaponIndex == 1) //flamer
-            bullet = gm.bullets[1];//have to add flame bullet
+            bulletIndex = 0;//undecided
+        /*else if (gm.weaponIndex == 1) //flamer*/
         else if (gm.weaponIndex == 2) //Gun 4
-            bullet = gm.bullets[5]; //waveform
+            bulletIndex = 5; //waveform
         else if (gm.weaponIndex == 3) //Gun 5
-            bullet = gm.bullets[2];//undecided
+            bulletIndex = 2;//undecided
         else if (gm.weaponIndex == 4) //L-Coil
-            bullet = gm.bullets[4];//spark
-        else if (gm.weaponIndex == 5) //L-Coil
-            bullet = gm.bullets[3];//spark
+            bulletIndex = 4;//spark
+        else if (gm.weaponIndex == 5) //Shotgun
+            bulletIndex = 3;//spark
         else
             Debug.Log("Unrecognized gun");
 
         CinemachineShake.Instance.ShakeCamera(.4f, .03f); //could potentially change these values depending on the bullet or even make bosses shake the screen
-        PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
-        newBullet.setTarget("Enemy", shootDirection, 18);
+        if (gm.weaponIndex != 1 && gm.weaponIndex != 5) //if not flamer or shotgun
+        {
+            bullet = gm.bullets[bulletIndex];
+            PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
+            newBullet.setTarget("Enemy", shootDirection, 18);
+        }
+        else if (gm.weaponIndex == 1) //flamer
+        {
+            flamerParticles.Play();
+            flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        }
+
         gunFlash.Play();
         canShoot = false;
         yield return new WaitForSeconds(0.4f);
+        flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
     }
 

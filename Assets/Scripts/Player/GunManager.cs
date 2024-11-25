@@ -15,37 +15,12 @@ public class GunManager : MonoBehaviour
     {
         aimTransform = transform.Find("Aim");
         weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
-        weaponIndex = 2;
+        setGun(0); //assault rifle is default weapon, when no card is active
     }
 
-    // Update is called once per frame
-    void Update()
+    public void setGun(int index)
     {
-        //example of changing the weapon sprite:
-        if (Input.GetKeyDown(KeyCode.Alpha1))
-        {
-            weaponIndex = 0;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
-        {
-            weaponIndex = 1;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
-        {
-            weaponIndex = 2;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha4))
-        {
-            weaponIndex = 3;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha5))
-        {
-            weaponIndex = 4;
-        }
-        else if (Input.GetKeyDown(KeyCode.Alpha6))
-        {
-            weaponIndex = 5;
-        }
+        weaponIndex = index;
         weaponSprite.sprite = weapons[weaponIndex];
         damage = damages[weaponIndex];
     }
