@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class PlayerAimWeapon : MonoBehaviour
 {
@@ -10,10 +12,12 @@ public class PlayerAimWeapon : MonoBehaviour
     public Animator weaponAnim;
     public ParticleSystem gunFlash;
     public ParticleSystem flamerParticles;
-    private bool canShoot;
+    public bool canShoot;
     private PlayerBullet bullet;
     private GunManager gm;
     private SpriteRenderer playerSprite;
+    private float fillSpeed = 0.3f;
+    private Slider ammoBar;
     // Start is called before the first frame update
     void Awake()
     {
@@ -25,6 +29,7 @@ public class PlayerAimWeapon : MonoBehaviour
         playerSprite = GetComponent<SpriteRenderer>();
         flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
+        ammoBar = GameObject.Find("Ammo Bar").GetComponent<Slider>();
     }
 
     // Update is called once per frame
@@ -104,13 +109,15 @@ public class PlayerAimWeapon : MonoBehaviour
 
     private void HandleShooting(Vector3 aimDirection)
     {
+        //var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
+
         if (Input.GetMouseButton(0))
         {
-            if (canShoot)
+            if (canShoot && gm.ammo >= gm.getShotIncrement()) //&& mouseWorldPos.x < 9f
             {
                 StartCoroutine(Shoot(aimDirection));
+                weaponAnim.SetBool("Shoot", true);
             }
-            weaponAnim.SetBool("Shoot", true);
         }
         else
         {
@@ -122,38 +129,67 @@ public class PlayerAimWeapon : MonoBehaviour
     {
         int bulletIndex = 0;
         //bullet type decider depending on active gun
-        if (gm.weaponIndex == 0) //Assault rifle
-            bulletIndex = 0;//undecided
-        /*else if (gm.weaponIndex == 1) //flamer*/
-        else if (gm.weaponIndex == 2) //Gun 4
-            bulletIndex = 5; //waveform
-        else if (gm.weaponIndex == 3) //Gun 5
-            bulletIndex = 2;//undecided
-        else if (gm.weaponIndex == 4) //L-Coil
-            bulletIndex = 4;//spark
-        else if (gm.weaponIndex == 5) //Shotgun
-            bulletIndex = 3;//spark
-        else
-            Debug.Log("Unrecognized gun");
+        if (gm.weaponIndex == 0) //L-Coil
+            bulletIndex = 4;
+        else if (gm.weaponIndex == 1) //Shotgun
+            bulletIndex = 1;
+        else if (gm.weaponIndex == 2) //Gattling Gun / Gun 5
+            bulletIndex = 2;
+        //else if (gm.weaponIndex == 3) //flamer has no bullet type
+        else if (gm.weaponIndex == 4) //Assault rifle
+            bulletIndex = 0;
 
         CinemachineShake.Instance.ShakeCamera(.4f, .03f); //could potentially change these values depending on the bullet or even make bosses shake the screen
-        if (gm.weaponIndex != 1 && gm.weaponIndex != 5) //if not flamer or shotgun
+        if (gm.weaponIndex == 3) //flamer
+        {
+            flamerParticles.Play();
+            flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        }
+        else if (gm.weaponIndex == 2)
+        {
+            bullet = gm.bullets[bulletIndex];
+            StartCoroutine(GattlingGunShoot(shootDirection));
+        }
+        else
         {
             bullet = gm.bullets[bulletIndex];
             PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
             newBullet.setTarget("Enemy", shootDirection, 18);
         }
-        else if (gm.weaponIndex == 1) //flamer
-        {
-            flamerParticles.Play();
-            flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
-        }
 
         gunFlash.Play();
         canShoot = false;
+        gm.ammo = gm.ammo - gm.getShotIncrement();
+        float targetFillAmount = gm.ammo;
+        ammoBar.DOValue(targetFillAmount, fillSpeed);
+        if (gm.ammo <= 0)
+        {
+            if (gm.weaponIndex != 4)
+            {
+                gm.breakGun();
+            }
+            else
+            {
+                gm.reload();
+            }
+        }
+
         yield return new WaitForSeconds(0.4f);
         flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
+    }
+
+    private IEnumerator GattlingGunShoot(Vector3 shootDirection)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
+            newBullet.setTarget("Enemy", shootDirection, 20);
+            if (i != 2)
+            {
+                yield return new WaitForSeconds(0.07f);
+            }
+        }
     }
 
     public static Vector3 GetMouseWorldPosition()

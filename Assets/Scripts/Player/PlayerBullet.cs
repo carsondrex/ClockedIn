@@ -26,6 +26,7 @@ public class PlayerBullet : MonoBehaviour
         transform.up = dir;
         StartCoroutine(startCountdown());
     }
+
     public IEnumerator startCountdown()
     {
         yield return new WaitForSeconds(LifeTime);
@@ -47,9 +48,13 @@ public class PlayerBullet : MonoBehaviour
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
             StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
         }
-        else if (gameObject.name == "Flamer Particles")
+        else if (other.tag == "Wall")
         {
-            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
+            bulletSprite.enabled = false;
+            Vector2 collisionPoint = other.ClosestPoint(transform.position);
+            GameObject thisImpact = null;
+            thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
         }
     }
 

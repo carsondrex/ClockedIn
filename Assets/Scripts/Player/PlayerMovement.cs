@@ -25,6 +25,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     private GunManager gm;
     //card drops
     public ParticleSystem dropPickUpParticles;
+    private CardManager cm;
     // Start is called before the first frame update
     void Start()
     {
@@ -34,6 +35,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         staminaBar = GameObject.Find("Stamina Bar").GetComponent<Slider>();
         ll = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
         gm = GetComponent<GunManager>();
+        cm = GameObject.Find("Cards").GetComponent<CardManager>();
         isInvincible = false;
         currentStamina = 100;
         staminaBar.maxValue = maxStamina;
@@ -159,31 +161,27 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         if (collision.gameObject.tag == "Drop")
         {
             ParticleSystem dropPickUp = Instantiate(dropPickUpParticles, collision.gameObject.transform.position, Quaternion.identity);
-            if (collision.gameObject.name == "HealthDrop")
+            if (collision.gameObject.name == "HealthDrop(Clone)")
             {
                 Heal(collision.gameObject.GetComponent<HealthDrop>().healAmount);
             }
-            else if (collision.gameObject.name == "FlamerDrop(Clone)")
-            {
-                gm.setGun(1);
-            }
-            else if (collision.gameObject.name == "TeslaCoilDrop(Clone)")
-            {
-                gm.setGun(2);
-            }
-            else if (collision.gameObject.name == "GattlingGunDrop(Clone)")
-            {
-                gm.setGun(3);
-            }
             else if (collision.gameObject.name == "LCoilDrop(Clone)")
             {
-                gm.setGun(4);
+                cm.changeCardCount(0, 1);
             }
             else if (collision.gameObject.name == "ShotgunDrop(Clone)")
             {
-                gm.setGun(5);
+                cm.changeCardCount(1, 1);
             }
-            
+            else if (collision.gameObject.name == "GattlingGunDrop(Clone)")
+            {
+                cm.changeCardCount(2, 1);
+            }
+            else if (collision.gameObject.name == "FlamerDrop(Clone)")
+            {
+                cm.changeCardCount(3, 1);
+            }
+
             Destroy(collision.gameObject);
             StartCoroutine(DestroyParticles(dropPickUp));
         }
