@@ -41,29 +41,29 @@ public class PlayerBullet : MonoBehaviour
     {
         if (target == "Enemy" && other.tag == "Enemy")
         {
+            bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            Vector2 collisionPoint = this.transform.position;
             bulletSprite.enabled = false;
-            Vector2 collisionPoint = other.ClosestPoint(transform.position);
-            GameObject thisImpact = null;
-            thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
-            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
+            StartCoroutine(SelfDestruct(thisImpact));
         }
         else if (other.tag == "Wall")
         {
+            bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            Vector2 collisionPoint = this.transform.position;
             bulletSprite.enabled = false;
-            Vector2 collisionPoint = other.ClosestPoint(transform.position);
-            GameObject thisImpact = null;
-            thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
-            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
+            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            StartCoroutine(SelfDestruct(thisImpact));
         }
     }
 
-    IEnumerator SelfDestruct(GameObject thisBullet, GameObject thisImpact)
+    IEnumerator SelfDestruct(GameObject thisImpact)
     {
         yield return new WaitForSeconds(0.1f);
         if (thisImpact)
         {
-            Destroy(thisImpact);
+            Destroy(thisImpact.gameObject);
         }
         Destroy(this.gameObject);
     }

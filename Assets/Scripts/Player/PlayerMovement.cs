@@ -26,6 +26,8 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     //card drops
     public ParticleSystem dropPickUpParticles;
     private CardManager cm;
+    private SoundManager sm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -36,6 +38,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         ll = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
         gm = GetComponent<GunManager>();
         cm = GameObject.Find("Cards").GetComponent<CardManager>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         isInvincible = false;
         currentStamina = 100;
         staminaBar.maxValue = maxStamina;
@@ -163,6 +166,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
             ParticleSystem dropPickUp = Instantiate(dropPickUpParticles, collision.gameObject.transform.position, Quaternion.identity);
             if (collision.gameObject.name == "HealthDrop(Clone)")
             {
+                sm.healSource.Play();
                 Heal(collision.gameObject.GetComponent<HealthDrop>().healAmount);
             }
             else if (collision.gameObject.name == "LCoilDrop(Clone)")

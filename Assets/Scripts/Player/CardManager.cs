@@ -15,7 +15,12 @@ public class CardManager : MonoBehaviour
     private Animator shotgunCounterAnim;
     private Animator gattlingCounterAnim;
     private Animator flamerCounterAnim;
+    private Animator lcoilCardAnim;
+    private Animator shotgunCardAnim;
+    private Animator gattlingCardAnim;
+    private Animator flamerCardAnim;
     private GunManager gm;
+    private SoundManager sm;
     // Start is called before the first frame update
     void Start()
     {
@@ -30,7 +35,13 @@ public class CardManager : MonoBehaviour
         gattlingCounterAnim = GameObject.Find("Gattling Gun Count Text").GetComponent<Animator>();
         flamerCounterAnim = GameObject.Find("Flamer Count Text").GetComponent<Animator>();
 
+        lcoilCardAnim = GameObject.Find("LCoil Card").GetComponent<Animator>();
+        shotgunCardAnim = GameObject.Find("Shotgun Card").GetComponent<Animator>();
+        gattlingCardAnim = GameObject.Find("Gattling Gun Card").GetComponent<Animator>();
+        flamerCardAnim = GameObject.Find("Flamer Card").GetComponent<Animator>();
+
         gm = GameObject.Find("Player").GetComponent<GunManager>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
 
@@ -64,7 +75,9 @@ public class CardManager : MonoBehaviour
             lcoilCountText.text = cardCounts[index].ToString();
             if (changeAmount > 0)
             {
+                sm.cardSource.Play();
                 lcoilCounterAnim.SetTrigger("increase");
+                lcoilCardAnim.SetTrigger("flare");
             }
             else
             {
@@ -76,7 +89,9 @@ public class CardManager : MonoBehaviour
             shotgunCountText.text = cardCounts[index].ToString();
             if (changeAmount > 0)
             {
+                sm.cardSource.Play();
                 shotgunCounterAnim.SetTrigger("increase");
+                shotgunCardAnim.SetTrigger("flare");
             }
             else
             {
@@ -88,7 +103,9 @@ public class CardManager : MonoBehaviour
             gattlingGunCountText.text = cardCounts[index].ToString();
             if (changeAmount > 0)
             {
+                sm.cardSource.Play();
                 gattlingCounterAnim.SetTrigger("increase");
+                gattlingCardAnim.SetTrigger("flare");
             }
             else
             {
@@ -100,7 +117,9 @@ public class CardManager : MonoBehaviour
             flamerCountText.text = cardCounts[index].ToString();
             if (changeAmount > 0)
             {
+                sm.cardSource.Play();
                 flamerCounterAnim.SetTrigger("increase");
+                flamerCardAnim.SetTrigger("flare");
             }
             else
             {

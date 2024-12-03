@@ -18,6 +18,8 @@ public class PlayerAimWeapon : MonoBehaviour
     private SpriteRenderer playerSprite;
     private float fillSpeed = 0.3f;
     private Slider ammoBar;
+    private SoundManager sm;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -26,6 +28,7 @@ public class PlayerAimWeapon : MonoBehaviour
         weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
         weaponAnim = aimTransform.Find("Weapon").GetComponent<Animator>();
         gm = transform.GetComponent<GunManager>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         playerSprite = GetComponent<SpriteRenderer>();
         flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
@@ -109,11 +112,9 @@ public class PlayerAimWeapon : MonoBehaviour
 
     private void HandleShooting(Vector3 aimDirection)
     {
-        //var mouseWorldPos = Camera.main.ScreenToWorldPoint(Input.mousePosition);
-
         if (Input.GetMouseButton(0))
         {
-            if (canShoot && gm.ammo >= gm.getShotIncrement()) //&& mouseWorldPos.x < 9f
+            if (canShoot && gm.ammo >= gm.getShotIncrement())
             {
                 StartCoroutine(Shoot(aimDirection));
                 weaponAnim.SetBool("Shoot", true);
@@ -145,14 +146,27 @@ public class PlayerAimWeapon : MonoBehaviour
             flamerParticles.Play();
             flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
         }
-        else if (gm.weaponIndex == 2)
+        else if (gm.weaponIndex == 2) //gattling gun
         {
             bullet = gm.bullets[bulletIndex];
+            sm.minigunSource.Play();
             StartCoroutine(GattlingGunShoot(shootDirection));
         }
         else
         {
             bullet = gm.bullets[bulletIndex];
+            if (gm.weaponIndex == 0)
+            {
+                sm.laser1Source.Play();
+            }
+            else if (gm.weaponIndex == 1)
+            {
+                sm.laser2Source.Play();
+            }
+            else if (gm.weaponIndex == 4)
+            {
+                sm.laser3Source.Play();
+            }
             PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
             newBullet.setTarget("Enemy", shootDirection, 18);
         }
