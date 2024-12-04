@@ -12,11 +12,13 @@ public class PlayerBullet : MonoBehaviour
     private SpriteRenderer bulletSprite;
     private GunManager gunManager;
     private int damage;
+    private SoundManager sm;
     void Start()
     {
         bulletSprite = GetComponent<SpriteRenderer>();
         gunManager = GameObject.Find("Player").GetComponent<GunManager>();
         damage = gunManager.getDamage();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
     public void setTarget(string name, Vector3 dir, float force)
     {
@@ -41,6 +43,7 @@ public class PlayerBullet : MonoBehaviour
     {
         if (target == "Enemy" && other.tag == "Enemy")
         {
+            sm.hitEnemySource.Play();
             bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             Vector2 collisionPoint = this.transform.position;
             bulletSprite.enabled = false;

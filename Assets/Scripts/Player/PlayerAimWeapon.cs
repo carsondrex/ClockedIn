@@ -143,6 +143,7 @@ public class PlayerAimWeapon : MonoBehaviour
         CinemachineShake.Instance.ShakeCamera(.4f, .03f); //could potentially change these values depending on the bullet or even make bosses shake the screen
         if (gm.weaponIndex == 3) //flamer
         {
+            StartCoroutine(FlamerAudio());
             flamerParticles.Play();
             flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
         }
@@ -191,6 +192,16 @@ public class PlayerAimWeapon : MonoBehaviour
         yield return new WaitForSeconds(0.4f);
         flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
+    }
+
+    private IEnumerator FlamerAudio()
+    {
+        sm.flameStartSource.Play();
+        yield return new WaitForSeconds(0.5f);
+        /*sm.flameLoopSource.Play();
+        yield return new WaitForSeconds(0.5f);
+        sm.flameLoopSource.Stop();
+        sm.flameEndSource.Play();*/
     }
 
     private IEnumerator GattlingGunShoot(Vector3 shootDirection)

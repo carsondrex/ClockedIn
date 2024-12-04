@@ -20,6 +20,7 @@ public class GunManager : MonoBehaviour
     private Slider ammoBar;
     private float fillSpeed = 0.3f;
     private PlayerAimWeapon paw;
+    private SoundManager sm;
     void Awake()
     {
         aimTransform = transform.Find("Aim");
@@ -28,11 +29,12 @@ public class GunManager : MonoBehaviour
         ammo = 8;
         ammoBar = GameObject.Find("Ammo Bar").GetComponent<Slider>();
         paw = GetComponent<PlayerAimWeapon>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     private void Update()
     {
-        if (cm.noCardsLeft())
+        if (cm.noCardsLeft() || cm.getCurrentCard() == "default")
         {
             setGun(4); //default gun
         }
@@ -62,13 +64,22 @@ public class GunManager : MonoBehaviour
     private IEnumerator ReloadGun()
     {
         paw.canShoot = false;
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(1);
+        sm.reloadSource.Play();
+        yield return new WaitForSeconds(1);
         refillAmmo();
         paw.canShoot = true;
     }
 
     public void refillAmmo()
     {
+        if (weaponIndex != 4)
+        {
+            if (cm.getCardCounts()[weaponIndex] > 0)
+            {
+                sm.refillAmmoSource.Play();
+            }
+        }
         ammo = 8;
         ammoBar.DOValue(8, fillSpeed);
     }
@@ -76,7 +87,12 @@ public class GunManager : MonoBehaviour
     public void breakGun()
     {
         cm.changeCardCount(weaponIndex, -1);
-        setGun(4);
+        if (cm.getCardCounts()[weaponIndex] == 0)
+        {
+            sm.breakGunSource.Play();
+            cm.setCurrentCard("default");
+            setGun(4);
+        }
         refillAmmo();
     }
 
@@ -86,6 +102,26 @@ public class GunManager : MonoBehaviour
         weaponSprite.sprite = weapons[weaponIndex];
         currentDamage = damages[weaponIndex];
         currentShotIncrement = shotIncrements[weaponIndex];
+        if (index == 0)
+        {
+            cm.setCurrentCard("l-coil");
+        }
+        else if (index == 1)
+        {
+            cm.setCurrentCard("shotgun");
+        }
+        else if (index == 2)
+        {
+            cm.setCurrentCard("gattlinggun");
+        }
+        else if (index == 3)
+        {
+            cm.setCurrentCard("flamer");
+        }
+        else if (index == 4)
+        {
+            cm.setCurrentCard("default");
+        }
     }
 
     public int getDamage() {

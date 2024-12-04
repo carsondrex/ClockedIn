@@ -126,13 +126,13 @@ MonoBehaviour:
   state: Idle
   lootTable:
   - itemPrefab: {fileID: 6910282204130749330, guid: dcd8d730a57b6ba479ae7cf7ab3d8734, type: 3}
-    dropChance: 50
+    dropChance: 15
   - itemPrefab: {fileID: 7751058183062309553, guid: 9f4a6e33ede98944a96d27edc4b48171, type: 3}
-    dropChance: 50
+    dropChance: 25
   - itemPrefab: {fileID: 5735958755134595758, guid: 579f2e255bcce78438f1afc4b1148603, type: 3}
-    dropChance: 50
+    dropChance: 30
   - itemPrefab: {fileID: 8114072012275267850, guid: ce2bab803a5c8c847acb8b9321f41b63, type: 3}
-    dropChance: 50
+    dropChance: 35
   - itemPrefab: {fileID: 8752811776544055500, guid: e347193224316a541a5395440e79ec1e, type: 3}
     dropChance: 50
 --- !u!60 &2529006048759630578
