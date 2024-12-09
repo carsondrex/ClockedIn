@@ -46,13 +46,6 @@ public class PlayerBullet : MonoBehaviour
     {
         if (target == "Enemy" && other.tag == "Enemy")
         {
-            bulletSprite.enabled = false;
-            Vector2 collisionPoint = other.ClosestPoint(transform.position);
-            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
-            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
-            StartCoroutine(SelfDestruct(thisImpact));
-        } else if (target == "Player" && other.tag == "Player") 
-        {
             sm.hitEnemySource.Play();
             bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             Vector2 collisionPoint = this.transform.position;
@@ -60,6 +53,19 @@ public class PlayerBullet : MonoBehaviour
             GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
             StartCoroutine(SelfDestruct(thisImpact));
+        }
+        else if (other.tag == "Wall")
+        {
+            bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
+            Vector2 collisionPoint = this.transform.position;
+            bulletSprite.enabled = false;
+            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            StartCoroutine(SelfDestruct(thisImpact));
+        } 
+        else if (target == "Player" && other.tag == "Player") 
+        {
+            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
+            Destroy(this.gameObject);
         }
     }
 

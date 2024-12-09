@@ -14,12 +14,18 @@ public class FlyScript : MonoBehaviour, IDamagable
     private NavMeshAgent agent;
     private WinCondition deathChecker;
     public PlayerBullet bullet;
+    private SoundManager sm;
+
+    [Header("Loot")]
+    public List<LootItem> lootTable = new List<LootItem>();
+
     void Start()
     {
         anim = GetComponent<Animator>();
         deathChecker = GameObject.Find("Main Camera").GetComponent<WinCondition>();
         player = GameObject.Find("Player");
         agent = GetComponent<NavMeshAgent>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -68,9 +74,18 @@ public class FlyScript : MonoBehaviour, IDamagable
         anim.SetTrigger("Die");
         yield return new WaitForSeconds(1.6f);
         deathChecker.EnemyDied();
+        foreach (LootItem lootItem in lootTable)
+        {
+            if (Random.Range(0f, 100f) <= lootItem.dropChance)
+            {
+                InstantiateLoot(lootItem.itemPrefab);
+                break;
+            }
+        }
         Destroy(this.gameObject);
     }
     public IEnumerator Shoot() {
+        sm.FlyBotLazerSource.Play();
         yield return new WaitForSeconds(1f);    
         PlayerBullet newBullet = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);
         newBullet.setTarget("Player", new Vector3(0, 1, 0), 9f, "Enemy");
@@ -98,5 +113,14 @@ public class FlyScript : MonoBehaviour, IDamagable
         newBullet10.setTarget("Player", new Vector3(-1, 0, 0), 9f, "Enemy");
         PlayerBullet newBullet11 = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);
         newBullet11.setTarget("Player", new Vector3(0, -1, 0), 9f, "Enemy");
+    }
+
+    void InstantiateLoot(GameObject loot)
+    {
+        if (loot)
+        {
+            Vector2 position = new Vector2(transform.position.x, transform.position.y);
+            GameObject droppedLoot = Instantiate(loot, position, Quaternion.identity);
+        }
     }
 }

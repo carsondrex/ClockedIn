@@ -18,6 +18,9 @@ public class BigScript : MonoBehaviour, IDamagable
     public PlayerBullet bullet;
     private float angle;
     private float shootSide;
+
+    [Header("Loot")]
+    public List<LootItem> lootTable = new List<LootItem>();
     // Start is called before the first frame update
     void Start()
     {
@@ -101,6 +104,23 @@ public class BigScript : MonoBehaviour, IDamagable
         anim.SetTrigger("Die");
         yield return new WaitForSeconds(1.6f);
         deathChecker.EnemyDied();
+        foreach (LootItem lootItem in lootTable)
+        {
+            if (Random.Range(0f, 100f) <= lootItem.dropChance)
+            {
+                InstantiateLoot(lootItem.itemPrefab);
+                break;
+            }
+        }
         Destroy(this.gameObject);
+    }
+
+    void InstantiateLoot(GameObject loot)
+    {
+        if (loot)
+        {
+            Vector2 position = new Vector2(transform.position.x, transform.position.y);
+            GameObject droppedLoot = Instantiate(loot, position, Quaternion.identity);
+        }
     }
 }

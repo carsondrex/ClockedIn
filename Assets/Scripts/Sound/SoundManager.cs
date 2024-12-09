@@ -16,6 +16,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip flameStartClip;
     public AudioClip flameLoopClip;
     public AudioClip flameEndClip;
+    public AudioClip FlyBotLazerClip;
+    public AudioClip TurretShotClip;
+    public AudioClip TurretExplodeClip;
 
     public AudioSource cardSource;
     public AudioSource cardSelectSource;
@@ -31,5 +34,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource flameStartSource;
     public AudioSource flameLoopSource;
     public AudioSource flameEndSource;
+    public AudioSource FlyBotLazerSource;
+    public AudioSource TurretShotSource;
+    public AudioSource TurretExplodeSource;
 
 }

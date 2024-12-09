@@ -14,6 +14,7 @@ public class TurretBulletScript : MonoBehaviour
     private Animator anim;
     public float radius;
     public float power;
+    private SoundManager sm;
     // Start is called before the first frame update
     void Start()
     {
@@ -21,6 +22,7 @@ public class TurretBulletScript : MonoBehaviour
         anim = GetComponent<Animator>();
         target = GameObject.Find("Player");
         playerHealth = target.GetComponent<PlayerMovement>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         StartCoroutine(Timer());
     }
 
@@ -49,6 +51,7 @@ public class TurretBulletScript : MonoBehaviour
     {
         projSpeed = 0;
         anim.SetTrigger("Explode");
+        sm.TurretExplodeSource.Play();
         Vector3 explosionPos = transform.position;
         Collider2D[] colliders = Physics2D.OverlapCircleAll(explosionPos, radius);
         foreach (Collider2D hit in colliders)

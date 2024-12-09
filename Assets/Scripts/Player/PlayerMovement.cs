@@ -53,7 +53,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
 
         rb.AddForce(new Vector2(horizontalInput * speed * Time.deltaTime * 1000, rb.velocity.y), ForceMode2D.Force);
         rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed * Time.deltaTime * 1000), ForceMode2D.Force);
-
+        
         if (canBlink)
         {
             if (anim.GetBool("down"))
@@ -92,14 +92,19 @@ public class PlayerMovement : MonoBehaviour,IDamagable
 
     public void TakeDamage(int damage)
     {
-        CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
-        health -= damage / 2; //divide by 2 since we have two colliders on player
-        float targetFillAmount = health / 100;
-        healthBar.DOValue(targetFillAmount, fillSpeed);
-        if (health <= 0)
+        if (isInvincible == false) 
         {
+            CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
+            health -= damage / 2; //divide by 2 since we have two colliders on player
+            float targetFillAmount = health / 100;
+            healthBar.DOValue(targetFillAmount, fillSpeed);
+            if (health <= 0)
+            {
             ll.GameOver(); ; //game over screen, enter corresponding scene index here.
+            }
         }
+        
+        
     }
 
     public void Heal(float healAmount)

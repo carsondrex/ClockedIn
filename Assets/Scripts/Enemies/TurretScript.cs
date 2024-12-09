@@ -11,6 +11,7 @@ public class TurretScript : MonoBehaviour, IDamagable
     private int isFlipped;
     private WinCondition deathChecker;
     public string state = "Idle";
+    private SoundManager sm;
 
     //Loot table
     [Header("Loot")]
@@ -24,6 +25,7 @@ public class TurretScript : MonoBehaviour, IDamagable
             isFlipped = 1;
         }
         deathChecker = GameObject.Find("Main Camera").GetComponent<WinCondition>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     public IEnumerator Shoot()
@@ -31,6 +33,7 @@ public class TurretScript : MonoBehaviour, IDamagable
         canShoot = false;
         yield return new WaitForSeconds(2);
         anim.SetTrigger("Shoot");
+        sm.TurretShotSource.Play();
         yield return new WaitForSeconds(.1f);
         TurretBulletScript newBullet = Instantiate(bullet, transform.position-(new Vector3(0, .75f, 0)), Quaternion.Euler(new Vector3(0, 0, 180*isFlipped)));
         yield return new WaitForSeconds(2);

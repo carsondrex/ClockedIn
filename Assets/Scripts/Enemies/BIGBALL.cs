@@ -22,6 +22,9 @@ public class BIGBALL : MonoBehaviour, IDamagable
     //health bar
     private float fillSpeed = 0.3f;
     private Slider healthBar;
+
+    [Header("Loot")]
+    public List<LootItem> lootTable = new List<LootItem>();
     // Start is called before the first frame update
     void Start()
     {
@@ -49,7 +52,9 @@ public class BIGBALL : MonoBehaviour, IDamagable
         } else {
             anim.SetBool("Moving", false);
         }
-        GetComponent<Enemy>().speed += .1f * Time.deltaTime;
+        if (dying == false) {
+            GetComponent<Enemy>().speed += .1f * Time.deltaTime;
+        }
         if ((GetComponent<Enemy>().state != "Idle") && (dying == false)) {
             GameObject.Find("Boss Bar").GetComponent<CanvasGroup>().alpha = 1f;
         }
@@ -109,7 +114,7 @@ public class BIGBALL : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage) {
         health -= damage;
-        float targetFillAmount = health / 100;
+        float targetFillAmount = health / 300;
         healthBar.DOValue(targetFillAmount, fillSpeed);
         if (health <= 0 && dying == false) {
             StartCoroutine(Die());
@@ -124,7 +129,28 @@ public class BIGBALL : MonoBehaviour, IDamagable
         GetComponent<CircleCollider2D>().enabled = false;
         anim.SetTrigger("Die");
         yield return new WaitForSeconds(1.6f);
+        for (int i = 0; i < 10; i++) 
+        {
+            yield return new WaitForSeconds(.1f);
+            foreach (LootItem lootItem in lootTable) 
+            {
+                if (Random.Range(0f, 100f) <= lootItem.dropChance)
+                {
+                    InstantiateLoot(lootItem.itemPrefab);
+                    break;
+                }
+            }
+        }
         deathChecker.EnemyDied();
         Destroy(this.gameObject);
+    }
+
+    void InstantiateLoot(GameObject loot)
+    {
+        if (loot)
+        {
+            Vector2 position = new Vector2(transform.position.x + Random.Range(-3f, 3f), transform.position.y + Random.Range(-3f, 3f));
+            GameObject droppedLoot = Instantiate(loot, position, Quaternion.identity);
+        }
     }
 }
