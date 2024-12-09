@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,301 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FlyingBot - Death_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: daa16b3ba54d67a41b097a8016a3ebfd
+      internalID: -807613329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4af60648b640d0944ae60d338f89081f
+      internalID: 1700742995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665f37c1bbdaa884d8b6ed656139c7e7
+      internalID: -676159238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b8ef40b28201ca4783ac0f833c93302
+      internalID: 966670096
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea4a4a2cf78b3f94197c00d38229a48e
+      internalID: 2079931036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc49de78c19af4543bb7fc37cdbaf745
+      internalID: 1100737128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_6
+      rect:
+        serializedVersion: 2
+        x: 768
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a061ab5cff62e74a962ef7275f6c956
+      internalID: -1921258356
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_7
+      rect:
+        serializedVersion: 2
+        x: 896
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9bcc5940839f94149ad4493185a64695
+      internalID: 1661330056
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_8
+      rect:
+        serializedVersion: 2
+        x: 1024
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7e066c81981ded4c9d9b87e75b78e50
+      internalID: -149549770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_9
+      rect:
+        serializedVersion: 2
+        x: 1152
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d453fe1d744f4b4fa1a7f773ee5dd84
+      internalID: -1609891820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_10
+      rect:
+        serializedVersion: 2
+        x: 1280
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ad5371bc43fce844b241741f5a50623
+      internalID: -756270046
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_11
+      rect:
+        serializedVersion: 2
+        x: 1408
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7aaaa06ccdb8334781dbadfd2fa2907
+      internalID: 1056972278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_12
+      rect:
+        serializedVersion: 2
+        x: 1536
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1dbac769bb93fa24bb52d6f6cd3b06a5
+      internalID: -617198707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Death_13
+      rect:
+        serializedVersion: 2
+        x: 1664
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd1e6ff03cce9d34eb169f91d6823816
+      internalID: 768762363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +400,21 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlyingBot - Death_0: -807613329
+      FlyingBot - Death_1: 1700742995
+      FlyingBot - Death_10: -756270046
+      FlyingBot - Death_11: 1056972278
+      FlyingBot - Death_12: -617198707
+      FlyingBot - Death_13: 768762363
+      FlyingBot - Death_2: -676159238
+      FlyingBot - Death_3: 966670096
+      FlyingBot - Death_4: 2079931036
+      FlyingBot - Death_5: 1100737128
+      FlyingBot - Death_6: -1921258356
+      FlyingBot - Death_7: 1661330056
+      FlyingBot - Death_8: -149549770
+      FlyingBot - Death_9: -1609891820
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

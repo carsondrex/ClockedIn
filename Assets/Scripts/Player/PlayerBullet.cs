@@ -18,13 +18,16 @@ public class PlayerBullet : MonoBehaviour
         gunManager = GameObject.Find("Player").GetComponent<GunManager>();
         damage = gunManager.getDamage();
     }
-    public void setTarget(string name, Vector3 dir, float force)
+    public void setTarget(string name, Vector3 dir, float force, string type = "Player")
     {
         target = name;
         rb = GetComponent<Rigidbody2D>();
         speed = force;
         transform.up = dir;
         StartCoroutine(startCountdown());
+        if (type == "Enemy") {
+            damage = 6;
+        }
     }
     public IEnumerator startCountdown()
     {
@@ -39,6 +42,13 @@ public class PlayerBullet : MonoBehaviour
     void OnTriggerEnter2D(Collider2D other)
     {
         if (target == "Enemy" && other.tag == "Enemy")
+        {
+            bulletSprite.enabled = false;
+            Vector2 collisionPoint = other.ClosestPoint(transform.position);
+            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
+            StartCoroutine(SelfDestruct(this.gameObject, thisImpact));
+        } else if (target == "Player" && other.tag == "Player") 
         {
             bulletSprite.enabled = false;
             Vector2 collisionPoint = other.ClosestPoint(transform.position);
