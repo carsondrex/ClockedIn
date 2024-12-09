@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: FlyingBot - Attack(End)_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d56aba9d3b1013c46ba2537d7189ba91
+      internalID: 1149044275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Attack(End)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2206c825c39e13c4488c00929f8acc2e
+      internalID: -342066629
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Attack(End)_2
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef67dc218e342764d962ded073a6ccc9
+      internalID: -1853403240
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Attack(End)_3
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87af6a7e2c3e5c84684c3660269fffc7
+      internalID: -1014629402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Attack(End)_4
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 645492b528af2f845a864953a860f0ea
+      internalID: -1196740625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: FlyingBot - Attack(End)_5
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 28
+        width: 128
+        height: 100
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 721c55d5c50831f489efa0f8c733282a
+      internalID: -1732030341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +232,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      FlyingBot - Attack(End)_0: 1149044275
+      FlyingBot - Attack(End)_1: -342066629
+      FlyingBot - Attack(End)_2: -1853403240
+      FlyingBot - Attack(End)_3: -1014629402
+      FlyingBot - Attack(End)_4: -1196740625
+      FlyingBot - Attack(End)_5: -1732030341
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

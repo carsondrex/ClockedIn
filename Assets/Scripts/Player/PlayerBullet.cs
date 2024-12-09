@@ -20,13 +20,16 @@ public class PlayerBullet : MonoBehaviour
         damage = gunManager.getDamage();
         sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
-    public void setTarget(string name, Vector3 dir, float force)
+    public void setTarget(string name, Vector3 dir, float force, string type = "Player")
     {
         target = name;
         rb = GetComponent<Rigidbody2D>();
         speed = force;
         transform.up = dir;
         StartCoroutine(startCountdown());
+        if (type == "Enemy") {
+            damage = 6;
+        }
     }
 
     public IEnumerator startCountdown()
@@ -43,20 +46,19 @@ public class PlayerBullet : MonoBehaviour
     {
         if (target == "Enemy" && other.tag == "Enemy")
         {
+            bulletSprite.enabled = false;
+            Vector2 collisionPoint = other.ClosestPoint(transform.position);
+            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
+            other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
+            StartCoroutine(SelfDestruct(thisImpact));
+        } else if (target == "Player" && other.tag == "Player") 
+        {
             sm.hitEnemySource.Play();
             bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             Vector2 collisionPoint = this.transform.position;
             bulletSprite.enabled = false;
             GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
-            StartCoroutine(SelfDestruct(thisImpact));
-        }
-        else if (other.tag == "Wall")
-        {
-            bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
-            Vector2 collisionPoint = this.transform.position;
-            bulletSprite.enabled = false;
-            GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
             StartCoroutine(SelfDestruct(thisImpact));
         }
     }
