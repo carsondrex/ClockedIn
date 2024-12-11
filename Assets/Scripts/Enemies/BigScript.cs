@@ -18,6 +18,7 @@ public class BigScript : MonoBehaviour, IDamagable
     public PlayerBullet bullet;
     private float angle;
     private float shootSide;
+    private SoundManager sm;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -29,6 +30,7 @@ public class BigScript : MonoBehaviour, IDamagable
         player = GameObject.Find("Player");
         playerHealth = player.GetComponent<PlayerMovement>();
         agent = GetComponent<NavMeshAgent>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -65,6 +67,7 @@ public class BigScript : MonoBehaviour, IDamagable
     public IEnumerator Attack() {
         anim.SetTrigger("Attack");
         yield return new WaitForSeconds(.6f);
+        sm.BigShootSource.Play();
         PlayerBullet newBullet = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z), Quaternion.identity);
         newBullet.setTarget("Player", directionToPlayer.normalized, 9f, "Enemy");
         PlayerBullet newBullet1 = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 1f, transform.position.z), Quaternion.identity);
@@ -72,6 +75,7 @@ public class BigScript : MonoBehaviour, IDamagable
         PlayerBullet newBullet2 = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 1, transform.position.z), Quaternion.identity);
         newBullet2.setTarget("Player", Quaternion.AngleAxis(-30, Vector3.back) * directionToPlayer.normalized, 9f, "Enemy");
         yield return new WaitForSeconds(.3f);
+        sm.BigShootSource.Play();
         PlayerBullet newBullet3 = Instantiate(bullet, new Vector3(transform.position.x + shootSide, transform.position.y - .8f, transform.position.z), Quaternion.identity);
         newBullet3.setTarget("Player", Quaternion.AngleAxis(15, Vector3.back) * directionToPlayer.normalized, 9f, "Enemy");
         PlayerBullet newBullet4 = Instantiate(bullet, new Vector3(transform.position.x + shootSide, transform.position.y - .8f, transform.position.z), Quaternion.identity);

@@ -22,6 +22,7 @@ public class BIGBALL : MonoBehaviour, IDamagable
     //health bar
     private float fillSpeed = 0.3f;
     private Slider healthBar;
+    private SoundManager sm;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -34,6 +35,7 @@ public class BIGBALL : MonoBehaviour, IDamagable
         playerHealth = player.GetComponent<PlayerMovement>();
         agent = GetComponent<NavMeshAgent>();
         healthBar = GameObject.Find("Boss Bar").GetComponent<Slider>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -91,6 +93,7 @@ public class BIGBALL : MonoBehaviour, IDamagable
 
     public IEnumerator Hurt() {
         yield return new WaitForSeconds(.8f);
+        sm.BigBallSlamSource.Play();
         PlayerBullet newBullet = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);
         newBullet.setTarget("Player", new Vector3(0, 1, 0), 9f, "Enemy");
         PlayerBullet newBullet1 = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);

@@ -19,6 +19,9 @@ public class SoundManager : MonoBehaviour
     public AudioClip FlyBotLazerClip;
     public AudioClip TurretShotClip;
     public AudioClip TurretExplodeClip;
+    public AudioClip BallSlamClip;
+    public AudioClip BigBallSlamClip;
+    public AudioClip BigShootClip;
 
     public AudioSource cardSource;
     public AudioSource cardSelectSource;
@@ -37,5 +40,8 @@ public class SoundManager : MonoBehaviour
     public AudioSource FlyBotLazerSource;
     public AudioSource TurretShotSource;
     public AudioSource TurretExplodeSource;
+    public AudioSource BallSlamSource;
+    public AudioSource BigBallSlamSource;
+    public AudioSource BigShootSource;
 
 }

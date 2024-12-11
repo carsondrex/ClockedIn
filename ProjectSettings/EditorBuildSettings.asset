@@ -9,8 +9,11 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeScreen.unity
     guid: b7a2420f7bb74a3469848c24272dba0a
   - enabled: 1
-    path: Assets/Scenes/Level Design.unity
-    guid: 6d1460a54b01eee4796435092aa2606e
+    path: Assets/Scenes/StoryBit.unity
+    guid: 84fb729808a616a49ae5b1bc1ae0165a
+  - enabled: 1
+    path: Assets/Scenes/More Enemies.unity
+    guid: 384011a5bfb78264bbba62ceade7b0df
   - enabled: 1
     path: Assets/Scenes/GameOverScreen.unity
     guid: ad5ba66b31b9d44418290dc80c9adfb6

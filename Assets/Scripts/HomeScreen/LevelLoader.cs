@@ -13,6 +13,10 @@ public class LevelLoader : MonoBehaviour
         StartCoroutine(LoadLevel(1)); //Load first level (Scene after this one in the build index)
     }
 
+    public void LevelOne() {
+        StartCoroutine(LoadLevel(2));
+    }
+
     public void MainMenu()
     {
         StartCoroutine(LoadLevel(0)); //0 is the index of the first scene in the build which should be main menu
@@ -20,11 +24,11 @@ public class LevelLoader : MonoBehaviour
 
     public void GameOver()
     {
-        StartCoroutine(LoadLevel(2)); //whatever the index is of the game over screen. will change.
+        StartCoroutine(LoadLevel(3)); //whatever the index is of the game over screen. will change.
     }
 
     public void Win() {
-        StartCoroutine(LoadLevel(3));
+        StartCoroutine(LoadLevel(4));
     }
 
     public IEnumerator LoadLevel(int levelIndex)

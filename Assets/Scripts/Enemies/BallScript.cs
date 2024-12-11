@@ -16,6 +16,7 @@ public class BallScript : MonoBehaviour, IDamagable
     private bool dying = false;
     private NavMeshAgent agent;
     private WinCondition deathChecker;
+    private SoundManager sm;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -27,6 +28,7 @@ public class BallScript : MonoBehaviour, IDamagable
         player = GameObject.Find("Player");
         playerHealth = player.GetComponent<PlayerMovement>();
         agent = GetComponent<NavMeshAgent>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
     }
 
     // Update is called once per frame
@@ -75,6 +77,7 @@ public class BallScript : MonoBehaviour, IDamagable
 
     public IEnumerator Hurt() {
         yield return new WaitForSeconds(.5f);
+        sm.BallSlamSource.Play();
         if (willTakeDamage == true) {
             playerHealth.TakeDamage(10);
         }
