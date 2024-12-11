@@ -98,7 +98,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         if (isInvincible == false) 
         {
             CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
-            health -= damage / 2; //divide by 2 since we have two colliders on player
+            health -= damage;
             float targetFillAmount = health / 100;
             healthBar.DOValue(targetFillAmount, fillSpeed);
             if (health <= 0)

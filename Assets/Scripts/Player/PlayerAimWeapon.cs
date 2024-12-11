@@ -140,7 +140,7 @@ public class PlayerAimWeapon : MonoBehaviour
         else if (gm.weaponIndex == 4) //Assault rifle
             bulletIndex = 0;
 
-        CinemachineShake.Instance.ShakeCamera(.4f, .03f); //could potentially change these values depending on the bullet or even make bosses shake the screen
+        CinemachineShake.Instance.ShakeCamera(.4f, .3f); //could potentially change these values depending on the bullet or even make bosses shake the screen
         if (gm.weaponIndex == 3) //flamer
         {
             StartCoroutine(FlamerAudio());

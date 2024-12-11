@@ -315,7 +315,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   bullet: {fileID: 7861126017504167079, guid: 7a97999c98bfa5f4da85db81e55810e8, type: 3}
-  health: 300
+  health: 250
   lootTable:
   - itemPrefab: {fileID: 6910282204130749330, guid: dcd8d730a57b6ba479ae7cf7ab3d8734, type: 3}
     dropChance: 15

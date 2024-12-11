@@ -80,7 +80,7 @@ public class TurretBulletScript : MonoBehaviour
         if(other.tag == "Player")
         {
             StartCoroutine(Explode());
-            playerHealth.TakeDamage(15);
+            playerHealth.TakeDamage(10);
         }
         if(other.tag == "Wall")
         {

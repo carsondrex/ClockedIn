@@ -111,7 +111,7 @@ public class BIGBALL : MonoBehaviour, IDamagable
         PlayerBullet newBullet7 = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);
         newBullet7.setTarget("Player", new Vector3(-1, -1, 0), 9f, "Enemy");
         if (willTakeDamage == true) {
-            playerHealth.TakeDamage(20);
+            playerHealth.TakeDamage(15);
         }
     }
 

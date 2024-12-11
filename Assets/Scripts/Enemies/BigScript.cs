@@ -99,7 +99,9 @@ public class BigScript : MonoBehaviour, IDamagable
         GetComponent<Enemy>().speed = 0;
         anim.SetTrigger("Hit");
         yield return new WaitForSeconds(.5f);
-        GetComponent<Enemy>().speed = 1;
+        if (dying == false) {
+            GetComponent<Enemy>().speed = 1;
+        }
     }
 
     public IEnumerator Die() {
