@@ -82,6 +82,10 @@ public class TurretBulletScript : MonoBehaviour
             StartCoroutine(Explode());
             playerHealth.TakeDamage(15);
         }
+        if(other.tag == "Wall")
+        {
+            StartCoroutine(Explode());
+        }
     }
     
 }
