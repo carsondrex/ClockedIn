@@ -9,7 +9,7 @@ EditorBuildSettings:
     path: Assets/Scenes/HomeScreen.unity
     guid: b7a2420f7bb74a3469848c24272dba0a
   - enabled: 1
-    path: Assets/Scenes/Level Design.unity
+    path: Assets/Scenes/Level 1.unity
     guid: 6d1460a54b01eee4796435092aa2606e
   - enabled: 1
     path: Assets/Scenes/GameOverScreen.unity

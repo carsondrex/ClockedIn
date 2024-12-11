@@ -1,0 +1,6604 @@
+fileFormatVersion: 2
+guid: 3e7ac3ab828b9c64c971da61941eed05
+TextureImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 48
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 1
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4009e0ea3a46844986675b830096ccc
+      internalID: 828303736
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e41ee20a7ae29248bbc415f20bfd7d0
+      internalID: -786625272
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 994d56ca12cbeda44ae86373ab1128a9
+      internalID: -1775516854
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c018ac706a8f9b64cbad89ba46299cc4
+      internalID: -2016150382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5aa8f24971aacae43bbe108d61eefe74
+      internalID: -303319297
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7ce1608f39f8540a4abe3bb622877a
+      internalID: 1515977075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ee9fb0e75f3a0f4295b0c026065d6e8
+      internalID: -1502830643
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6130041371681814188429274b9ca6bb
+      internalID: 1531863632
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_8
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 571b274784c83a74b9842f404c5d4983
+      internalID: 504697378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_9
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76f3d8485ae1b434892b7a3b2cd3ecce
+      internalID: 1538571076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_10
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9aecf4d0ac3f41f4892d4e71a9e1cc33
+      internalID: -2099645227
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_11
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f32c0a4359ccd834ca82c0afe67e2e71
+      internalID: -920483788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_12
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1060c43da085e1543aa44f44f60688ff
+      internalID: 252206839
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_13
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d840e1fe3e63c83448265ccfe27947e0
+      internalID: 1344267168
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_14
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3b2ba02c981f3459e5e86a1128d100
+      internalID: 581864171
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_15
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 950
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56ed9f8f875d3bc40a77d00ba111e19d
+      internalID: 665134203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_16
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 75ea17c1ea4079b488002787539586fd
+      internalID: -754548160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_17
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e515615e143912f4ba772f6db354bc1b
+      internalID: -258234357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_18
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43afc71898ac57e419d3c650363a7bf3
+      internalID: 1284258587
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_19
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94ac2e4c3d431aa429d56671857b7293
+      internalID: -396926892
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_20
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d402c4b1e4e4cd478e4e27ff51be78b
+      internalID: 895297265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_21
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 185586934f418e244ac2ff4cb9c65788
+      internalID: 1258016662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_22
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c2d6318e6a09684da4eee1ca94d595a
+      internalID: -447846363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_23
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 457f48f2f2ca8c148a2b4f29b3080822
+      internalID: 1776537120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_24
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 644b40ca471d04f42bebfe726f3422ea
+      internalID: -597600778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_25
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e2037d54e6ab44d89e06101dc26e6e
+      internalID: 789394936
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_26
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28c3f68e3abca484980c45b86c282562
+      internalID: -2007928518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10426672ad6f39a4c805ac48f799e600
+      internalID: -1271627324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_28
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccc587ae04fb51348bbdb7ffd4b7fc00
+      internalID: -1527887223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_29
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10717cd914693b147be5355af087ce5b
+      internalID: 1257661536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_30
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f011b68d8e9493f4da491e2c353724c3
+      internalID: 350811337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_31
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 902
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f686a5bc9e90db458af4a321911ad3f
+      internalID: 2123955853
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_32
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 209d586283a64f042bf20777ea29f0a4
+      internalID: -1585148986
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8551c9a79b736914485f958fd21fe4e8
+      internalID: -774509928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b45be8977a3d424583d0f19ef7f9ef8
+      internalID: 1396929829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_35
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4079d414894fc46a5cbfd2e8be9912
+      internalID: 3104625
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_36
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4151c5538bae6bd43b1abf04eed1adaf
+      internalID: 2096789597
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_37
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c4cd40141adcc945bee27e05cb065ec
+      internalID: 1072475680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_38
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea71e67b58e983d4b83890eb49b3594a
+      internalID: -854663784
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_39
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c860218e43d369f428e5f50cf5381750
+      internalID: 1114165085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_40
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98e61bbb555b98d4ca085cf3af0ee452
+      internalID: 1340614246
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_41
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 892983d614f7c604ba6cdbeb8c94b7f8
+      internalID: 1595121662
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_42
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d72c67ba5bc305141b036aca4e48e67c
+      internalID: 1872306957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_43
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 854
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3c02c78c36ae934e823e0a0afe144e1
+      internalID: -780768670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_44
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9fd617aefebc2843b590dba4aaa0370
+      internalID: -1876485780
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_45
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a516af9ca140a446b320b416e16a333
+      internalID: 1419046428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_46
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68aa7cc2c0685464286d8aaa3d8f5b76
+      internalID: -677474901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_47
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c3340991903cd72409861401c87be6b1
+      internalID: 1458063377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_48
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0164b7c392f6ba4498f58d31ddbbbe2b
+      internalID: 1860495713
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_49
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43136baf6b310484b9a989672366dbb2
+      internalID: -5044209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_50
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 13c0c0c88f3dcf34e8c0400468691079
+      internalID: 2070471429
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_51
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5abfedb53aec66340bb54f3dd4945fb3
+      internalID: 1162615471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_52
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78dc68310d2b1ae47a2b7ef743b55cbc
+      internalID: -1080902596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_53
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfd52f26176d0c24c9789c0219909e82
+      internalID: -889671984
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_54
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ee7135cb5c7e3c47b68b9e8802a296d
+      internalID: 360732119
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_55
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c04a83499dc4e40af007cd3adc8d74
+      internalID: 2052601002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_56
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a65bfeff15e76d44885559047dc92ed4
+      internalID: 518371652
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_57
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0a2366fc4de6b42926fdc43e4d4439
+      internalID: 1500073883
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_58
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 806
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d75ca76f0a151ad4fa4ab608756bad51
+      internalID: -2070537259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_59
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e4994fc3d7dbf7428166d3f8db913e2
+      internalID: -1793666061
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_60
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33136dfc2ac63604583879cbe9dd0e3a
+      internalID: 2137723450
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_61
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9c26312c4b8749499c8ce78b6d44a44
+      internalID: -979743346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_62
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4bec85813140ac4189e7d69b5c8a0f0
+      internalID: -605100448
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f2f3b7c9c18adf48ab02d2760f74939
+      internalID: 753370550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_64
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3c88e9e7acb99d4ab2d6ff8a55daa2a
+      internalID: -958945098
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_65
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d11fcf707900c74a9831c39a261a2a8
+      internalID: -1757753635
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_66
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e6033ba27dd3e9642b0a2c1ad462fc7f
+      internalID: -397897282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_67
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89feb79a1fa555241950f0bcb6d3f442
+      internalID: -938126529
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_68
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e8477f62279b2e49ae27259d66bc0cc
+      internalID: -837030437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_69
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56acd36c51525654f8ac29b73959b3f2
+      internalID: -631086916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_70
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19fa7041c70d1734d96698c91c789549
+      internalID: -641568847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_71
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78c10a6b8be887a4c9370bd137dfc12b
+      internalID: 575887660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_72
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3fc443c90de8e594cb01b0c86acda8f3
+      internalID: -1962809571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_73
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f96b43eee8ef6d746b53a583042514e1
+      internalID: -795817021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_74
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 758
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a589804bb12dca4d8f3909ac0f495cb
+      internalID: -52370548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17017226d7bcf204d8c141b5a737bd10
+      internalID: 936439699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_76
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4eec8edded4c9424baa336f969502989
+      internalID: -332473277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_77
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f534b7deb4abed64990c51f41137ba9e
+      internalID: 1660037564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_78
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2151e4be9cd84d47a773648913e9528
+      internalID: -811534395
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_79
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c295e0085e4a46d44a36b83e96e8fd6a
+      internalID: 1744579396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_80
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f5e91473a471b4f449dd391e41a32a08
+      internalID: -1040142199
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_81
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff74733b621771b4cb76e7af249251b6
+      internalID: -645384373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_82
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e0f8f27226fb4047823d534d4d37bdf
+      internalID: 561358073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_83
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5472f2be481ccff478ffaaff8e22ecfc
+      internalID: 973034470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_84
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c02c7132cf81354ea7bc66dcb527ffa
+      internalID: 278143128
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_85
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f616be4aba4de514c8e75ad772425958
+      internalID: -2026096589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_86
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 710
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8accb70d4df47804ea370b702dbd2c66
+      internalID: -1197881656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_87
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7791238328f02341bf250f6c7bd4d94
+      internalID: 1436460428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_88
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e7e7b73f257e514bac5c51ee3ab1542
+      internalID: -628172029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_89
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c90cd624a75604458cfa547327cc0a0
+      internalID: 477803353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_90
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: abb19cf114d49084db966ac93fb5de84
+      internalID: 2086808657
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_91
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d7bb22ff1048aa458fa7e3edb93a4dd
+      internalID: -596168465
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_92
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0e2ce0a02d1b614588bab2760eed7ce
+      internalID: -251287565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_93
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 365be75ccf7109941b78f8bb5cff8eac
+      internalID: -2100217229
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_94
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c51a2f3be1395a245bb8bfc04b3b8dde
+      internalID: -1111400313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_95
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfa1025a581eaf40882e21e62f4096e
+      internalID: -148418561
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_96
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: debd5f0d4fe1d5a4b9e4b1e443e5a7b0
+      internalID: -400857234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_97
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09654957b03c0a04db4ca09c539591fa
+      internalID: -1173119217
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_98
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adb06eab20b555e4882a985e6fcaa0d4
+      internalID: -596263794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_99
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da388f5b0445f764b8fff26c68f8a18e
+      internalID: 1307148768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_100
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62407082df278a94eabfedb1d792a184
+      internalID: -29215752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_101
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 23f9e98ca9919ec46a81f324dd9cdadd
+      internalID: 1088151075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_102
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 662
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0b106753c2834418a2326ecd117d94
+      internalID: -821138836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_103
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2344962b2dd1bbc4f81b89d33c142168
+      internalID: -1532165688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_104
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894dd0bcaaa85ba419ff32c3af5140c6
+      internalID: 1372778565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_105
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7dfdf6d125024d349984240a5801f910
+      internalID: 1122321993
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_106
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7fd8a34fe1d2fd94793a6d5c365e5320
+      internalID: 1984267821
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_107
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20dd81f6c90691342b96b78d89b377e0
+      internalID: 961876436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_108
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c778f3568bc56845924e517fcbde5be
+      internalID: 1079561301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_109
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d106b0ce38adbbe45bde0c8c6e568933
+      internalID: -1261262147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_110
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f54e936767e416947ae24ada67bcef69
+      internalID: -283305864
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_111
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aae992c188fac5e43a07cd3f92f9089e
+      internalID: 1979926564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_112
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3b93f33ac2ee744bae1bc0c45a660e2
+      internalID: 1148934659
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_113
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d153560fcde09114ba1e66700e5fd9fa
+      internalID: -757963870
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_114
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8771059edc7a400489dd3219827b8f07
+      internalID: 2070211485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_115
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a0e560472dd587f43b8f97877748e872
+      internalID: 976448688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_116
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98fc1dce72d5af47a33bb34f3517f48
+      internalID: 441146124
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_117
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 614
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 22d76afe90c72e940aff60d791bcee2e
+      internalID: -1604954798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_118
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05667a4e7aa404e458fc9275ff9f6f10
+      internalID: 1170826505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_119
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a8257aaef788d64bab88f32d6655678
+      internalID: -78467140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_120
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dbd4e0f022cd214b9f33d26695eb3a0
+      internalID: 630376915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_121
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c04a96bba8e27b42935fa24fa62da95
+      internalID: 500084651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_122
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c847b1b82c2f9844ac2daded3ececb3
+      internalID: 256999676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_123
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cd798956154d6b44d9b96b5daaeb5852
+      internalID: -2035625506
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_124
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adfb6485f6654e145af0f8f1d6e578ea
+      internalID: 1547408673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_125
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99b739d26923c0a46a407c2d3bc7247d
+      internalID: -1835570834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_126
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7137af539abb9db4c9f5ab250fa45ebb
+      internalID: -199534530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_127
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4673cdf52d0db0448a138d03fb6c4c99
+      internalID: -828110895
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_128
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d9078d9bb37fa6a4abe41725c08af87b
+      internalID: -146126996
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_129
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f3fcf819d06fae458ac227c08e5aace
+      internalID: 1988527965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_130
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40edc99025b63d94aba7f7606049e070
+      internalID: 105642114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_131
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca0031bb8810d5a47ad1b78de0a07b63
+      internalID: -1477684055
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_132
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 566
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa6d167526cad5347b78fe90ac9f1943
+      internalID: -331889599
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_133
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22207f09ee1c39459faa3f1b048368e
+      internalID: 563010260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_134
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eaeef2567f43a5442adf9319bc2c5995
+      internalID: 1528817160
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_135
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a5e8d97939c4ef14c8cc2a59855b0d18
+      internalID: -1960994091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_136
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 706e138b11a881a4f8d4a77502a10a8b
+      internalID: 1928489417
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_137
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9cbbbdc2b04a134c8965b5806add0c3
+      internalID: 2115688397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_138
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 786cab2cbdb1b6f49ab744d6a2cb79c9
+      internalID: -936234817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_139
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4bdd84003c7f31b4ca48d4238140708b
+      internalID: 1065783091
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_140
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd0f20ee89184df40bab798714dcb5de
+      internalID: -9407438
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_141
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0031ce5bd24eff94fa83227ba5f73ece
+      internalID: 404073844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_142
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec192d0543bccfd4b8d7895b8adcc0ed
+      internalID: -1415459403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_143
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae4e5d252785a1545be2ad81585cad7e
+      internalID: -2040975452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_144
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f1c078d6681ac641a88e053d40bb95c
+      internalID: 463546454
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_145
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2888771c62cb030418686a25cdf42bda
+      internalID: -623896075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_146
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 518
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f8865584c48d9304fb6c703a354cbc1c
+      internalID: -275041249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_147
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 15f8a32cf0669f740af987302a602736
+      internalID: 1970387680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_148
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7d713807a0331044b9f06ac685ee5af
+      internalID: 437900332
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_149
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 491bbc8bc3c6a934e8ca3bdecac0bcce
+      internalID: 66335346
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_150
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9066fe4a63b65df489ce23f04118e746
+      internalID: -115297177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_151
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4796eece08043844beecf8bfa93911e
+      internalID: 760096915
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_152
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d916b363ce89354e82069c7e7b4aee6
+      internalID: 808098401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_153
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2a2f4b3b5fde5384b9be8e54ea943aa5
+      internalID: 148696086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_154
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2b0dd674434ce740913339a72a07899
+      internalID: -1966901694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_155
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 407fc298ae1d50549b998a3e6b9970c1
+      internalID: 2104033733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_156
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4a2233d504948e4a9d07e304f525879
+      internalID: 1998833639
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_157
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c4781cd58384f54685dad7abaf67cba
+      internalID: 1742613598
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_158
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d693ef472f185d4cbdaf902bbe59755
+      internalID: -1789647269
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_159
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd0b9fc07eab8944ca391f74f7bff768
+      internalID: -519763877
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_160
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d530a9437c00a440bc5b7bb88f411e3
+      internalID: -814502483
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_161
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 470
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 681d21f18f9e5f7478204e33861abc6a
+      internalID: 1472386829
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_162
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ce1cbb85a5478514780cb61ce1404f22
+      internalID: -1726140341
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_163
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84dc6c9ed326c5640b3501e35439bea7
+      internalID: 1847814376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_164
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 438c4a8a5a59de44d88036c516f24304
+      internalID: -171264671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_165
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 882511ff15e78594c9b51ed38628de34
+      internalID: -2145500979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_166
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ef6fa1a44c2bb4185afe5540e08551
+      internalID: 160698387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_167
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e52bf5fb194e4f4f8baab0a5ecc393a
+      internalID: 1307663549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_168
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56bebafa5ba472c4aa9252266c59be24
+      internalID: 1948982032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_169
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69b9329c47c825e4ab24a9d35fd3d44c
+      internalID: 1153333901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_170
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 894f96edd51cfa94fab08dbb846478b5
+      internalID: -1068760962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_171
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90475f0405ab3e5439ceb94ea2835490
+      internalID: -1806708000
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_172
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 623cea32a636b7d459c6d4f3021c9a44
+      internalID: 954971149
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_173
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8f6e7f206755c14388d2a032022048a
+      internalID: 179668411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_174
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83037309a15226b4fbda56eb332b0672
+      internalID: 831131794
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_175
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 422
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3278ec55f5337bc4fb5f69892307a519
+      internalID: 1970996073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_176
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1a82a269aa0e4545bb9e0178dcbd94a
+      internalID: -554274247
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_177
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ed44d3d4119104a9e04e2988fabcfa
+      internalID: -2112448071
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_178
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fda3a96578fb9cd4a9c8d2bcf63e380d
+      internalID: 1852791081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_179
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddfe7775b8a808344863c8207be331ec
+      internalID: -243973887
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_180
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8cde3ec625ee7b42ab664a51830dfff
+      internalID: 1530604
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_181
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9adb5e9e9803ae3498d88b5c69bd6c67
+      internalID: 1986689591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_182
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8259be85353e3b54a80967d56fb41735
+      internalID: 1116874727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_183
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff31c7d25da660d458339deaa6d74799
+      internalID: 1375527685
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_184
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4607e02c281bd224a998c5ec49acacd9
+      internalID: -252397664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_185
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3bf55f097a548ab459c4ad225825e8e6
+      internalID: 527164580
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_186
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4edd129b7d342354a9fabfdabdf4fe50
+      internalID: -1242929406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_187
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 567410389f2f88343b8c5dba2c9d630d
+      internalID: 1982324237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_188
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d1cf0c152259f5648991d7f130839392
+      internalID: 1600926680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_189
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 374
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93504a800d8aa3d47b768b23e0f025b3
+      internalID: -187802560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_190
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47201b1db214b2a42aeb56edffe400c6
+      internalID: 1977437778
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_191
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcdd1a68a011c934fab7045eeb1f3557
+      internalID: 1677497654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_192
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 117f5b6c667203d46816615b20a8326c
+      internalID: -493745113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_193
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbb765531e645f3439bf3a20a3ad74e7
+      internalID: 1699086763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_194
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd3e31cb907a91e469a4022085a2412e
+      internalID: -1248120528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_195
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64ee4f16488918a4ca9af6cd5e52f114
+      internalID: -1530770765
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_196
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18d460955ca056f449d2d10d99ca9bb3
+      internalID: -2002028779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_197
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8605ee712aa73644493d339b2805b14a
+      internalID: -2118727556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_198
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 989ece4ac5979504983151a8ee63830f
+      internalID: -239541886
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_199
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d8f168d6f59f63d42a72fe2980c344ec
+      internalID: -1699086556
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_200
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 086965a0b67fc774c8f942247dec262a
+      internalID: 2141905616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_201
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 613cc7d7ee3f6c44fad8a9923483c3d3
+      internalID: 351247824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_202
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83f45d95be1c6db4cae5e84a802b0fea
+      internalID: -816769801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_203
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50123be7cf2d4db45a091fd5fc5b62af
+      internalID: -110953277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_204
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 326
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe736576cee23c849a42487855c50e85
+      internalID: -2112663945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_205
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afd171f97f3bac449b922e6c4b711281
+      internalID: 2048929772
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_206
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4836e2c1aa58c9c45aa3f9e6f5556872
+      internalID: -541548264
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_207
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fd0d2e16483d784d8d5d16b8c3f8b13
+      internalID: 1377297177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_208
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 845029bf6d6ea5e4698e678056f57e41
+      internalID: -2083785131
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_209
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f167b48c62d757344a91db78b549d982
+      internalID: -1490607286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_210
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3876a4603ab97144a6e4dae4a2caed6
+      internalID: 1143878623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_211
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c993eb1cbc4ec84469febd831287dd8c
+      internalID: -685048664
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_212
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78d36fd5c59388f46ae90feb84b9db87
+      internalID: -570650735
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_213
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c01bf1cc17008f45a441f8bd07e2710
+      internalID: 406362325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_214
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b1607d6db103f93478a6e708250e5860
+      internalID: -1697140219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_215
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bf161f29d3c6ec7418cb4594a216577b
+      internalID: 459653237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_216
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 677bc1f23fa25674bac6d690e8d1930d
+      internalID: 948285716
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_217
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 278
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2cb5a4744793f8e44b5057aa6927be04
+      internalID: 669528940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_218
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b09ecb2c570264245998cb571e59eb9a
+      internalID: 540756250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_219
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0c18d30cd9c2a9428129cfa312f6a1a
+      internalID: 394571086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_220
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281836aee7dd0474b90de74be93a563a
+      internalID: 1589810397
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_221
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 597e524942a9134489addafb7d6fcd3e
+      internalID: -1769127742
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_222
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 904e9bc718b107242b5c2f3b0dded74d
+      internalID: -665253746
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_223
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4e752c0a4b447b9478c62fe977e22081
+      internalID: 1759314700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_224
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f43594054a251b344babab7d6fbb3a9a
+      internalID: 1670471157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_225
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d669d1461bcddf049be1bb1861a06e29
+      internalID: 1227513083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_226
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae7b0e8fcd3d5b48815cd75599dc16c
+      internalID: -725314828
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_227
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8b677a581a440d4497ab20cf3297b4b
+      internalID: 724387596
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_228
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d671c9d05ed8d54cb8c99194cd0c825
+      internalID: 703106979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_229
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8ef67f91a3d878146901b00786593e1f
+      internalID: -1335346620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_230
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be8a760bcc27a8147b13f53524ac1169
+      internalID: 813639410
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_231
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c148d20f4b302c4a8b03078305e7705
+      internalID: -1942854286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_232
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 969da62e83cde46458de010f8b164937
+      internalID: -721512412
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_233
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 230
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 396cdaac8c357254a9450d12dc27756d
+      internalID: -506187688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_234
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b11414eaf61a1db45b5eb1e13b7f3310
+      internalID: 382273202
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_235
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 628146d96ba03c44dacd5dd1d213684b
+      internalID: 539010940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_236
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29e35460b9b87ad4187b6815adf00a61
+      internalID: -1062075434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_237
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e755e14a31d2fd348869834ec277d2a0
+      internalID: 412182793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_238
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a3ae933d4c81fa4dbbe408b6212926c
+      internalID: -1922200770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_239
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1cdde79490347104089091b7ead5a92b
+      internalID: 1890377418
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_240
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88fd7d35d8a0fef44a0ba2a7b2a7514b
+      internalID: 609022186
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_241
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 920c7c458052bce4a8b782e6da4b8178
+      internalID: -680367494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_242
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6df2744586b9817419fbe730ebf640f6
+      internalID: -1496015651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_243
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c05c87edcc59b0d4fa4fae3f0b2e5689
+      internalID: -910971773
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_244
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9030ac99ad7176468cb9446d68418aa
+      internalID: 745442037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_245
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bcb2836af1204946bc067c5f8781c83
+      internalID: 2122822613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_246
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f190d7a96fe5fb34f9360771f169a994
+      internalID: 1872192953
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_247
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 182
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ded5c4b3d091b7142bbaa99b4941d0a6
+      internalID: -1702848550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_248
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a08850665afd4564e847a215d0b29782
+      internalID: 39567612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_249
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 259a999ed276ffc43b0aa5b2a6d2f3ae
+      internalID: 155992866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_250
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8de2a2d7a29b9249bfe76df0bb61d3b
+      internalID: 1047099710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_251
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c9b6d645bf128e4d9d5a8387a812393
+      internalID: -548996628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_252
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 846b644eb65b2544880ff53d76033770
+      internalID: -1170857788
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_253
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbeb8dd61614b5e42a6d83ca77ce6f94
+      internalID: -325360861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_254
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 62aa9b5d1d1e5d544952480592b94c83
+      internalID: -860777390
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_255
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e4f99cbe26860e442ab9712d3cf839c3
+      internalID: -964703699
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_256
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 463f96cc6d7bd3549acb2b76ab68e9f2
+      internalID: -1123776019
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_257
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e288c328c0d742246baf71ae511ed142
+      internalID: 378690497
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_258
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 002245df9e7ac2d4a82438fc4d11eb92
+      internalID: 827451399
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_259
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ec4c08216a055c4fab188f9572484ad
+      internalID: -1191281798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_260
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb9cc931a850adb428a1c78b1271a659
+      internalID: -361635338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_261
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69c3ae4c2403b0644a95a2d761d0d968
+      internalID: -65949698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_262
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fedafad4f678791418f9361ecdd5d1f4
+      internalID: 387816549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_263
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 134
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a6d7265919a14e144b0a9ca44edef773
+      internalID: 353074531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_264
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66291ceb10d38424782c4d660ff4ca43
+      internalID: -1754999324
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_265
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d90b2cbea4dc3a0458fba916c320fccc
+      internalID: -1420478890
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_266
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2bbdb45712d4e841be3033108f163b4
+      internalID: -123804463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_267
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83c6a107b4289c740b2b432f4f370d56
+      internalID: 1468877039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_268
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 65959029277fef945866b24c8fe9dc12
+      internalID: -828488931
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_269
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6bfa72a7572e77845b0dbe1df12fbb8b
+      internalID: -823321427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_270
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b3c0c379e9c0b0144a1aefec24071310
+      internalID: 798888823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_271
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: edae95ebb62027742872d6e041051c12
+      internalID: -1584384421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_272
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebd8d2b9deda2344f8e4b8d0b82d9112
+      internalID: -447603893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_273
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a923f97032d354f429a52a55e2818585
+      internalID: 1835441357
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_274
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 401f40f20f29bda41800b4de1c3b0ed1
+      internalID: 201630384
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_275
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 41d11c5d3f6927943b6074adb720b7a5
+      internalID: -1035225565
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_276
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 83fc2128052ac48489d06fd839eb766c
+      internalID: -1500469469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_277
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214b2df340bd896439e8b1adc83472ef
+      internalID: 956833485
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_278
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 86
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c182f27f6397a8b49a796317c2d5ec8a
+      internalID: 1192767571
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_279
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a9cdb14fc199f54f80b2aa584c6cdb5
+      internalID: -219149511
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_280
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12c4c4af2f8e2b34094cb31217455ec9
+      internalID: 1974281110
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_281
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf1d48d9cdcb5fb47b425c05fff86897
+      internalID: -2071302844
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_282
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7bae4238a6907f4088853df203e6dbe
+      internalID: -654318552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_283
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa3dcbc7120d4a5439bb8aaae89df01d
+      internalID: 1865003835
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_284
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38310dbe3fd40ac4db74750b52f58f9d
+      internalID: -310753152
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_285
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97068c530c5783a46a7b1f2e3359cc8d
+      internalID: 1092771560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_286
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3b7b602812a65ab43b52d4c0cbd52a25
+      internalID: -534355435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_287
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 243fcd2660f817845ae61986b235d7e3
+      internalID: -103819042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_288
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6216e3437a95a904cbe927d1c0ec2050
+      internalID: 1555580793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_289
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea543e604ca6171499c17b0c6925b633
+      internalID: 33725377
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_290
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d15be7f8e0e122d44a2de6f405e564cc
+      internalID: -750457549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_291
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e348d80c3e01473449d352348b7e3a80
+      internalID: 1444904745
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_292
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a01129882f1c9bb48811dd0496ed308f
+      internalID: 259870641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_293
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7884128513527ed4fb50b8820bcda199
+      internalID: -1017251063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: 19_Hospital_48x48_294
+      rect:
+        serializedVersion: 2
+        x: 720
+        y: 38
+        width: 48
+        height: 48
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 84bb0da3ad66a02428c72b92bfc16254
+      internalID: 505454419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 5e97eb03825dee720800000000000000
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      19_Hospital_48x48_0: 828303736
+      19_Hospital_48x48_1: -786625272
+      19_Hospital_48x48_10: -2099645227
+      19_Hospital_48x48_100: -29215752
+      19_Hospital_48x48_101: 1088151075
+      19_Hospital_48x48_102: -821138836
+      19_Hospital_48x48_103: -1532165688
+      19_Hospital_48x48_104: 1372778565
+      19_Hospital_48x48_105: 1122321993
+      19_Hospital_48x48_106: 1984267821
+      19_Hospital_48x48_107: 961876436
+      19_Hospital_48x48_108: 1079561301
+      19_Hospital_48x48_109: -1261262147
+      19_Hospital_48x48_11: -920483788
+      19_Hospital_48x48_110: -283305864
+      19_Hospital_48x48_111: 1979926564
+      19_Hospital_48x48_112: 1148934659
+      19_Hospital_48x48_113: -757963870
+      19_Hospital_48x48_114: 2070211485
+      19_Hospital_48x48_115: 976448688
+      19_Hospital_48x48_116: 441146124
+      19_Hospital_48x48_117: -1604954798
+      19_Hospital_48x48_118: 1170826505
+      19_Hospital_48x48_119: -78467140
+      19_Hospital_48x48_12: 252206839
+      19_Hospital_48x48_120: 630376915
+      19_Hospital_48x48_121: 500084651
+      19_Hospital_48x48_122: 256999676
+      19_Hospital_48x48_123: -2035625506
+      19_Hospital_48x48_124: 1547408673
+      19_Hospital_48x48_125: -1835570834
+      19_Hospital_48x48_126: -199534530
+      19_Hospital_48x48_127: -828110895
+      19_Hospital_48x48_128: -146126996
+      19_Hospital_48x48_129: 1988527965
+      19_Hospital_48x48_13: 1344267168
+      19_Hospital_48x48_130: 105642114
+      19_Hospital_48x48_131: -1477684055
+      19_Hospital_48x48_132: -331889599
+      19_Hospital_48x48_133: 563010260
+      19_Hospital_48x48_134: 1528817160
+      19_Hospital_48x48_135: -1960994091
+      19_Hospital_48x48_136: 1928489417
+      19_Hospital_48x48_137: 2115688397
+      19_Hospital_48x48_138: -936234817
+      19_Hospital_48x48_139: 1065783091
+      19_Hospital_48x48_14: 581864171
+      19_Hospital_48x48_140: -9407438
+      19_Hospital_48x48_141: 404073844
+      19_Hospital_48x48_142: -1415459403
+      19_Hospital_48x48_143: -2040975452
+      19_Hospital_48x48_144: 463546454
+      19_Hospital_48x48_145: -623896075
+      19_Hospital_48x48_146: -275041249
+      19_Hospital_48x48_147: 1970387680
+      19_Hospital_48x48_148: 437900332
+      19_Hospital_48x48_149: 66335346
+      19_Hospital_48x48_15: 665134203
+      19_Hospital_48x48_150: -115297177
+      19_Hospital_48x48_151: 760096915
+      19_Hospital_48x48_152: 808098401
+      19_Hospital_48x48_153: 148696086
+      19_Hospital_48x48_154: -1966901694
+      19_Hospital_48x48_155: 2104033733
+      19_Hospital_48x48_156: 1998833639
+      19_Hospital_48x48_157: 1742613598
+      19_Hospital_48x48_158: -1789647269
+      19_Hospital_48x48_159: -519763877
+      19_Hospital_48x48_16: -754548160
+      19_Hospital_48x48_160: -814502483
+      19_Hospital_48x48_161: 1472386829
+      19_Hospital_48x48_162: -1726140341
+      19_Hospital_48x48_163: 1847814376
+      19_Hospital_48x48_164: -171264671
+      19_Hospital_48x48_165: -2145500979
+      19_Hospital_48x48_166: 160698387
+      19_Hospital_48x48_167: 1307663549
+      19_Hospital_48x48_168: 1948982032
+      19_Hospital_48x48_169: 1153333901
+      19_Hospital_48x48_17: -258234357
+      19_Hospital_48x48_170: -1068760962
+      19_Hospital_48x48_171: -1806708000
+      19_Hospital_48x48_172: 954971149
+      19_Hospital_48x48_173: 179668411
+      19_Hospital_48x48_174: 831131794
+      19_Hospital_48x48_175: 1970996073
+      19_Hospital_48x48_176: -554274247
+      19_Hospital_48x48_177: -2112448071
+      19_Hospital_48x48_178: 1852791081
+      19_Hospital_48x48_179: -243973887
+      19_Hospital_48x48_18: 1284258587
+      19_Hospital_48x48_180: 1530604
+      19_Hospital_48x48_181: 1986689591
+      19_Hospital_48x48_182: 1116874727
+      19_Hospital_48x48_183: 1375527685
+      19_Hospital_48x48_184: -252397664
+      19_Hospital_48x48_185: 527164580
+      19_Hospital_48x48_186: -1242929406
+      19_Hospital_48x48_187: 1982324237
+      19_Hospital_48x48_188: 1600926680
+      19_Hospital_48x48_189: -187802560
+      19_Hospital_48x48_19: -396926892
+      19_Hospital_48x48_190: 1977437778
+      19_Hospital_48x48_191: 1677497654
+      19_Hospital_48x48_192: -493745113
+      19_Hospital_48x48_193: 1699086763
+      19_Hospital_48x48_194: -1248120528
+      19_Hospital_48x48_195: -1530770765
+      19_Hospital_48x48_196: -2002028779
+      19_Hospital_48x48_197: -2118727556
+      19_Hospital_48x48_198: -239541886
+      19_Hospital_48x48_199: -1699086556
+      19_Hospital_48x48_2: -1775516854
+      19_Hospital_48x48_20: 895297265
+      19_Hospital_48x48_200: 2141905616
+      19_Hospital_48x48_201: 351247824
+      19_Hospital_48x48_202: -816769801
+      19_Hospital_48x48_203: -110953277
+      19_Hospital_48x48_204: -2112663945
+      19_Hospital_48x48_205: 2048929772
+      19_Hospital_48x48_206: -541548264
+      19_Hospital_48x48_207: 1377297177
+      19_Hospital_48x48_208: -2083785131
+      19_Hospital_48x48_209: -1490607286
+      19_Hospital_48x48_21: 1258016662
+      19_Hospital_48x48_210: 1143878623
+      19_Hospital_48x48_211: -685048664
+      19_Hospital_48x48_212: -570650735
+      19_Hospital_48x48_213: 406362325
+      19_Hospital_48x48_214: -1697140219
+      19_Hospital_48x48_215: 459653237
+      19_Hospital_48x48_216: 948285716
+      19_Hospital_48x48_217: 669528940
+      19_Hospital_48x48_218: 540756250
+      19_Hospital_48x48_219: 394571086
+      19_Hospital_48x48_22: -447846363
+      19_Hospital_48x48_220: 1589810397
+      19_Hospital_48x48_221: -1769127742
+      19_Hospital_48x48_222: -665253746
+      19_Hospital_48x48_223: 1759314700
+      19_Hospital_48x48_224: 1670471157
+      19_Hospital_48x48_225: 1227513083
+      19_Hospital_48x48_226: -725314828
+      19_Hospital_48x48_227: 724387596
+      19_Hospital_48x48_228: 703106979
+      19_Hospital_48x48_229: -1335346620
+      19_Hospital_48x48_23: 1776537120
+      19_Hospital_48x48_230: 813639410
+      19_Hospital_48x48_231: -1942854286
+      19_Hospital_48x48_232: -721512412
+      19_Hospital_48x48_233: -506187688
+      19_Hospital_48x48_234: 382273202
+      19_Hospital_48x48_235: 539010940
+      19_Hospital_48x48_236: -1062075434
+      19_Hospital_48x48_237: 412182793
+      19_Hospital_48x48_238: -1922200770
+      19_Hospital_48x48_239: 1890377418
+      19_Hospital_48x48_24: -597600778
+      19_Hospital_48x48_240: 609022186
+      19_Hospital_48x48_241: -680367494
+      19_Hospital_48x48_242: -1496015651
+      19_Hospital_48x48_243: -910971773
+      19_Hospital_48x48_244: 745442037
+      19_Hospital_48x48_245: 2122822613
+      19_Hospital_48x48_246: 1872192953
+      19_Hospital_48x48_247: -1702848550
+      19_Hospital_48x48_248: 39567612
+      19_Hospital_48x48_249: 155992866
+      19_Hospital_48x48_25: 789394936
+      19_Hospital_48x48_250: 1047099710
+      19_Hospital_48x48_251: -548996628
+      19_Hospital_48x48_252: -1170857788
+      19_Hospital_48x48_253: -325360861
+      19_Hospital_48x48_254: -860777390
+      19_Hospital_48x48_255: -964703699
+      19_Hospital_48x48_256: -1123776019
+      19_Hospital_48x48_257: 378690497
+      19_Hospital_48x48_258: 827451399
+      19_Hospital_48x48_259: -1191281798
+      19_Hospital_48x48_26: -2007928518
+      19_Hospital_48x48_260: -361635338
+      19_Hospital_48x48_261: -65949698
+      19_Hospital_48x48_262: 387816549
+      19_Hospital_48x48_263: 353074531
+      19_Hospital_48x48_264: -1754999324
+      19_Hospital_48x48_265: -1420478890
+      19_Hospital_48x48_266: -123804463
+      19_Hospital_48x48_267: 1468877039
+      19_Hospital_48x48_268: -828488931
+      19_Hospital_48x48_269: -823321427
+      19_Hospital_48x48_27: -1271627324
+      19_Hospital_48x48_270: 798888823
+      19_Hospital_48x48_271: -1584384421
+      19_Hospital_48x48_272: -447603893
+      19_Hospital_48x48_273: 1835441357
+      19_Hospital_48x48_274: 201630384
+      19_Hospital_48x48_275: -1035225565
+      19_Hospital_48x48_276: -1500469469
+      19_Hospital_48x48_277: 956833485
+      19_Hospital_48x48_278: 1192767571
+      19_Hospital_48x48_279: -219149511
+      19_Hospital_48x48_28: -1527887223
+      19_Hospital_48x48_280: 1974281110
+      19_Hospital_48x48_281: -2071302844
+      19_Hospital_48x48_282: -654318552
+      19_Hospital_48x48_283: 1865003835
+      19_Hospital_48x48_284: -310753152
+      19_Hospital_48x48_285: 1092771560
+      19_Hospital_48x48_286: -534355435
+      19_Hospital_48x48_287: -103819042
+      19_Hospital_48x48_288: 1555580793
+      19_Hospital_48x48_289: 33725377
+      19_Hospital_48x48_29: 1257661536
+      19_Hospital_48x48_290: -750457549
+      19_Hospital_48x48_291: 1444904745
+      19_Hospital_48x48_292: 259870641
+      19_Hospital_48x48_293: -1017251063
+      19_Hospital_48x48_294: 505454419
+      19_Hospital_48x48_3: -2016150382
+      19_Hospital_48x48_30: 350811337
+      19_Hospital_48x48_31: 2123955853
+      19_Hospital_48x48_32: -1585148986
+      19_Hospital_48x48_33: -774509928
+      19_Hospital_48x48_34: 1396929829
+      19_Hospital_48x48_35: 3104625
+      19_Hospital_48x48_36: 2096789597
+      19_Hospital_48x48_37: 1072475680
+      19_Hospital_48x48_38: -854663784
+      19_Hospital_48x48_39: 1114165085
+      19_Hospital_48x48_4: -303319297
+      19_Hospital_48x48_40: 1340614246
+      19_Hospital_48x48_41: 1595121662
+      19_Hospital_48x48_42: 1872306957
+      19_Hospital_48x48_43: -780768670
+      19_Hospital_48x48_44: -1876485780
+      19_Hospital_48x48_45: 1419046428
+      19_Hospital_48x48_46: -677474901
+      19_Hospital_48x48_47: 1458063377
+      19_Hospital_48x48_48: 1860495713
+      19_Hospital_48x48_49: -5044209
+      19_Hospital_48x48_5: 1515977075
+      19_Hospital_48x48_50: 2070471429
+      19_Hospital_48x48_51: 1162615471
+      19_Hospital_48x48_52: -1080902596
+      19_Hospital_48x48_53: -889671984
+      19_Hospital_48x48_54: 360732119
+      19_Hospital_48x48_55: 2052601002
+      19_Hospital_48x48_56: 518371652
+      19_Hospital_48x48_57: 1500073883
+      19_Hospital_48x48_58: -2070537259
+      19_Hospital_48x48_59: -1793666061
+      19_Hospital_48x48_6: -1502830643
+      19_Hospital_48x48_60: 2137723450
+      19_Hospital_48x48_61: -979743346
+      19_Hospital_48x48_62: -605100448
+      19_Hospital_48x48_63: 753370550
+      19_Hospital_48x48_64: -958945098
+      19_Hospital_48x48_65: -1757753635
+      19_Hospital_48x48_66: -397897282
+      19_Hospital_48x48_67: -938126529
+      19_Hospital_48x48_68: -837030437
+      19_Hospital_48x48_69: -631086916
+      19_Hospital_48x48_7: 1531863632
+      19_Hospital_48x48_70: -641568847
+      19_Hospital_48x48_71: 575887660
+      19_Hospital_48x48_72: -1962809571
+      19_Hospital_48x48_73: -795817021
+      19_Hospital_48x48_74: -52370548
+      19_Hospital_48x48_75: 936439699
+      19_Hospital_48x48_76: -332473277
+      19_Hospital_48x48_77: 1660037564
+      19_Hospital_48x48_78: -811534395
+      19_Hospital_48x48_79: 1744579396
+      19_Hospital_48x48_8: 504697378
+      19_Hospital_48x48_80: -1040142199
+      19_Hospital_48x48_81: -645384373
+      19_Hospital_48x48_82: 561358073
+      19_Hospital_48x48_83: 973034470
+      19_Hospital_48x48_84: 278143128
+      19_Hospital_48x48_85: -2026096589
+      19_Hospital_48x48_86: -1197881656
+      19_Hospital_48x48_87: 1436460428
+      19_Hospital_48x48_88: -628172029
+      19_Hospital_48x48_89: 477803353
+      19_Hospital_48x48_9: 1538571076
+      19_Hospital_48x48_90: 2086808657
+      19_Hospital_48x48_91: -596168465
+      19_Hospital_48x48_92: -251287565
+      19_Hospital_48x48_93: -2100217229
+      19_Hospital_48x48_94: -1111400313
+      19_Hospital_48x48_95: -148418561
+      19_Hospital_48x48_96: -400857234
+      19_Hospital_48x48_97: -1173119217
+      19_Hospital_48x48_98: -596263794
+      19_Hospital_48x48_99: 1307148768
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
