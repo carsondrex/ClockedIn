@@ -32,10 +32,6 @@ public class CardManager : MonoBehaviour
     private SoundManager sm;
     private PlayerMovement pm;
 
-    private void Awake()
-    {
-        DontDestroyOnLoad(GameObject.Find("UI").gameObject);
-    }
     // Start is called before the first frame update
     void Start()
     {

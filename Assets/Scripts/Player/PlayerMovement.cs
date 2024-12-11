@@ -120,9 +120,11 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     public void Heal(float healAmount)
     {
         float heal = health + healAmount;
+        health += heal;
         if (heal > 100)
         {
             heal = 100;
+            health = 100;
         }
         float targetFillAmount = heal / 100;
         healthBar.DOValue(targetFillAmount, fillSpeed);
