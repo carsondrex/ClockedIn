@@ -19,6 +19,7 @@ public class BigScript : MonoBehaviour, IDamagable
     private float angle;
     private float shootSide;
     private SoundManager sm;
+    public int size;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -41,10 +42,10 @@ public class BigScript : MonoBehaviour, IDamagable
         if (angle < 90f && angle > -90f)
         {
             shootSide = 1;
-            transform.localScale = new Vector3(5, 5, 1);
+            transform.localScale = new Vector3(size, size, 1);
         } else {
             shootSide = -1;
-            transform.localScale = new Vector3(-5, 5, 1);
+            transform.localScale = new Vector3(-size, size, 1);
         }
         if (agent.velocity != new Vector3(0, 0, 0)) {
             anim.SetBool("Moving", true);
