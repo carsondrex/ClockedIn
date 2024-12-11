@@ -7,6 +7,7 @@ public class LevelLoader : MonoBehaviour
 {
     public Animator transition;
     public float transitionTime = 1f;
+    private PlayerMovement pm;
 
     public void NewRun()
     {
@@ -16,19 +17,38 @@ public class LevelLoader : MonoBehaviour
     public void LevelOne() {
         StartCoroutine(LoadLevel(2));
     }
+    public void LevelTwo()
+    {
+        pm = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        pm.Heal(100);
+        StartCoroutine(WaitBetweenLevels());
+        StartCoroutine(LoadLevel(3));
+    }
+    public void LevelThree()
+    {
+        pm = GameObject.Find("Player").GetComponent<PlayerMovement>();
+        pm.Heal(100);
+        StartCoroutine(WaitBetweenLevels());
+        StartCoroutine(LoadLevel(4));
+    }
+
+    public IEnumerator WaitBetweenLevels()
+    {
+        yield return new WaitForSeconds(2f);
+    }
 
     public void MainMenu()
     {
-        StartCoroutine(LoadLevel(0)); //0 is the index of the first scene in the build which should be main menu
+        StartCoroutine(LoadLevel(0));
     }
 
     public void GameOver()
     {
-        StartCoroutine(LoadLevel(3)); //whatever the index is of the game over screen. will change.
+        StartCoroutine(LoadLevel(5)); //whatever the index is of the game over screen. will change.
     }
 
     public void Win() {
-        StartCoroutine(LoadLevel(4));
+        StartCoroutine(LoadLevel(6));
     }
 
     public IEnumerator LoadLevel(int levelIndex)

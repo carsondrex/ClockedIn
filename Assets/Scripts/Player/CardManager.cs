@@ -30,6 +30,12 @@ public class CardManager : MonoBehaviour
 
     private GunManager gm;
     private SoundManager sm;
+    private PlayerMovement pm;
+
+    private void Awake()
+    {
+        DontDestroyOnLoad(GameObject.Find("UI").gameObject);
+    }
     // Start is called before the first frame update
     void Start()
     {
@@ -56,12 +62,24 @@ public class CardManager : MonoBehaviour
 
         gm = GameObject.Find("Player").GetComponent<GunManager>();
         sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        pm = GameObject.Find("Player").GetComponent<PlayerMovement>();
+
+        //set to saved card counts
+        lcoilCountText.text = cardCounts[0].ToString();
+        shotgunCountText.text = cardCounts[1].ToString();
+        gattlingGunCountText.text = cardCounts[2].ToString();
+        flamerCountText.text = cardCounts[3].ToString();
     }
 
 
     public string getCurrentCard()
     {
         return currentCard;
+    }
+
+    public void setCardCounts(int[] set)
+    {
+        cardCounts = set;
     }
 
     public void setCurrentCard(string card)
@@ -114,6 +132,7 @@ public class CardManager : MonoBehaviour
 
     public void changeCardCount(int index, int changeAmount)
     {
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         cardCounts[index] = cardCounts[index] + changeAmount;
         if (index == 0)
         {
@@ -175,7 +194,7 @@ public class CardManager : MonoBehaviour
 
     public void ClickLCoil()
     {
-        if (cardCounts[0] > 0)
+        if (cardCounts[0] > 0 && currentCard != "l-coil" && !pm.dead)
         {
             sm.cardSelectSource.Play();
             currentCard = "l-coil";
@@ -184,7 +203,7 @@ public class CardManager : MonoBehaviour
     }
     public void ClickShotgun()
     {
-        if (cardCounts[1] > 0)
+        if (cardCounts[1] > 0 && currentCard != "shotgun" && !pm.dead)
         {
             sm.cardSelectSource.Play();
             currentCard = "shotgun";
@@ -193,7 +212,7 @@ public class CardManager : MonoBehaviour
     }
     public void ClickGattlingGun()
     {
-        if (cardCounts[2] > 0)
+        if (cardCounts[2] > 0 && currentCard != "gattlinggun" && !pm.dead)
         {
             sm.cardSelectSource.Play();
             currentCard = "gattlinggun";
@@ -202,7 +221,7 @@ public class CardManager : MonoBehaviour
     }
     public void ClickFlamer()
     {
-        if (cardCounts[3] > 0)
+        if (cardCounts[3] > 0 && currentCard != "flamer" && !pm.dead)
         {
             sm.cardSelectSource.Play();
             currentCard = "flamer";

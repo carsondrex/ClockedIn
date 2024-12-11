@@ -27,7 +27,8 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     public ParticleSystem dropPickUpParticles;
     private CardManager cm;
     private SoundManager sm;
-
+    private PlayerAimWeapon paw;
+    public bool dead;
     // Start is called before the first frame update
     void Start()
     {
@@ -39,7 +40,9 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         gm = GetComponent<GunManager>();
         cm = GameObject.Find("Cards").GetComponent<CardManager>();
         sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
+        paw = GetComponent<PlayerAimWeapon>();
         isInvincible = false;
+        dead = false;
         currentStamina = 100;
         staminaBar.maxValue = maxStamina;
         staminaBar.value = currentStamina;
@@ -100,11 +103,18 @@ public class PlayerMovement : MonoBehaviour,IDamagable
             healthBar.DOValue(targetFillAmount, fillSpeed);
             if (health <= 0)
             {
-            ll.GameOver(); ; //game over screen, enter corresponding scene index here.
+                StartCoroutine(Die());
             }
         }
-        
-        
+    }
+
+    public IEnumerator Die()
+    {
+        paw.canShoot = false;
+        dead = true;
+        yield return new WaitForSeconds(1f);
+        rb.constraints = RigidbodyConstraints2D.FreezePosition;
+        ll.GameOver(); ; //game over screen, enter corresponding scene index here.
     }
 
     public void Heal(float healAmount)
