@@ -22,6 +22,12 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     private WaitForSeconds regenTick = new WaitForSeconds(0.03f);
     private Coroutine regen;
     public bool isInvincible;
+    private GunManager gm;
+    //card drops
+    public ParticleSystem dropPickUpParticles;
+    private CardManager cm;
+    private SoundManager sm;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -30,6 +36,9 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         healthBar = GameObject.Find("Health Bar").GetComponent<Slider>();
         staminaBar = GameObject.Find("Stamina Bar").GetComponent<Slider>();
         ll = GameObject.Find("LevelLoader").GetComponent<LevelLoader>();
+        gm = GetComponent<GunManager>();
+        cm = GameObject.Find("Cards").GetComponent<CardManager>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         isInvincible = false;
         currentStamina = 100;
         staminaBar.maxValue = maxStamina;
@@ -44,7 +53,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
 
         rb.AddForce(new Vector2(horizontalInput * speed * Time.deltaTime * 1000, rb.velocity.y), ForceMode2D.Force);
         rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed * Time.deltaTime * 1000), ForceMode2D.Force);
-
+        
         if (canBlink)
         {
             if (anim.GetBool("down"))
@@ -83,14 +92,30 @@ public class PlayerMovement : MonoBehaviour,IDamagable
 
     public void TakeDamage(int damage)
     {
-        CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
-        health -= damage / 2; //divide by 2 since we have two colliders on player
-        float targetFillAmount = health / 100;
-        healthBar.DOValue(targetFillAmount, fillSpeed);
-        if (health <= 0)
+        if (isInvincible == false) 
         {
+            CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
+            health -= damage / 2; //divide by 2 since we have two colliders on player
+            float targetFillAmount = health / 100;
+            healthBar.DOValue(targetFillAmount, fillSpeed);
+            if (health <= 0)
+            {
             ll.GameOver(); ; //game over screen, enter corresponding scene index here.
+            }
         }
+        
+        
+    }
+
+    public void Heal(float healAmount)
+    {
+        float heal = health + healAmount;
+        if (heal > 100)
+        {
+            heal = 100;
+        }
+        float targetFillAmount = heal / 100;
+        healthBar.DOValue(targetFillAmount, fillSpeed);
     }
 
     private IEnumerator Blink(float horizontalInput, float verticalInput)
@@ -137,5 +162,43 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     public bool getIsInvincible()
     {
         return isInvincible;
+    }
+
+    void OnTriggerEnter2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "Drop")
+        {
+            ParticleSystem dropPickUp = Instantiate(dropPickUpParticles, collision.gameObject.transform.position, Quaternion.identity);
+            if (collision.gameObject.name == "HealthDrop(Clone)")
+            {
+                sm.healSource.Play();
+                Heal(collision.gameObject.GetComponent<HealthDrop>().healAmount);
+            }
+            else if (collision.gameObject.name == "LCoilDrop(Clone)")
+            {
+                cm.changeCardCount(0, 1);
+            }
+            else if (collision.gameObject.name == "ShotgunDrop(Clone)")
+            {
+                cm.changeCardCount(1, 1);
+            }
+            else if (collision.gameObject.name == "GattlingGunDrop(Clone)")
+            {
+                cm.changeCardCount(2, 1);
+            }
+            else if (collision.gameObject.name == "FlamerDrop(Clone)")
+            {
+                cm.changeCardCount(3, 1);
+            }
+
+            Destroy(collision.gameObject);
+            StartCoroutine(DestroyParticles(dropPickUp));
+        }
+    }
+
+    IEnumerator DestroyParticles(ParticleSystem dropPickUp)
+    {
+        yield return new WaitForSeconds(0.4f);
+        Destroy(dropPickUp.gameObject);
     }
 }

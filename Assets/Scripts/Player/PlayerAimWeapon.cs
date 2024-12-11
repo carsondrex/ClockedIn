@@ -1,6 +1,8 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+using DG.Tweening;
 
 public class PlayerAimWeapon : MonoBehaviour
 {
@@ -9,10 +11,15 @@ public class PlayerAimWeapon : MonoBehaviour
     private SpriteRenderer weaponSprite;
     public Animator weaponAnim;
     public ParticleSystem gunFlash;
-    private bool canShoot;
+    public ParticleSystem flamerParticles;
+    public bool canShoot;
     private PlayerBullet bullet;
     private GunManager gm;
     private SpriteRenderer playerSprite;
+    private float fillSpeed = 0.3f;
+    private Slider ammoBar;
+    private SoundManager sm;
+
     // Start is called before the first frame update
     void Awake()
     {
@@ -21,8 +28,11 @@ public class PlayerAimWeapon : MonoBehaviour
         weaponSprite = aimTransform.Find("Weapon").GetComponent<SpriteRenderer>();
         weaponAnim = aimTransform.Find("Weapon").GetComponent<Animator>();
         gm = transform.GetComponent<GunManager>();
+        sm = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         playerSprite = GetComponent<SpriteRenderer>();
+        flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
+        ammoBar = GameObject.Find("Ammo Bar").GetComponent<Slider>();
     }
 
     // Update is called once per frame
@@ -59,7 +69,6 @@ public class PlayerAimWeapon : MonoBehaviour
             {
                 anim.SetBool("up", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("down", false);
                 weaponSprite.sortingOrder = 1;
             }
             //look down
@@ -68,7 +77,6 @@ public class PlayerAimWeapon : MonoBehaviour
                 weaponSprite.sortingOrder = 3;
                 anim.SetBool("down", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("up", false);
             }
         }
         //gun is on left of player
@@ -90,7 +98,6 @@ public class PlayerAimWeapon : MonoBehaviour
             {
                 anim.SetBool("up", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("down", false);
                 weaponSprite.sortingOrder = 1;
             }
             //look down
@@ -99,7 +106,6 @@ public class PlayerAimWeapon : MonoBehaviour
                 weaponSprite.sortingOrder = 3;
                 anim.SetBool("down", true);
                 anim.SetBool("leftRight", false);
-                //anim.SetBool("up", false);
             }
         }
     }
@@ -108,11 +114,11 @@ public class PlayerAimWeapon : MonoBehaviour
     {
         if (Input.GetMouseButton(0))
         {
-            if (canShoot)
+            if (canShoot && gm.ammo >= gm.getShotIncrement())
             {
                 StartCoroutine(Shoot(aimDirection));
+                weaponAnim.SetBool("Shoot", true);
             }
-            weaponAnim.SetBool("Shoot", true);
         }
         else
         {
@@ -122,29 +128,93 @@ public class PlayerAimWeapon : MonoBehaviour
 
     protected IEnumerator Shoot(Vector3 shootDirection)
     {
+        int bulletIndex = 0;
         //bullet type decider depending on active gun
-        if (gm.weaponIndex == 0) //Assault rifle
-            bullet = gm.bullets[0];//undecided
-        else if (gm.weaponIndex == 1) //flamer
-            bullet = gm.bullets[1];//have to add flame bullet
-        else if (gm.weaponIndex == 2) //Gun 4
-            bullet = gm.bullets[5]; //waveform
-        else if (gm.weaponIndex == 3) //Gun 5
-            bullet = gm.bullets[2];//undecided
-        else if (gm.weaponIndex == 4) //L-Coil
-            bullet = gm.bullets[4];//spark
-        else if (gm.weaponIndex == 5) //L-Coil
-            bullet = gm.bullets[3];//spark
-        else
-            Debug.Log("Unrecognized gun");
+        if (gm.weaponIndex == 0) //L-Coil
+            bulletIndex = 4;
+        else if (gm.weaponIndex == 1) //Shotgun
+            bulletIndex = 1;
+        else if (gm.weaponIndex == 2) //Gattling Gun / Gun 5
+            bulletIndex = 2;
+        //else if (gm.weaponIndex == 3) //flamer has no bullet type
+        else if (gm.weaponIndex == 4) //Assault rifle
+            bulletIndex = 0;
 
         CinemachineShake.Instance.ShakeCamera(.4f, .03f); //could potentially change these values depending on the bullet or even make bosses shake the screen
-        PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
-        newBullet.setTarget("Enemy", shootDirection, 18);
+        if (gm.weaponIndex == 3) //flamer
+        {
+            StartCoroutine(FlamerAudio());
+            flamerParticles.Play();
+            flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = true;
+        }
+        else if (gm.weaponIndex == 2) //gattling gun
+        {
+            bullet = gm.bullets[bulletIndex];
+            sm.minigunSource.Play();
+            StartCoroutine(GattlingGunShoot(shootDirection));
+        }
+        else
+        {
+            bullet = gm.bullets[bulletIndex];
+            if (gm.weaponIndex == 0)
+            {
+                sm.laser1Source.Play();
+            }
+            else if (gm.weaponIndex == 1)
+            {
+                sm.laser2Source.Play();
+            }
+            else if (gm.weaponIndex == 4)
+            {
+                sm.laser3Source.Play();
+            }
+            PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
+            newBullet.setTarget("Enemy", shootDirection, 18);
+        }
+
         gunFlash.Play();
         canShoot = false;
+        gm.ammo = gm.ammo - gm.getShotIncrement();
+        float targetFillAmount = gm.ammo;
+        ammoBar.DOValue(targetFillAmount, fillSpeed);
+        if (gm.ammo <= 0)
+        {
+            if (gm.weaponIndex != 4)
+            {
+                gm.breakGun();
+            }
+            else
+            {
+                gm.reload();
+            }
+        }
+
         yield return new WaitForSeconds(0.4f);
+        flamerParticles.gameObject.GetComponent<PolygonCollider2D>().enabled = false;
         canShoot = true;
+    }
+
+    private IEnumerator FlamerAudio()
+    {
+        sm.flameStartSource.Play();
+        yield return new WaitForSeconds(0.5f);
+        /*sm.flameLoopSource.Play();
+        yield return new WaitForSeconds(0.5f);
+        sm.flameLoopSource.Stop();
+        sm.flameEndSource.Play();*/
+    }
+
+    private IEnumerator GattlingGunShoot(Vector3 shootDirection)
+    {
+        for (int i = 0; i < 3; i++)
+        {
+            PlayerBullet newBullet = Instantiate(bullet, aimTransform.position, Quaternion.identity);
+            newBullet.setTarget("Enemy", shootDirection, 20);
+            if (i != 2)
+            {
+                yield return new WaitForSeconds(0.07f);
+            }
+        }
     }
 
     public static Vector3 GetMouseWorldPosition()
