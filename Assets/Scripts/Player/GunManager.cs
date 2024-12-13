@@ -91,9 +91,11 @@ public class GunManager : MonoBehaviour
             sm.breakGunSource.Play();
             cm.setCurrentCard("default");
             setGun(4);
+        } else {
+            cm.changeCardCount(weaponIndex, -1);
         }
         refillAmmo();
-        cm.changeCardCount(weaponIndex, -1);
+        
     }
 
     public void setGun(int index)

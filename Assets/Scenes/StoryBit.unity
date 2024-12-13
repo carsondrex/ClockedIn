@@ -2527,7 +2527,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_text: NO! well maybe... but NO! I'M GETTING MARRIED TOMRROW!
+  m_text: NO! well maybe... but NO! I'M GETTING MARRIED TOMORROW!
   m_isRightToLeft: 0
   m_fontAsset: {fileID: 11400000, guid: a10315b3133ee024386c2dee82463e8d, type: 2}
   m_sharedMaterial: {fileID: 3152291735557435485, guid: a10315b3133ee024386c2dee82463e8d, type: 2}

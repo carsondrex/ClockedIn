@@ -97,7 +97,6 @@ public class BallScript : MonoBehaviour, IDamagable
         GetComponent<Enemy>().speed = 0;
         GetComponent<CircleCollider2D>().enabled = false;
         anim.SetTrigger("Die");
-        yield return new WaitForSeconds(1.6f);
         deathChecker.EnemyDied();
         foreach (LootItem lootItem in lootTable)
         {
@@ -107,6 +106,8 @@ public class BallScript : MonoBehaviour, IDamagable
                 break;
             }
         }
+        yield return new WaitForSeconds(1.6f);
+        StopAllCoroutines();
         Destroy(this.gameObject);
     }
 

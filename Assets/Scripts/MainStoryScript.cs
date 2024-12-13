@@ -55,8 +55,8 @@ public class MainStoryScript : MonoBehaviour
             OtherT.Play();
         }
         Texts[i].gameObject.SetActive(true);
+        typing = true;
         while (Texts[i].gameObject.GetComponent<TypeEffect>().done != true) {
-            typing = true;
             yield return new WaitForSeconds(.01f);
         }
         typing = false;
@@ -66,10 +66,11 @@ public class MainStoryScript : MonoBehaviour
             OtherT.loop = false;
         }
         if (i == 17) {
-            yield return new WaitForSeconds(1f);
+            yield return new WaitForSeconds(2f);
             Texts[i].gameObject.SetActive(false);
             PutDown.Play();
         }
+        yield return new WaitForSeconds(.5f);
         j++;
     }
 
@@ -92,10 +93,8 @@ public class MainStoryScript : MonoBehaviour
                 Texts[i].gameObject.GetComponent<TypeEffect>().timeBtwChars = 0;
             }
         } 
-        if (i == Texts.Count) {
-            if (Input.GetKeyDown(KeyCode.Space)) {
-                GameObject.Find("LevelLoader").GetComponent<LevelLoader>().LevelOne();
-            }
+        if (i >= Texts.Count) {
+            GameObject.Find("LevelLoader").GetComponent<LevelLoader>().LevelOne();
         }
     }
 

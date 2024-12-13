@@ -60,7 +60,6 @@ public class TurretScript : MonoBehaviour, IDamagable
 
     public IEnumerator Die() {
         anim.SetTrigger("Die");
-        yield return new WaitForSeconds(1.5f);
         deathChecker.EnemyDied();
         foreach(LootItem lootItem in lootTable)
         {
@@ -70,6 +69,8 @@ public class TurretScript : MonoBehaviour, IDamagable
                 break;
             }
         }
+        yield return new WaitForSeconds(1.5f);
+        StopAllCoroutines();
         Destroy(this.gameObject);
     }
 

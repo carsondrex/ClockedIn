@@ -131,7 +131,6 @@ public class BIGBALL : MonoBehaviour, IDamagable
         GetComponent<Enemy>().speed = 0;
         GetComponent<CircleCollider2D>().enabled = false;
         anim.SetTrigger("Die");
-        yield return new WaitForSeconds(1.6f);
         for (int i = 0; i < 10; i++) 
         {
             yield return new WaitForSeconds(.1f);
@@ -144,6 +143,8 @@ public class BIGBALL : MonoBehaviour, IDamagable
                 }
             }
         }
+        yield return new WaitForSeconds(1.6f);
+        StopAllCoroutines();
         deathChecker.EnemyDied();
         Destroy(this.gameObject);
     }
