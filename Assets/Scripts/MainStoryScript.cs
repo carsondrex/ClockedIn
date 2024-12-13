@@ -16,6 +16,7 @@ public class MainStoryScript : MonoBehaviour
     public int i = 0;
     public int j = 0;
     bool MainTalking = true;
+    private bool typing;
     // Start is called before the first frame update
     void Start()
     {
@@ -55,8 +56,10 @@ public class MainStoryScript : MonoBehaviour
         }
         Texts[i].gameObject.SetActive(true);
         while (Texts[i].gameObject.GetComponent<TypeEffect>().done != true) {
+            typing = true;
             yield return new WaitForSeconds(.01f);
         }
+        typing = false;
         if (MainTalking) {
             MainT.loop = false;
         } else {
@@ -74,7 +77,7 @@ public class MainStoryScript : MonoBehaviour
     {
         if (i > 1 && i < Texts.Count) {
             if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0)) && (i == j)) {
-                 if (MainTalking) {
+                if (MainTalking) {
                     MainT.loop = true;
                 } else {
                     OtherT.loop = true;
@@ -85,6 +88,8 @@ public class MainStoryScript : MonoBehaviour
                 if (i != Texts.Count) {
                     StartCoroutine(NextTalk(MainTalking, i));
                 }
+            } else if ((Input.GetKeyDown(KeyCode.Space) || Input.GetMouseButton(0)) && (typing == true)) {
+                Texts[i].gameObject.GetComponent<TypeEffect>().timeBtwChars = 0;
             }
         } 
         if (i == Texts.Count) {

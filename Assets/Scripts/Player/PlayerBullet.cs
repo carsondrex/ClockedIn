@@ -13,6 +13,7 @@ public class PlayerBullet : MonoBehaviour
     private GunManager gunManager;
     private int damage;
     private SoundManager sm;
+    public bool hitWalls = true;
     void Start()
     {
         bulletSprite = GetComponent<SpriteRenderer>();
@@ -54,7 +55,7 @@ public class PlayerBullet : MonoBehaviour
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
             StartCoroutine(SelfDestruct(thisImpact));
         }
-        else if (other.tag == "Wall")
+        else if (other.tag == "Wall" && hitWalls == true)
         {
             bulletSprite.GetComponent<Rigidbody2D>().constraints = RigidbodyConstraints2D.FreezePosition;
             Vector2 collisionPoint = this.transform.position;

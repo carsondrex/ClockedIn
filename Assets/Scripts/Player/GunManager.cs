@@ -34,23 +34,23 @@ public class GunManager : MonoBehaviour
 
     private void Update()
     {
-        if (cm.noCardsLeft() || cm.getCurrentCard() == "default")
+        if (cm.getCurrentCard() == "default")
         {
             setGun(4); //default gun
         }
-        else if (cm.getCurrentCard() == "l-coil" && cm.getCardCounts()[0] > 0)
+        else if (cm.getCurrentCard() == "l-coil")
         {
             setGun(0);
         }
-        else if (cm.getCurrentCard() == "shotgun" && cm.getCardCounts()[1] > 0)
+        else if (cm.getCurrentCard() == "shotgun")
         {
             setGun(1);
         }
-        else if (cm.getCurrentCard() == "gattlinggun" && cm.getCardCounts()[2] > 0)
+        else if (cm.getCurrentCard() == "gattlinggun")
         {
             setGun(2);
         }
-        else if (cm.getCurrentCard() == "flamer" && cm.getCardCounts()[3] > 0)
+        else if (cm.getCurrentCard() == "flamer")
         {
             setGun(3);
         }
@@ -86,7 +86,6 @@ public class GunManager : MonoBehaviour
 
     public void breakGun()
     {
-        cm.changeCardCount(weaponIndex, -1);
         if (cm.getCardCounts()[weaponIndex] == 0)
         {
             sm.breakGunSource.Play();
@@ -94,6 +93,7 @@ public class GunManager : MonoBehaviour
             setGun(4);
         }
         refillAmmo();
+        cm.changeCardCount(weaponIndex, -1);
     }
 
     public void setGun(int index)

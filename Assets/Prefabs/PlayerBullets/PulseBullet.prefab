@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifeTime: 3
   impact: {fileID: 2399980849920544378, guid: ece8ea4d93d02ef469e366ee4cbae706, type: 3}
+  hitWalls: 1
 --- !u!50 &114826393684252210
 Rigidbody2D:
   serializedVersion: 4

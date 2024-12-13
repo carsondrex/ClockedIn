@@ -195,6 +195,7 @@ public class CardManager : MonoBehaviour
             sm.cardSelectSource.Play();
             currentCard = "l-coil";
             gm.refillAmmo();
+            changeCardCount(0, -1);
         }
     }
     public void ClickShotgun()
@@ -204,6 +205,7 @@ public class CardManager : MonoBehaviour
             sm.cardSelectSource.Play();
             currentCard = "shotgun";
             gm.refillAmmo();
+            changeCardCount(1, -1);
         }
     }
     public void ClickGattlingGun()
@@ -213,6 +215,7 @@ public class CardManager : MonoBehaviour
             sm.cardSelectSource.Play();
             currentCard = "gattlinggun";
             gm.refillAmmo();
+            changeCardCount(2, -1);
         }
     }
     public void ClickFlamer()
@@ -222,6 +225,7 @@ public class CardManager : MonoBehaviour
             sm.cardSelectSource.Play();
             currentCard = "flamer";
             gm.refillAmmo();
+            changeCardCount(3, -1);
         }
     }
 }

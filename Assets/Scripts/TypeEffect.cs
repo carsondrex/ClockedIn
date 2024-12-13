@@ -12,7 +12,7 @@ public class TypeEffect : MonoBehaviour
 	[SerializeField] private Coroutine coroutine;
 
 	[SerializeField] float delayBeforeStart = 0f;
-	[SerializeField] float timeBtwChars = 0.1f;
+	public float timeBtwChars = 0.1f;
 	[SerializeField] string leadingChar = "";
 	[SerializeField] bool leadingCharBeforeDelay = false;
 	[Space(10)] [SerializeField] private bool startOnEnable = true;

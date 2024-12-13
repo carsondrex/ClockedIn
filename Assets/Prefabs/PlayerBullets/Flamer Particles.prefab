@@ -4896,3 +4896,4 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifeTime: 0
   impact: {fileID: 0}
+  hitWalls: 1

@@ -102,6 +102,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   LifeTime: 3
   impact: {fileID: 3867366808553718454, guid: 6cc253fa1fd18054598ffef8ca57c0e7, type: 3}
+  hitWalls: 1
 --- !u!58 &1948987019119900937
 CircleCollider2D:
   m_ObjectHideFlags: 0
