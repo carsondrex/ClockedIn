@@ -17,6 +17,7 @@ public class BallScript : MonoBehaviour, IDamagable
     private NavMeshAgent agent;
     private WinCondition deathChecker;
     private SoundManager sm;
+    private bool recoiling = false;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -36,11 +37,13 @@ public class BallScript : MonoBehaviour, IDamagable
     {
         directionToPlayer = player.transform.position - transform.position;
         float angle = Vector2.SignedAngle(transform.right, directionToPlayer);
-        if (angle < 90f && angle > -90f)
-        {
-            transform.localScale = new Vector3(5, 5, 1);
-        } else {
-            transform.localScale = new Vector3(-5, 5, 1);
+        if (dying == false) {
+            if (angle < 90f && angle > -90f)
+            {
+                transform.localScale = new Vector3(5, 5, 1);
+            } else {
+                transform.localScale = new Vector3(-5, 5, 1);
+            }
         }
         if (agent.velocity != new Vector3(0, 0, 0)) {
             anim.SetBool("Moving", true);
@@ -86,10 +89,18 @@ public class BallScript : MonoBehaviour, IDamagable
     public void TakeDamage(int damage) {
         health -= damage;
         if (health <= 0 && dying == false) {
+            this.StopAllCoroutines();
             StartCoroutine(Die());
-        } else if (dying == false) {
-            anim.SetTrigger("Hit");
+        } else if (dying == false && recoiling == false) {
+            StartCoroutine(Hit());
         }
+    }
+
+    public IEnumerator Hit() {
+        recoiling = true;
+        anim.SetTrigger("Hit");
+        yield return new WaitForSeconds(.2f);
+        recoiling = false;
     }
 
     public IEnumerator Die() {
@@ -107,7 +118,6 @@ public class BallScript : MonoBehaviour, IDamagable
             }
         }
         yield return new WaitForSeconds(1.6f);
-        StopAllCoroutines();
         Destroy(this.gameObject);
     }
 

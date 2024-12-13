@@ -22,6 +22,11 @@ public class SoundManager : MonoBehaviour
     public AudioClip BallSlamClip;
     public AudioClip BigBallSlamClip;
     public AudioClip BigShootClip;
+    public AudioClip BallDieClip;
+    public AudioClip TurretDieClip;
+    public AudioClip FlyDieClip;
+    public AudioClip BIGBALLDieClip;
+    public AudioClip BigDieClip;
 
     public AudioSource cardSource;
     public AudioSource cardSelectSource;
@@ -43,5 +48,10 @@ public class SoundManager : MonoBehaviour
     public AudioSource BallSlamSource;
     public AudioSource BigBallSlamSource;
     public AudioSource BigShootSource;
+    public AudioSource BallDieSource;
+    public AudioSource TurretDieSource;
+    public AudioSource FlyDieSource;
+    public AudioSource BIGBALLDieSource;
+    public AudioSource BigDieSource;
 
 }

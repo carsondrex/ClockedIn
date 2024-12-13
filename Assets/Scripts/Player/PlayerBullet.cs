@@ -52,9 +52,8 @@ public class PlayerBullet : MonoBehaviour
             Vector2 collisionPoint = this.transform.position;
             bulletSprite.enabled = false;
             GameObject thisImpact = Instantiate(impact, new Vector3(collisionPoint.x, collisionPoint.y, 0), Quaternion.identity);
-            Debug.Log("HIT");
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
-            StartCoroutine(SelfDestruct(thisImpact));
+            Destroy(this.gameObject);
         }
         else if (other.tag == "Wall" && hitWalls == true)
         {
@@ -65,15 +64,5 @@ public class PlayerBullet : MonoBehaviour
             other.gameObject.GetComponent<IDamagable>().TakeDamage(damage);
             Destroy(this.gameObject);
         }
-    }
-
-    IEnumerator SelfDestruct(GameObject thisImpact)
-    {
-        yield return new WaitForSeconds(0.1f);
-        if (thisImpact)
-        {
-            Destroy(thisImpact.gameObject);
-        }
-        Destroy(this.gameObject);
     }
 }

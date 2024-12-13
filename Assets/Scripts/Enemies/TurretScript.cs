@@ -12,6 +12,8 @@ public class TurretScript : MonoBehaviour, IDamagable
     private WinCondition deathChecker;
     public string state = "Idle";
     private SoundManager sm;
+    private bool dying = false;
+    private bool recoiling = false;
 
     //Loot table
     [Header("Loot")]
@@ -31,19 +33,18 @@ public class TurretScript : MonoBehaviour, IDamagable
     public IEnumerator Shoot()
     {
         canShoot = false;
-        yield return new WaitForSeconds(2);
         anim.SetTrigger("Shoot");
         sm.TurretShotSource.Play();
         yield return new WaitForSeconds(.1f);
         TurretBulletScript newBullet = Instantiate(bullet, transform.position-(new Vector3(0, .75f, 0)), Quaternion.Euler(new Vector3(0, 0, 180*isFlipped)));
-        yield return new WaitForSeconds(2);
+        yield return new WaitForSeconds(4);
         canShoot = true;
     }
 
     // Update is called once per frame
     void Update()
     {
-        if (canShoot && state != "Idle")
+        if (canShoot && state != "Idle" && (dying == false))
         {
             StartCoroutine(Shoot());
         }
@@ -51,14 +52,23 @@ public class TurretScript : MonoBehaviour, IDamagable
 
     public void TakeDamage(int damage) {
         health -= damage;
-        if (health <= 0) {
+        if (health <= 0 && dying == false) {
+            this.StopAllCoroutines();
             StartCoroutine(Die());
-        } else {
-            anim.SetTrigger("Hit");
+        } else if (dying == false && recoiling == false) {
+            StartCoroutine(Hit());
         }
     }
 
+    public IEnumerator Hit() {
+        recoiling = true;
+        anim.SetTrigger("Hit");
+        yield return new WaitForSeconds(.2f);
+        recoiling = false;
+    }
+
     public IEnumerator Die() {
+        dying = true;
         anim.SetTrigger("Die");
         deathChecker.EnemyDied();
         foreach(LootItem lootItem in lootTable)
@@ -70,7 +80,6 @@ public class TurretScript : MonoBehaviour, IDamagable
             }
         }
         yield return new WaitForSeconds(1.5f);
-        StopAllCoroutines();
         Destroy(this.gameObject);
     }
 

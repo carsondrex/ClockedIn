@@ -20,6 +20,7 @@ public class BigScript : MonoBehaviour, IDamagable
     private float shootSide;
     private SoundManager sm;
     public int size;
+    private bool recoiling = false;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -39,13 +40,15 @@ public class BigScript : MonoBehaviour, IDamagable
     {
         directionToPlayer = player.transform.position - transform.position;
         angle = Vector2.SignedAngle(transform.right, directionToPlayer);
-        if (angle < 90f && angle > -90f)
-        {
-            shootSide = 1;
-            transform.localScale = new Vector3(size, size, 1);
-        } else {
-            shootSide = -1;
-            transform.localScale = new Vector3(-size, size, 1);
+        if (dying == false) {
+            if (angle < 90f && angle > -90f)
+            {
+                shootSide = 1;
+                transform.localScale = new Vector3(size, size, 1);
+            } else {
+                shootSide = -1;
+                transform.localScale = new Vector3(-size, size, 1);
+            }   
         }
         if (agent.velocity != new Vector3(0, 0, 0)) {
             anim.SetBool("Moving", true);
@@ -89,8 +92,9 @@ public class BigScript : MonoBehaviour, IDamagable
     public void TakeDamage(int damage) {
         health -= damage;
         if (health <= 0 && dying == false) {
+            this.StopAllCoroutines();
             StartCoroutine(Die());
-        } else if (dying == false) {
+        } else if (dying == false && recoiling == false) {
             StartCoroutine(Hit());
         }
     }
@@ -119,7 +123,6 @@ public class BigScript : MonoBehaviour, IDamagable
             }
         }
         yield return new WaitForSeconds(1.6f);
-        StopAllCoroutines();
         Destroy(this.gameObject);
     }
 

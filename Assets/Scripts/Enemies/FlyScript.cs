@@ -15,6 +15,8 @@ public class FlyScript : MonoBehaviour, IDamagable
     private WinCondition deathChecker;
     public PlayerBullet bullet;
     private SoundManager sm;
+    private bool shooting = false;
+    private bool recoiling = false;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -33,11 +35,13 @@ public class FlyScript : MonoBehaviour, IDamagable
     {
         directionToPlayer = player.transform.position - transform.position;
         float angle = Vector2.SignedAngle(transform.right, directionToPlayer);
-        if (angle < 90f && angle > -90f)
-        {
-            transform.localScale = new Vector3(5, 5, 1);
-        } else {
-            transform.localScale = new Vector3(-5, 5, 1);
+        if (dying == false) {
+            if (angle < 90f && angle > -90f)
+            {
+                transform.localScale = new Vector3(5, 5, 1);
+            } else {
+                transform.localScale = new Vector3(-5, 5, 1);
+            }
         }
     }
     void OnTriggerEnter2D(Collider2D other)
@@ -61,14 +65,25 @@ public class FlyScript : MonoBehaviour, IDamagable
     public void TakeDamage(int damage) {
         health -= damage;
         if (health <= 0 && dying == false) {
+            StopAllCoroutines();
             StartCoroutine(Die());
-        } else if (dying == false) {
-            anim.SetTrigger("Hit");
+        } else if (dying == false && recoiling == false) {
+            StartCoroutine(Hit());
         }
+    }
+
+    public IEnumerator Hit() {
+        recoiling = true;
+        anim.SetTrigger("Hit");
+        yield return new WaitForSeconds(.2f);
+        recoiling = false;
     }
 
     public IEnumerator Die() {
         dying = true; 
+        if (shooting) {
+            sm.FlyBotLazerSource.Stop();
+        }
         GetComponent<Enemy>().speed = 0;
         GetComponent<CircleCollider2D>().enabled = false;
         anim.SetTrigger("Die");
@@ -82,10 +97,10 @@ public class FlyScript : MonoBehaviour, IDamagable
             }
         }
         yield return new WaitForSeconds(1f);
-        StopAllCoroutines();
         Destroy(this.gameObject);
     }
     public IEnumerator Shoot() {
+        shooting = true;
         sm.FlyBotLazerSource.Play();
         yield return new WaitForSeconds(1f);    
         PlayerBullet newBullet = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);
@@ -114,6 +129,8 @@ public class FlyScript : MonoBehaviour, IDamagable
         newBullet10.setTarget("Player", new Vector3(-1, 0, 0), 9f, "Enemy");
         PlayerBullet newBullet11 = Instantiate(bullet, new Vector3(transform.position.x, transform.position.y - 2.5f, transform.position.z), Quaternion.identity);
         newBullet11.setTarget("Player", new Vector3(0, -1, 0), 9f, "Enemy");
+        yield return new WaitForSeconds(1f);
+        shooting = false;
     }
 
     void InstantiateLoot(GameObject loot)
