@@ -122,7 +122,11 @@ public class BigScript : MonoBehaviour, IDamagable
                 break;
             }
         }
-        yield return new WaitForSeconds(1.6f);
+        yield return new WaitForSeconds(.2f);
+        sm.BigDieSource.Play();
+        yield return new WaitForSeconds(.1f);
+        sm.BigDieSource.Play();
+        yield return new WaitForSeconds(1.3f);
         Destroy(this.gameObject);
     }
 

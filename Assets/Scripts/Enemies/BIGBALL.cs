@@ -155,7 +155,9 @@ public class BIGBALL : MonoBehaviour, IDamagable
                 }
             }
         }
-        yield return new WaitForSeconds(.8f);
+        yield return new WaitForSeconds(.3f);
+        sm.BIGBALLDieSource.Play();
+        yield return new WaitForSeconds(.5f);
         deathChecker.EnemyDied();
         Destroy(this.gameObject);
     }

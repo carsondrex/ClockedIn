@@ -79,6 +79,7 @@ public class TurretScript : MonoBehaviour, IDamagable
                 break;
             }
         }
+        sm.TurretDieSource.Play();
         yield return new WaitForSeconds(1.5f);
         Destroy(this.gameObject);
     }
