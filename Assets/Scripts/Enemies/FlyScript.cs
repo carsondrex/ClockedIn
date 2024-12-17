@@ -96,9 +96,9 @@ public class FlyScript : MonoBehaviour, IDamagable
                 break;
             }
         }
-        yield return new WaitForSeconds(.1f);
+        yield return new WaitForSeconds(.4f);
         sm.FlyDieSource.Play();
-        yield return new WaitForSeconds(.9f);
+        yield return new WaitForSeconds(.6f);
         Destroy(this.gameObject);
     }
     public IEnumerator Shoot() {

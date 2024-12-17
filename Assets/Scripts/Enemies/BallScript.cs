@@ -117,9 +117,9 @@ public class BallScript : MonoBehaviour, IDamagable
                 break;
             }
         }
-        yield return new WaitForSeconds(.3f);
+        yield return new WaitForSeconds(.4f);
         sm.BallDieSource.Play();
-        yield return new WaitForSeconds(1.3f);
+        yield return new WaitForSeconds(1.2f);
         Destroy(this.gameObject);
     }
 
