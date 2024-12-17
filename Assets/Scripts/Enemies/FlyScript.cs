@@ -20,6 +20,7 @@ public class FlyScript : MonoBehaviour, IDamagable
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
+    private bool inRange = false;
 
     void Start()
     {
@@ -43,23 +44,36 @@ public class FlyScript : MonoBehaviour, IDamagable
                 transform.localScale = new Vector3(-5, 5, 1);
             }
         }
-    }
-    void OnTriggerEnter2D(Collider2D other)
-    {
-        if(other.tag == "Player" && canAttack == true && dying == false)
+        if(inRange == true && canAttack == true && dying == false)
         {
             canAttack = false;
             GetComponent<Enemy>().speed = 0;
             StartCoroutine(Attack());
         }
     }
+    void OnTriggerEnter2D(Collider2D other)
+    {
+        if(other.tag == "Player" && canAttack == true && dying == false)
+        {
+            inRange = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            inRange = true;
+        }
+    }
     public IEnumerator Attack() {
         anim.SetBool("Attack", true);
         StartCoroutine(Shoot());
-        yield return new WaitForSeconds(3.5f); 
-        canAttack = true;   
+        yield return new WaitForSeconds(3.5f);   
         anim.SetBool("Attack", false);
         GetComponent<Enemy>().speed = 1;
+        yield return new WaitForSeconds(2f);
+        canAttack = true; 
     }
 
     public void TakeDamage(int damage) {

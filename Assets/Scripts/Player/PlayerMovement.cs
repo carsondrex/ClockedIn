@@ -54,6 +54,9 @@ public class PlayerMovement : MonoBehaviour,IDamagable
         float horizontalInput = Input.GetAxis("Horizontal");
         float verticalInput = Input.GetAxis("Vertical");
 
+        float targetFillAmount = health / 100;
+        healthBar.DOValue(targetFillAmount, fillSpeed);
+
         rb.AddForce(new Vector2(horizontalInput * speed * Time.deltaTime * 1000, rb.velocity.y), ForceMode2D.Force);
         rb.AddForce(new Vector2(rb.velocity.x, verticalInput * speed * Time.deltaTime * 1000), ForceMode2D.Force);
         
@@ -97,6 +100,7 @@ public class PlayerMovement : MonoBehaviour,IDamagable
     {
         if (isInvincible == false) 
         {
+            PlayHurtNoise();
             CinemachineShake.Instance.ShakeCamera(5.5f, 1f);
             health -= damage;
             float targetFillAmount = health / 100;
@@ -106,6 +110,11 @@ public class PlayerMovement : MonoBehaviour,IDamagable
                 StartCoroutine(Die());
             }
         }
+    }
+
+    public void PlayHurtNoise() {
+        sm.HurtSource.pitch = (Random.Range(1.1f, 1.3f));
+        sm.HurtSource.Play();
     }
 
     public IEnumerator Die()

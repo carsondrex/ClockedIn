@@ -21,6 +21,7 @@ public class BigScript : MonoBehaviour, IDamagable
     private SoundManager sm;
     public int size;
     private bool recoiling = false;
+    private bool inRange = false;
 
     [Header("Loot")]
     public List<LootItem> lootTable = new List<LootItem>();
@@ -55,6 +56,12 @@ public class BigScript : MonoBehaviour, IDamagable
         } else {
             anim.SetBool("Moving", false);
         }
+        if(inRange == true && canAttack == true && dying == false)
+        {
+            canAttack = false;
+            GetComponent<Enemy>().speed = 0;
+            StartCoroutine(Attack());
+        }
 
     }
 
@@ -62,9 +69,15 @@ public class BigScript : MonoBehaviour, IDamagable
     {
         if(other.tag == "Player" && canAttack == true && dying == false)
         {
-            canAttack = false;
-            GetComponent<Enemy>().speed = 0;
-            StartCoroutine(Attack());
+            inRange = true;
+        }
+    }
+
+    void OnTriggerExit2D(Collider2D other)
+    {
+        if(other.tag == "Player")
+        {
+            inRange = true;
         }
     }
 
@@ -86,6 +99,7 @@ public class BigScript : MonoBehaviour, IDamagable
         newBullet4.setTarget("Player", Quaternion.AngleAxis(-15, Vector3.back) * directionToPlayer.normalized, 9f, "Enemy");
         yield return new WaitForSeconds(.6f);
         GetComponent<Enemy>().speed = 1;
+        yield return new WaitForSeconds(1f);
         canAttack = true;
     }
 

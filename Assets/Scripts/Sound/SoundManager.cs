@@ -27,6 +27,7 @@ public class SoundManager : MonoBehaviour
     public AudioClip FlyDieClip;
     public AudioClip BIGBALLDieClip;
     public AudioClip BigDieClip;
+    public AudioClip HurtClip;
 
     public AudioSource cardSource;
     public AudioSource cardSelectSource;
@@ -53,5 +54,6 @@ public class SoundManager : MonoBehaviour
     public AudioSource FlyDieSource;
     public AudioSource BIGBALLDieSource;
     public AudioSource BigDieSource;
+    public AudioSource HurtSource;
 
 }

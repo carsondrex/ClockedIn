@@ -63,6 +63,11 @@ public class BIGBALL : MonoBehaviour, IDamagable
         if ((GetComponent<Enemy>().state != "Idle") && (dying == false)) {
             GameObject.Find("Boss Bar").GetComponent<CanvasGroup>().alpha = 1f;
         }
+        if(canAttack == true && dying == false && willTakeDamage == true) {
+            canAttack = false;
+            StartCoroutine(Attack());
+            StartCoroutine(Hurt());
+        }
 
     }
 
@@ -70,10 +75,7 @@ public class BIGBALL : MonoBehaviour, IDamagable
     {
         if(other.tag == "Player" && canAttack == true && dying == false)
         {
-            canAttack = false;
             willTakeDamage = true;
-            StartCoroutine(Attack());
-            StartCoroutine(Hurt());
         }
     }
 

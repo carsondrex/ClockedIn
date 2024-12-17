@@ -49,6 +49,11 @@ public class BallScript : MonoBehaviour, IDamagable
             anim.SetBool("Moving", true);
         } else {
             anim.SetBool("Moving", false);
+        } 
+        if(canAttack == true && dying == false && willTakeDamage == true) {
+            canAttack = false;
+            StartCoroutine(Attack());
+            StartCoroutine(Hurt());
         }
 
     }
@@ -57,10 +62,7 @@ public class BallScript : MonoBehaviour, IDamagable
     {
         if(other.tag == "Player" && canAttack == true && dying == false)
         {
-            canAttack = false;
             willTakeDamage = true;
-            StartCoroutine(Attack());
-            StartCoroutine(Hurt());
         }
     }
 
